@@ -205,3 +205,9 @@ Open decisions: project/package naming (`fontgrab` vs `pyfontsource`), PyPI scal
 **User:** Asked whether anyone but them would need 1Password in the proposed setup (.env.example stays plain, only their .env uses op://).
 
 **Claude:** Confirmed: 1Password is a personal dependency only. Users get plain wheels; contributors use .env.example with plaintext values; CI uses Actions secrets. One caution: shared justfile recipes shouldn't hardwire `op run` — keep recipes env-agnostic and let each person populate the environment their own way (direnv/.envrc as the personal wrapper home).
+
+---
+
+**User:** Asked for a fuller explanation of the SOPS+age solution.
+
+**Claude:** Explained: age = minimal public-key file encryption (one keypair in ~/.config/sops/age/keys.txt); SOPS = structured-file layer that encrypts values but not variable names (diffable, reviewable), encrypting a per-file data key to N recipient public keys. Workflow: .sops.yaml lists recipients; sops encrypt/edit/exec-env (exec-env = op run analog, decrypt only into child process env). Encrypted .env can live in Dropbox/git; only the age secret key stays off Dropbox, copied once per machine — shrinks the sync problem from "every secret continuously" to "one key file once". Per-machine keys give cheap revocation. Compared honestly with 1Password (service+biometrics+zero key management vs no-service+versioned-with-repo); recommended op for personal tokens, SOPS+age for team-shared repo secrets.
