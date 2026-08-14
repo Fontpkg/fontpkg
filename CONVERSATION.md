@@ -217,3 +217,9 @@ Open decisions: project/package naming (`fontgrab` vs `pyfontsource`), PyPI scal
 **User:** Adopting the 1Password solution. Asked Claude to (a) save notes in its own memory describing the standard pattern for future projects, and (b) write a short user-facing doc explaining the workflow and its 2026 rationale for rediscovery years later.
 
 **Claude:** Saved two persistent memories (1password-env-secrets-pattern; evan-workflow-context) + index. Wrote docs/SECRETS.md: one-sentence version, the 2026 Dropbox rationale, the pieces (.env with op:// refs, .env.example contract, vault, op CLI), op run usage, and a future-you FAQ (new machine, adding secrets, contributors without 1P, CI, 1P exit strategy). Added .env.example. Remaining to activate: user creates the vault item with the rotated token; Claude then converts .env to op:// references and updates the Actions secret.
+
+---
+
+**User:** Created a Development vault + new PyPI token item. Asked how to get a CLI-valid path from the 1Password GUI.
+
+**Claude:** Pointed to "Copy Secret Reference" in the field's dropdown/right-click menu (enable Settings → Developer → 1Password Developer experience / CLI integration if absent). Noted references use field labels (rename to pypi-token for clarity) and the `op item get --format json` alternative. Next: paste reference into .env; Claude verifies op run resolution and rotates the Actions secret without seeing the value.
