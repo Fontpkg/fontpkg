@@ -151,3 +151,9 @@ Open decisions: project/package naming (`fontgrab` vs `pyfontsource`), PyPI scal
 **User:** Bought fontpkg.org (Route53 registration in progress); will confirm CNAME later. Said to build assuming the domain works shortly.
 
 **Claude:** fira-code + inter .post1 published (existing projects bypass the new-project throttle) — all live packages now carry the fontpkg dependency; 8 still queued. Pre-wired the domain: canonical/og meta tags + emoji favicon pointing at fontpkg.org in the site template. Added a font-request issue template (license checkbox, google-fonts link) + config linking the specimen site. Added `fontpkg search --category` filter with tests (49 passing). Domain repo-side wiring (Pages custom domain, HTTPS) waits for CNAME confirmation.
+
+---
+
+**User:** Route53 rejected a CNAME at the apex (fontpkg.org) with "RRSet of type CNAME ... not permitted at apex".
+
+**Claude:** Explained CNAMEs are forbidden at zone apex and Route53 ALIAS only targets AWS resources. Prescribed the standard GitHub Pages setup: apex A records to 185.199.108-111.153 (optionally AAAA 2606:50c0:8000-8003::153), and the CNAME on the www subdomain → fontpkg.github.io. Will wire the Pages custom domain + HTTPS + link updates once records are saved.
