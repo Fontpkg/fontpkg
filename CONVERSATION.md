@@ -199,3 +199,9 @@ Open decisions: project/package naming (`fontgrab` vs `pyfontsource`), PyPI scal
 **User:** Asked for better cross-platform secret patterns than plaintext .env in Dropbox (their idea: non-Dropbox ~/project_secrets/<proj>/.env, but less automatic).
 
 **Claude:** Recommended 1Password CLI (already owned): .env keeps only op:// references (Dropbox/commit-safe), `op run --env-file=.env --` injects at runtime, 1P handles cross-machine sync + biometric unlock; justfile prefix makes it invisible. direnv as per-directory auto-loading glue (also improves their project_secrets idea). SOPS+age as the no-subscription versioned alternative. Skip OS keychains (no sync) and AWS SM (overkill locally). Offered to convert fontpkg's .env to op:// pattern when they create the vault item.
+
+---
+
+**User:** Asked whether anyone but them would need 1Password in the proposed setup (.env.example stays plain, only their .env uses op://).
+
+**Claude:** Confirmed: 1Password is a personal dependency only. Users get plain wheels; contributors use .env.example with plaintext values; CI uses Actions secrets. One caution: shared justfile recipes shouldn't hardwire `op run` — keep recipes env-agnostic and let each person populate the environment their own way (direnv/.envrc as the personal wrapper home).
