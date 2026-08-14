@@ -125,6 +125,20 @@ A repo (this one) with CI that:
 5. Runs on a schedule (weekly) — diff against last published upstream commit, so steady
    state publishes only deltas.
 
+**Update detection.** A `state.json` manifest in this repo maps `slug →
+{upstream_commit, published_version}`. The weekly run diffs each family's latest
+upstream commit against the manifest (via the GitHub compare/commits API), rebuilds and
+publishes only the deltas, then commits the updated manifest. Families newly entering
+the allowlist are "in upstream, not in state" → built; families that disappear or
+change license are flagged for human review, never auto-yanked. Consumers need no
+mechanism of their own: font updates arrive through normal dependency tooling
+(`uv lock --upgrade`, Dependabot/Renovate) as reviewable version bumps.
+
+**Publishing phases.** (1) MVP 10 families, manual; (2) top ~200 by popularity;
+(3) full allowlist once the pipeline has run unattended reliably. Fonts download at
+*install* time only — the bytes are in the wheel, cached by uv/pip; import and
+resolution are offline.
+
 **Data sources.** Primary is the google/fonts repo directly: it is the authoritative
 origin for binaries, `METADATA.pb`, axis definitions, and license files — provenance we
 can cite. Fontsource's own catalog is mostly Google Fonts plus a small "other" set

@@ -47,3 +47,12 @@ Open decisions: project/package naming (`fontgrab` vs `pyfontsource`), PyPI scal
 - Decisions recorded in DESIGN.md §8 (Python ≥3.10, OFL+Apache only for now — UFL deferred, head.fontRevision versioning + PEP 440 leading-zero caveat, static/ subdirs skipped, zip-install limitation, matplotlib VF limitation).
 
 **Claude (continued):** Batch-validated all 10 MVP families (Lato static-only, Fira Code no-italic, Playfair min-weight edge cases all behave). Added `fontpkg list` / `fontpkg path` CLI (console script + `python -m fontpkg`) with tests (32 passing total), and GitHub Actions CI (test matrix 3.10/3.12/3.13 + manual generate workflow uploading wheels). PyPI publishing deferred until names are registered.
+
+---
+
+**User:** Asked about usage patterns: do we publish ~1500 Google fonts to PyPI? Are fonts downloaded at first load or venv creation? What system detects new font packages?
+
+**Claude:** Answered and recorded in DESIGN.md §3.3:
+- Publishing is phased: 10 MVP families manual → top ~200 by popularity → full ~1,500 allowlist once the pipeline runs unattended (precedent: fontsource's ~1,500 npm packages, typeshed's thousands of types-* packages). Fallback for PyPI pushback: self-hosted PEP 503 index for the long tail.
+- Fonts are downloaded at install time only — bytes live in the wheel, cached by uv/pip; import/resolution are fully offline (deliberate inversion of pyfonts' plot-time fetching).
+- Update detection: state.json manifest (slug → upstream_commit + published_version); weekly CI diffs upstream commits, rebuilds/publishes deltas, commits manifest; new allowlist families auto-built, disappearing/license-changed families flagged for review. Consumers use normal dependency tooling (uv lock --upgrade, Dependabot). Future `fontpkg search` queries a static catalog index for not-yet-installed fonts.
