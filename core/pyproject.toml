@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fontpkg"
+version = "0.1.0"
+description = "Fonts as Python project dependencies — a Fontsource analog for PyPI"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "Evan Jones", email = "evan_t_jones@mac.com" }]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Topic :: Text Processing :: Fonts",
+]
+
+[project.optional-dependencies]
+pil = ["pillow>=9.0"]
+matplotlib = ["matplotlib>=3.6"]
+
+[dependency-groups]
+dev = ["pytest>=8", "pillow>=9.0", "fonttools>=4.50"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/fontpkg"]

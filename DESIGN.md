@@ -180,3 +180,44 @@ Fontsource maintainers a heads-up — good citizenship, possible future collabor
 2. **Automation:** scheduled CI over full google/fonts allowlist, trusted publishing, deltas.
 3. **Ecosystem:** docs site with searchable family index (fontsource-style), `fontpkg search`
    CLI, bunny/fontshare adapters, static-instance extras, `[system]` fallback module.
+
+## 8. Implementation decisions (2026-08-14, initial build)
+
+Recorded while implementing the MVP; deviations from or refinements of the sections above.
+
+- **Layout:** uv workspace monorepo — `core/` (the `fontpkg` runtime) + `generator/`
+  (`fontpkg-gen` CLI). `just sync / test / build <families>`.
+- **Python ≥3.10** (not 3.9): `importlib.metadata.entry_points(group=...)` and modern
+  union hints; 3.9 is EOL anyway.
+- **metadata.json schema v1:** `{schema, family, slug, version, license, copyright, axes:
+  [{tag,min,max}], files: [{path, style, weight|null, variable}], source: {repo, path,
+  commit}}`. Variable files carry `weight: null`; their wght range comes from the
+  family-level `wght` axis.
+- **Licenses in v1: OFL-1.1 and Apache-2.0 only.** UFL dropped for now — its SPDX id is
+  unclear and PEP 639 backends validate license expressions, so Ubuntu's family is
+  excluded until resolved (only affects a handful of families).
+- **Fetching:** GitHub contents API (no multi-GB clone), unauthenticated with UA header,
+  top-level `.ttf/.otf` + license + `METADATA.pb` only; `static/` subdirs skipped
+  (`[static]` extras deferred). Provenance commit from the commits API. Unauthenticated
+  rate limit is 60 req/hr — fine for a handful of families; CI at scale needs a token.
+- **Versioning:** `head.fontRevision` formatted `%.3f` → package version; PEP 440
+  normalizes leading zeros (Roboto `3.015` becomes wheel version `3.15`) while
+  `metadata.json` preserves the exact font version. Theoretical collision (3.015 vs 3.15)
+  accepted for MVP; revisit with a post-release scheme if it ever bites.
+- **Resolution details:** nearest-match tie-break prefers the lighter weight; VF wins over
+  static when both cover the requested weight; `nearest=True` clamps into a VF's range
+  when the weight falls outside it.
+- **Legacy compat:** pimoroni's `fonts_ttf` entry points are read best-effort (path-valued
+  entries become single-file 400/normal families); native `fontpkg.family` entries win on
+  slug collision.
+- **Zip-installed wheels not supported:** `path()` materializes `Path(str(traversable))`;
+  real-world installs are unpacked. Documented limitation rather than an `as_file`
+  ExitStack held for the process lifetime.
+- **matplotlib helper** registers all family files and returns `FontProperties`;
+  matplotlib cannot set VF axes, so non-400 weights of VF-only families need the future
+  `[static]` extra there (PIL helper handles VF axes properly).
+- **`fontpkg.system` deferred** to v2 (design §3.1 tier 2).
+- **Tests:** no network anywhere; fixture fonts are built in-memory with fontTools
+  `FontBuilder`; generator↔core schema compatibility is covered by a roundtrip test.
+  Live verification (fetch → build → wheel → clean-venv install → resolve → PIL render)
+  was run manually for Roboto + Inter and passed.
