@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>fontpkg — fonts as Python dependencies</title>
+<style>
+:root {
+  --bg: #fafaf8; --fg: #1a1a1a; --muted: #6b6b6b; --card: #ffffff;
+  --border: #e4e2dd; --accent: #2563eb; --accent-fg: #ffffff; --chip: #efede8;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #12110f; --fg: #ececec; --muted: #9a9a9a; --card: #1c1b18;
+    --border: #2e2c28; --accent: #3b82f6; --accent-fg: #ffffff; --chip: #262420;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+header { max-width: 1100px; margin: 0 auto; padding: 2.5rem 1.25rem 0; }
+h1 { font-size: 1.6rem; margin: 0 0 .25rem; }
+h1 code { font-family: ui-monospace, monospace; }
+.tagline { color: var(--muted); margin: 0 0 1.5rem; }
+.tagline a { color: var(--accent); text-decoration: none; }
+.controls {
+  max-width: 1100px; margin: 0 auto; padding: 0 1.25rem 1rem;
+  display: flex; flex-wrap: wrap; gap: .75rem; align-items: center;
+  position: sticky; top: 0; background: var(--bg); padding-top: 1rem; z-index: 5;
+  border-bottom: 1px solid var(--border);
+}
+.controls input[type="text"] {
+  background: var(--card); color: var(--fg); border: 1px solid var(--border);
+  border-radius: 8px; padding: .55rem .8rem; font-size: 1rem;
+}
+#search { width: 14rem; }
+#preview { flex: 1 1 16rem; }
+.chips { display: flex; gap: .4rem; flex-wrap: wrap; }
+.chip {
+  background: var(--chip); border: 1px solid var(--border); color: var(--fg);
+  border-radius: 999px; padding: .3rem .8rem; font-size: .85rem; cursor: pointer;
+}
+.chip.active { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); }
+.slider-group { display: flex; align-items: center; gap: .5rem; font-size: .85rem; color: var(--muted); }
+.grid {
+  max-width: 1100px; margin: 0 auto; padding: 1.25rem;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1rem;
+}
+.card {
+  background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+  padding: 1.1rem 1.25rem; display: flex; flex-direction: column; gap: .6rem;
+}
+.card .meta { display: flex; justify-content: space-between; align-items: baseline; gap: .5rem; }
+.card .name { font-weight: 600; }
+.card .info { color: var(--muted); font-size: .78rem; text-align: right; }
+.card .sample {
+  font-size: 1.9rem; line-height: 1.25; min-height: 3.2rem; overflow-wrap: anywhere;
+  outline: none; border: none; padding: 0; background: none; color: var(--fg);
+}
+.card .install {
+  display: flex; align-items: center; gap: .5rem; margin-top: auto;
+}
+.card .install code {
+  font-family: ui-monospace, monospace; font-size: .82rem; color: var(--muted);
+  background: var(--chip); border-radius: 6px; padding: .3rem .55rem; flex: 1;
+  overflow-x: auto; white-space: nowrap;
+}
+.card .install button {
+  background: none; border: 1px solid var(--border); color: var(--muted);
+  border-radius: 6px; padding: .28rem .6rem; font-size: .78rem; cursor: pointer;
+}
+.card .install button:hover { color: var(--fg); border-color: var(--muted); }
+#empty { max-width: 1100px; margin: 2rem auto; padding: 0 1.25rem; color: var(--muted); display: none; }
+footer {
+  max-width: 1100px; margin: 2rem auto 3rem; padding: 0 1.25rem;
+  color: var(--muted); font-size: .85rem;
+}
+footer a { color: var(--accent); text-decoration: none; }
+/*__FONT_FACES__*/
+</style>
+</head>
+<body>
+<header>
+  <h1><code>fontpkg</code></h1>
+  <p class="tagline">Fonts as ordinary Python dependencies.
+    Every specimen below renders from the exact font file the package installs.
+    <a href="https://github.com/Fontpkg/fontpkg">GitHub</a> ·
+    <a href="https://pypi.org/project/fontpkg/">PyPI</a></p>
+</header>
+<div class="controls">
+  <input id="search" type="text" placeholder="Filter families… (e.g. got)">
+  <div class="chips" id="categories"></div>
+  <input id="preview" type="text" placeholder="Type to preview in every font…">
+  <span class="slider-group">
+    <label for="weight">weight <b id="weight-val">400</b></label>
+    <input id="weight" type="range" min="100" max="900" step="10" value="400">
+    <label><input id="italic" type="checkbox"> italic</label>
+  </span>
+</div>
+<div class="grid" id="grid"></div>
+<p id="empty">No families match. The catalog grows weekly — request one on
+  <a href="https://github.com/Fontpkg/fontpkg/issues">GitHub</a>.</p>
+<footer>
+  Fonts are redistributed unmodified under their own licenses (OFL-1.1 / Apache-2.0),
+  packaged from <a href="https://github.com/google/fonts">google/fonts</a>.
+  Inspired by <a href="https://fontsource.org">Fontsource</a>.
+</footer>
+<script>
+const FAMILIES = __FAMILY_DATA__;
+const DEFAULT_TEXT = "Grumpy wizards make toxic brew for the evil queen and jack.";
+const CATEGORY_LABELS = {
+  SANS_SERIF: "Sans", SERIF: "Serif", MONOSPACE: "Mono",
+  DISPLAY: "Display", HANDWRITING: "Handwriting",
+};
+const state = { query: "", category: "ALL", text: "", weight: 400, italic: false };
+
+const grid = document.getElementById("grid");
+const cards = new Map();
+const lazyLoader = new IntersectionObserver((entries) => {
+  for (const entry of entries) {
+    if (!entry.isIntersecting) continue;
+    const { sample, fam } = cards.get(entry.target.dataset.slug);
+    sample.style.fontFamily = `"${fam.family}"`;
+    lazyLoader.unobserve(entry.target);
+  }
+}, { rootMargin: "300px" });
+
+function clamp(value, range) {
+  if (!range) return value;
+  return Math.min(Math.max(value, range[0]), range[1]);
+}
+
+function buildCard(fam) {
+  const card = document.createElement("div");
+  card.className = "card";
+  const range = fam.weight_range ? `${fam.weight_range[0]}–${fam.weight_range[1]}` : "";
+  const kind = fam.variable ? `variable ${range}` : `${fam.weights.length} weights`;
+  card.innerHTML = `
+    <div class="meta">
+      <span class="name">${fam.family}</span>
+      <span class="info">${fam.license} · ${kind}</span>
+    </div>
+    <div class="sample" contenteditable="true" spellcheck="false"></div>
+    <div class="install">
+      <code>uv add ${fam.package}</code>
+      <button type="button">copy</button>
+    </div>`;
+  const sample = card.querySelector(".sample");
+  card.dataset.slug = fam.slug;
+  lazyLoader.observe(card);
+  sample.addEventListener("input", () => { sample.dataset.custom = "1"; });
+  const button = card.querySelector("button");
+  button.addEventListener("click", async () => {
+    await navigator.clipboard.writeText(`uv add ${fam.package}`);
+    button.textContent = "copied!";
+    setTimeout(() => { button.textContent = "copy"; }, 1200);
+  });
+  cards.set(fam.slug, { card, sample, fam });
+  return card;
+}
+
+function applyText() {
+  const text = state.text || DEFAULT_TEXT;
+  for (const { sample } of cards.values()) {
+    if (!sample.dataset.custom) sample.textContent = text;
+  }
+}
+
+function applyStyle() {
+  for (const { sample, fam } of cards.values()) {
+    const weight = clamp(state.weight, fam.weight_range);
+    sample.style.fontWeight = weight;
+    const italic = state.italic && fam.styles.includes("italic");
+    sample.style.fontStyle = italic ? "italic" : "normal";
+  }
+}
+
+function applyFilter() {
+  const q = state.query.trim().toLowerCase();
+  let visible = 0;
+  for (const { card, fam } of cards.values()) {
+    const matchesQuery =
+      !q || fam.family.toLowerCase().includes(q) || fam.slug.includes(q);
+    const matchesCategory =
+      state.category === "ALL" || (fam.category || []).includes(state.category);
+    const show = matchesQuery && matchesCategory;
+    card.style.display = show ? "" : "none";
+    if (show) visible += 1;
+  }
+  document.getElementById("empty").style.display = visible ? "none" : "block";
+}
+
+const seen = new Set(FAMILIES.flatMap((f) => f.category || []));
+const chipHost = document.getElementById("categories");
+const chips = [["ALL", "All"], ...Object.entries(CATEGORY_LABELS).filter(([k]) => seen.has(k))];
+for (const [value, label] of chips) {
+  const chip = document.createElement("button");
+  chip.className = "chip" + (value === "ALL" ? " active" : "");
+  chip.textContent = label;
+  chip.addEventListener("click", () => {
+    state.category = value;
+    chipHost.querySelectorAll(".chip").forEach((c) => c.classList.remove("active"));
+    chip.classList.add("active");
+    applyFilter();
+  });
+  chipHost.appendChild(chip);
+}
+
+for (const fam of FAMILIES) grid.appendChild(buildCard(fam));
+applyText();
+applyStyle();
+applyFilter();
+
+document.getElementById("search").addEventListener("input", (e) => {
+  state.query = e.target.value;
+  applyFilter();
+});
+document.getElementById("preview").addEventListener("input", (e) => {
+  state.text = e.target.value;
+  for (const { sample } of cards.values()) delete sample.dataset.custom;
+  applyText();
+});
+document.getElementById("weight").addEventListener("input", (e) => {
+  state.weight = Number(e.target.value);
+  document.getElementById("weight-val").textContent = e.target.value;
+  applyStyle();
+});
+document.getElementById("italic").addEventListener("change", (e) => {
+  state.italic = e.target.checked;
+  applyStyle();
+});
+</script>
+</body>
+</html>

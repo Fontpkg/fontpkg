@@ -1,0 +1,38 @@
+name: Publish specimen site
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Sync font packages"]
+    types: [completed]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.13"
+      - run: uv sync --all-packages
+      - name: Build all font packages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: uv run fontpkg-gen build $(grep -v '^#' families.txt | tr '\n' ' ') --out build
+      - name: Generate site
+        run: uv run fontpkg-gen site --catalog catalog.json --packages build --out site-dist
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site-dist
+      - id: deployment
+        uses: actions/deploy-pages@v4

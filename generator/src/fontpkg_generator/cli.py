@@ -6,6 +6,7 @@ from pathlib import Path
 
 from fontpkg_generator.build import SourceInfo, UnsupportedLicense, build_package
 from fontpkg_generator.gh import REPO_URL, FamilyNotFound, fetch_family
+from fontpkg_generator.site import build_site
 from fontpkg_generator.sync import sync_families
 
 
@@ -32,9 +33,17 @@ def main(argv: list[str] | None = None) -> int:
     sync.add_argument("--catalog", type=Path, default=Path("catalog.json"))
     sync.add_argument("--out", type=Path, default=Path("build"))
     sync.add_argument("--wheel", action="store_true", help="also build wheels with uv build")
+    site = sub.add_parser("site", help="generate the static specimen site")
+    site.add_argument("--catalog", type=Path, default=Path("catalog.json"))
+    site.add_argument("--packages", type=Path, default=Path("build"))
+    site.add_argument("--out", type=Path, default=Path("site-dist"))
     args = parser.parse_args(argv)
     if args.command == "sync":
         return _sync(args)
+    if args.command == "site":
+        out = build_site(args.catalog, args.packages, args.out)
+        print(f"site written to {out}")
+        return 0
     return _build(args)
 
 

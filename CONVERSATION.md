@@ -130,3 +130,12 @@ Open decisions: project/package naming (`fontgrab` vs `pyfontsource`), PyPI scal
 **User:** Suggested fontpkg-<name> packages depend on fontpkg core, so one `uv add fontpkg-inter` suffices.
 
 **Claude:** Agreed (clean dependency direction, core guarantees schema back-compat) and implemented: generated pyproject now has dependencies = ["fontpkg>=0.1.0"]; added --post N flag to fontpkg-gen build for republishing already-released names as .postN without an upstream bump. 46 tests passing. Republish of the already-published packages queued behind the still-running PyPI throttle retry job.
+
+---
+
+**User:** Asked to start a static specimen site with live-typing demo + filtering; asked whether to serve fonts via fontpkg's own files or Fontsource; open to a separate repo.
+
+**Claude:** Recommended serving fontpkg's own TTFs (the site's promise is "this is exactly what uv add gives you"; browsers render TTF/VF natively; fontsource CDN would demo their subsetted builds) and staying in the same repo. Built:
+- `fontpkg-gen site`: generates a static site from catalog.json + built packages — copies font binaries (bracket-free names), emits @font-face rules (truetype-variations with weight ranges for VFs), embeds the catalog as JSON in a vanilla-JS page.
+- Page features: live-typing preview (global input + per-card contenteditable), substring family filter, category chips, global weight slider driving VF axes, italic toggle, uv-add copy buttons, lazy font loading via IntersectionObserver (30MB of fonts load only as cards scroll into view), dark/light theme.
+- pages.yml: deploys to GitHub Pages on dispatch and after each font sync; enabled Pages (build_type=workflow) via API. 48 tests passing. Verified live in browser: typing, filtering, weight slider all work.
