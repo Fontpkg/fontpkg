@@ -125,6 +125,20 @@ A repo (this one) with CI that:
 5. Runs on a schedule (weekly) — diff against last published upstream commit, so steady
    state publishes only deltas.
 
+**Update detection.** A `state.json` manifest in this repo maps `slug →
+{upstream_commit, published_version}`. The weekly run diffs each family's latest
+upstream commit against the manifest (via the GitHub compare/commits API), rebuilds and
+publishes only the deltas, then commits the updated manifest. Families newly entering
+the allowlist are "in upstream, not in state" → built; families that disappear or
+change license are flagged for human review, never auto-yanked. Consumers need no
+mechanism of their own: font updates arrive through normal dependency tooling
+(`uv lock --upgrade`, Dependabot/Renovate) as reviewable version bumps.
+
+**Publishing phases.** (1) MVP 10 families, manual; (2) top ~200 by popularity;
+(3) full allowlist once the pipeline has run unattended reliably. Fonts download at
+*install* time only — the bytes are in the wheel, cached by uv/pip; import and
+resolution are offline.
+
 **Data sources.** Primary is the google/fonts repo directly: it is the authoritative
 origin for binaries, `METADATA.pb`, axis definitions, and license files — provenance we
 can cite. Fontsource's own catalog is mostly Google Fonts plus a small "other" set
@@ -180,3 +194,54 @@ Fontsource maintainers a heads-up — good citizenship, possible future collabor
 2. **Automation:** scheduled CI over full google/fonts allowlist, trusted publishing, deltas.
 3. **Ecosystem:** docs site with searchable family index (fontsource-style), `fontpkg search`
    CLI, bunny/fontshare adapters, static-instance extras, `[system]` fallback module.
+
+## 8. Implementation decisions (2026-08-14, initial build)
+
+Recorded while implementing the MVP; deviations from or refinements of the sections above.
+
+- **Layout:** uv workspace monorepo — `core/` (the `fontpkg` runtime) + `generator/`
+  (`fontpkg-gen` CLI). `just sync / test / build <families>`.
+- **Python ≥3.10** (not 3.9): `importlib.metadata.entry_points(group=...)` and modern
+  union hints; 3.9 is EOL anyway.
+- **metadata.json schema v1:** `{schema, family, slug, version, license, copyright, axes:
+  [{tag,min,max}], files: [{path, style, weight|null, variable}], source: {repo, path,
+  commit}}`. Variable files carry `weight: null`; their wght range comes from the
+  family-level `wght` axis.
+- **Licenses in v1: OFL-1.1 and Apache-2.0 only.** UFL dropped for now — its SPDX id is
+  unclear and PEP 639 backends validate license expressions, so Ubuntu's family is
+  excluded until resolved (only affects a handful of families).
+- **Fetching:** GitHub contents API (no multi-GB clone), unauthenticated with UA header,
+  top-level `.ttf/.otf` + license + `METADATA.pb` only; `static/` subdirs skipped
+  (`[static]` extras deferred). Provenance commit from the commits API. Unauthenticated
+  rate limit is 60 req/hr — fine for a handful of families; CI at scale needs a token.
+- **Versioning:** `head.fontRevision` formatted `%.3f` → package version; PEP 440
+  normalizes leading zeros (Roboto `3.015` becomes wheel version `3.15`) while
+  `metadata.json` preserves the exact font version. Theoretical collision (3.015 vs 3.15)
+  accepted for MVP; revisit with a post-release scheme if it ever bites.
+- **Resolution details:** nearest-match tie-break prefers the lighter weight; VF wins over
+  static when both cover the requested weight; `nearest=True` clamps into a VF's range
+  when the weight falls outside it.
+- **Legacy compat:** pimoroni's `fonts_ttf` entry points are read best-effort (path-valued
+  entries become single-file 400/normal families); native `fontpkg.family` entries win on
+  slug collision.
+- **Zip-installed wheels not supported:** `path()` materializes `Path(str(traversable))`;
+  real-world installs are unpacked. Documented limitation rather than an `as_file`
+  ExitStack held for the process lifetime.
+- **matplotlib helper** registers all family files and returns `FontProperties`;
+  matplotlib cannot set VF axes, so non-400 weights of VF-only families need the future
+  `[static]` extra there (PIL helper handles VF axes properly).
+- **`fontpkg.system` deferred** to v2 (design §3.1 tier 2).
+- **CLI added to core:** `fontpkg list` / `fontpkg path <family> [--weight] [--style]
+  [--nearest]` (console script + `python -m fontpkg`). Roadmap's `fontpkg search`
+  (querying the not-yet-installed catalog) remains future work.
+- **Batch validation:** all 10 MVP families generated and verified in a clean venv
+  (Roboto, Inter, Open Sans, Lato, Source Sans 3, JetBrains Mono, Fira Code, Noto Sans,
+  Merriweather, Playfair Display). Lato exercises the static-only path (18 files);
+  Fira Code (no italic) and Playfair Display (min weight 400) exercise the error paths.
+- **CI:** GitHub Actions test matrix (3.10/3.12/3.13) + a manual `workflow_dispatch`
+  generate workflow that uploads wheels as artifacts. PyPI trusted publishing deferred
+  until the names are registered.
+- **Tests:** no network anywhere; fixture fonts are built in-memory with fontTools
+  `FontBuilder`; generator↔core schema compatibility is covered by a roundtrip test.
+  Live verification (fetch → build → wheel → clean-venv install → resolve → PIL render)
+  was run manually for Roboto + Inter and passed.

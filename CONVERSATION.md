@@ -32,3 +32,33 @@ Open decisions: project/package naming (`fontgrab` vs `pyfontsource`), PyPI scal
 - Related families (Roboto Condensed/Slab) = separate packages mirroring upstream boundaries.
 - Data sources: google/fonts repo is authoritative (binaries, METADATA.pb, licenses); fontsource's API is mostly normalized Google Fonts data serving subsetted woff2 — use only for discovery of non-Google families and cross-checks, never in the build critical path.
 - Naming decision: `fontpkg` (core + `fontpkg-<slug>` prefix). Verified `fontpkg`, `fontdep`, `fontset`, `typeface`, `fontsource-py`, `pyfontsource` all unclaimed on PyPI (2026-08-14). Recommended against `fontsource_py`: trades on their goodwill + implies API tracking; credit them in README instead, optional heads-up email.
+
+---
+
+## 2026-08-14 (later)
+
+**User:** Asked to implement the plan as `fontpkg`, autonomously (gone for a couple hours), noting decisions in DESIGN.md.
+
+**Claude:** Implemented the MVP on branch `feature/fontpkg` (repo git-initialized first):
+- `core/` — `fontpkg` runtime: entry-point discovery (`fontpkg.family` group + legacy `fonts_ttf`), `path()/family()/families()`, weight/style normalization with aliases, exact/nearest/VF resolution, actionable errors, `fontpkg.pil` (sets VF weight axis) and `fontpkg.mpl` helpers.
+- `generator/` — `fontpkg-gen` CLI: fetches families from google/fonts via the GitHub contents API, parses METADATA.pb with a small textproto parser, enforces OFL-1.1/Apache-2.0 allowlist, emits per-family packages (unmodified binaries + LICENSE + metadata.json + entry point), optionally builds wheels via `uv build`; `--from-dir` for offline builds.
+- 28 tests passing (no network; fixture fonts via fontTools FontBuilder; core↔generator schema roundtrip).
+- Live e2e verified: built `fontpkg-roboto` (3.015) and `fontpkg-inter` (4.001) wheels, installed into a clean venv, resolved paths/weights/styles, rendered six Inter VF weights via PIL (demo PNG sent).
+- Decisions recorded in DESIGN.md §8 (Python ≥3.10, OFL+Apache only for now — UFL deferred, head.fontRevision versioning + PEP 440 leading-zero caveat, static/ subdirs skipped, zip-install limitation, matplotlib VF limitation).
+
+**Claude (continued):** Batch-validated all 10 MVP families (Lato static-only, Fira Code no-italic, Playfair min-weight edge cases all behave). Added `fontpkg list` / `fontpkg path` CLI (console script + `python -m fontpkg`) with tests (32 passing total), and GitHub Actions CI (test matrix 3.10/3.12/3.13 + manual generate workflow uploading wheels). PyPI publishing deferred until names are registered.
+
+---
+
+**User:** Asked about usage patterns: do we publish ~1500 Google fonts to PyPI? Are fonts downloaded at first load or venv creation? What system detects new font packages?
+
+**Claude:** Answered and recorded in DESIGN.md §3.3:
+- Publishing is phased: 10 MVP families manual → top ~200 by popularity → full ~1,500 allowlist once the pipeline runs unattended (precedent: fontsource's ~1,500 npm packages, typeshed's thousands of types-* packages). Fallback for PyPI pushback: self-hosted PEP 503 index for the long tail.
+- Fonts are downloaded at install time only — bytes live in the wheel, cached by uv/pip; import/resolution are fully offline (deliberate inversion of pyfonts' plot-time fetching).
+- Update detection: state.json manifest (slug → upstream_commit + published_version); weekly CI diffs upstream commits, rebuilds/publishes deltas, commits manifest; new allowlist families auto-built, disappearing/license-changed families flagged for review. Consumers use normal dependency tooling (uv lock --upgrade, Dependabot). Future `fontpkg search` queries a static catalog index for not-yet-installed fonts.
+
+---
+
+**User:** Asked what they need to do now.
+
+**Claude:** Listed the account-gated steps: (1) push repo to GitHub (gh repo create) and merge feature/fontpkg; (2) register PyPI names — time-sensitive — by publishing fontpkg (and flagship fontpkg-* names) with their credentials, TestPyPI dry run suggested; (3) configure Trusted Publishing for generate.yml; (4) request a PyPI org early; (5) optional courtesy email to Fontsource maintainers. Next build items after that: state.json delta pipeline, publish step in CI, top-200 run.
