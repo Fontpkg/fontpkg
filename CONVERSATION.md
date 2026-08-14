@@ -98,3 +98,14 @@ Open decisions: project/package naming (`fontgrab` vs `pyfontsource`), PyPI scal
 **User:** Asked for a draft of the email to Ayu.
 
 **Claude:** Drafted a short heads-up email: leads with credit to Fontsource, describes fontpkg (google/fonts generation, license compliance, runtime API), offers to adjust README credit wording, explicitly no ask, open door to advice/coordination. Advised sending only after the repo is public so the link resolves.
+
+---
+
+**User:** Sent the email to Ayu; repo is public; PyPI test publish + trusted publishing + org request done. Asked Claude to take the next steps.
+
+**Claude:** Built the automation phase:
+- `fontpkg-gen sync`: state.json-driven delta detection (per-family upstream commit), rebuilds only changed families, `--families-file` support, wheel-builder hook; GitHub API calls now use GITHUB_TOKEN when set.
+- families.txt (the 10 MVP slugs) + seeded state.json via a live sync (all 10 built; second run: all unchanged).
+- generate.yml rewritten: weekly cron (Mon 06:17 UTC) + manual dispatch, syncs deltas, uploads wheels, publish step gated on `publish` input or AUTO_PUBLISH repo var, auto-commits state.json.
+- release.yml: publishes core fontpkg on v* tags via trusted publishing (tests must pass first).
+- 38 tests passing. Remaining user actions: add pending trusted publishers on PyPI for the 10 fontpkg-<slug> names (or first manual token publish), tag v0.1.0 to exercise release.yml, optionally set AUTO_PUBLISH=true.

@@ -241,6 +241,17 @@ Recorded while implementing the MVP; deviations from or refinements of the secti
 - **CI:** GitHub Actions test matrix (3.10/3.12/3.13) + a manual `workflow_dispatch`
   generate workflow that uploads wheels as artifacts. PyPI trusted publishing deferred
   until the names are registered.
+- **Delta pipeline implemented (Phase 2):** `fontpkg-gen sync` + `state.json` (keyed by
+  google/fonts dirname → `{path, commit, version, package}`) + `families.txt` as the
+  tracked-family list. Weekly scheduled workflow (`generate.yml`, Mondays 06:17 UTC)
+  syncs deltas, uploads wheels, optionally publishes, and commits the updated manifest.
+  GitHub API calls are authenticated via `GITHUB_TOKEN` when present (5,000 req/hr vs 60).
+- **Publishing wiring:** `release.yml` publishes core `fontpkg` on `v*` tags via trusted
+  publishing. Family-package publishing in `generate.yml` is gated behind a
+  `workflow_dispatch` `publish` input (or repo variable `AUTO_PUBLISH=true` for scheduled
+  runs) because **each new `fontpkg-<slug>` name needs a pending trusted publisher added
+  on PyPI first** — PyPI has no bulk API for this, so the MVP names are a one-time manual
+  step (or a first local `uv publish` with a token per package).
 - **Tests:** no network anywhere; fixture fonts are built in-memory with fontTools
   `FontBuilder`; generator↔core schema compatibility is covered by a roundtrip test.
   Live verification (fetch → build → wheel → clean-venv install → resolve → PIL render)

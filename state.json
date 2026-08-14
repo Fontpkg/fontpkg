@@ -1,0 +1,62 @@
+{
+  "firacode": {
+    "commit": "5020a98352f1909554697e1da4132da253727138",
+    "package": "fontpkg-fira-code",
+    "path": "ofl/firacode",
+    "version": "5.002"
+  },
+  "inter": {
+    "commit": "0b58fb370093f9a9f4ff785d94405710b79de67c",
+    "package": "fontpkg-inter",
+    "path": "ofl/inter",
+    "version": "4.001"
+  },
+  "jetbrainsmono": {
+    "commit": "6e4b84c976cadb3c49a40fd9a1c203e4f7fcf2da",
+    "package": "fontpkg-jetbrains-mono",
+    "path": "ofl/jetbrainsmono",
+    "version": "2.211"
+  },
+  "lato": {
+    "commit": "5d3b76120a319730fda218cc7410174a462b32cb",
+    "package": "fontpkg-lato",
+    "path": "ofl/lato",
+    "version": "2.015"
+  },
+  "merriweather": {
+    "commit": "8b0a1d0f5983c89bc2b93f1b5fb55f9e252744b5",
+    "package": "fontpkg-merriweather",
+    "path": "ofl/merriweather",
+    "version": "2.100"
+  },
+  "notosans": {
+    "commit": "8b0a1d0f5983c89bc2b93f1b5fb55f9e252744b5",
+    "package": "fontpkg-noto-sans",
+    "path": "ofl/notosans",
+    "version": "2.015"
+  },
+  "opensans": {
+    "commit": "8b0a1d0f5983c89bc2b93f1b5fb55f9e252744b5",
+    "package": "fontpkg-open-sans",
+    "path": "ofl/opensans",
+    "version": "3.003"
+  },
+  "playfairdisplay": {
+    "commit": "8b0a1d0f5983c89bc2b93f1b5fb55f9e252744b5",
+    "package": "fontpkg-playfair-display",
+    "path": "ofl/playfairdisplay",
+    "version": "1.203"
+  },
+  "roboto": {
+    "commit": "1c627bfa375fc51cf86fabeca4f6e08a95f0aa5c",
+    "package": "fontpkg-roboto",
+    "path": "ofl/roboto",
+    "version": "3.015"
+  },
+  "sourcesans3": {
+    "commit": "914ec116571b1162d886aa402e715552221f0b77",
+    "package": "fontpkg-source-sans-3",
+    "path": "ofl/sourcesans3",
+    "version": "3.052"
+  }
+}

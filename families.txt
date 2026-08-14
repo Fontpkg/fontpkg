@@ -1,0 +1,11 @@
+# Families tracked by the weekly sync (google/fonts directory names or fontpkg slugs).
+roboto
+inter
+open-sans
+lato
+source-sans-3
+jetbrains-mono
+fira-code
+noto-sans
+merriweather
+playfair-display

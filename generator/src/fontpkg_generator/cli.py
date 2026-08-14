@@ -6,6 +6,7 @@ from pathlib import Path
 
 from fontpkg_generator.build import SourceInfo, UnsupportedLicense, build_package
 from fontpkg_generator.gh import REPO_URL, FamilyNotFound, fetch_family
+from fontpkg_generator.sync import sync_families
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -21,8 +22,36 @@ def main(argv: list[str] | None = None) -> int:
         help="build from a local google/fonts family directory instead of fetching",
     )
     build.add_argument("--wheel", action="store_true", help="also build wheels with uv build")
+    sync = sub.add_parser("sync", help="rebuild families whose upstream changed")
+    sync.add_argument("families", nargs="*", help="family slugs (default: --families-file)")
+    sync.add_argument("--families-file", type=Path, default=None)
+    sync.add_argument("--state", type=Path, default=Path("state.json"))
+    sync.add_argument("--out", type=Path, default=Path("build"))
+    sync.add_argument("--wheel", action="store_true", help="also build wheels with uv build")
     args = parser.parse_args(argv)
+    if args.command == "sync":
+        return _sync(args)
     return _build(args)
+
+
+def _sync(args: argparse.Namespace) -> int:
+    families = list(args.families)
+    if args.families_file is not None:
+        lines = args.families_file.read_text(encoding="utf-8").splitlines()
+        families += [ln.strip() for ln in lines if ln.strip() and not ln.startswith("#")]
+    if not families:
+        print("error: no families given (pass slugs or --families-file)", file=sys.stderr)
+        return 2
+    args.out.mkdir(parents=True, exist_ok=True)
+    wheel_builder = _build_wheel if args.wheel else None
+    report = sync_families(families, args.state, args.out, wheel_builder=wheel_builder)
+    for slug in report.unchanged:
+        print(f"unchanged {slug}")
+    for slug, version in report.built:
+        print(f"built {slug} {version}")
+    for slug, err in report.failed:
+        print(f"FAIL {slug}: {err}", file=sys.stderr)
+    return 1 if report.failed else 0
 
 
 def _build(args: argparse.Namespace) -> int:

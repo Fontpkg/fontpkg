@@ -1,4 +1,5 @@
 import json
+import os
 import urllib.error
 import urllib.request
 from dataclasses import dataclass
@@ -38,7 +39,7 @@ def fetch_family(name_or_slug: str, dest: Path) -> FetchResult:
         if name not in KEEP_NAMES and not name.lower().endswith(KEEP_SUFFIXES):
             continue
         _download(item["download_url"], family_dir / name)
-    commit = _latest_commit(repo_path)
+    commit = latest_commit(repo_path)
     return FetchResult(family_dir=family_dir, repo_path=repo_path, commit=commit)
 
 
@@ -57,13 +58,22 @@ def _find_family(dirname: str) -> tuple[str, list[dict]]:
     )
 
 
-def _latest_commit(repo_path: str) -> str:
+def latest_commit(repo_path: str) -> str:
     commits = _get_json(f"{API}/commits?path={repo_path}&per_page=1")
     return commits[0]["sha"] if commits else "unknown"
 
 
+def family_repo_path(name_or_slug: str) -> str:
+    repo_path, _ = _find_family(google_dirname(name_or_slug))
+    return repo_path
+
+
 def _request(url: str) -> urllib.request.Request:
-    return urllib.request.Request(url, headers={"User-Agent": "fontpkg-generator/0.1"})
+    headers = {"User-Agent": "fontpkg-generator/0.1"}
+    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    return urllib.request.Request(url, headers=headers)
 
 
 def _get_json(url: str) -> dict | list:

@@ -1,14 +1,25 @@
-name: Generate font packages
+name: Sync font packages
 
 on:
+  schedule:
+    - cron: "17 6 * * 1"
   workflow_dispatch:
     inputs:
       families:
-        description: "Space-separated family slugs (e.g. roboto inter)"
-        required: true
+        description: "Space-separated family slugs (default: families.txt)"
+        required: false
+        default: ""
+      publish:
+        description: "Publish built wheels to PyPI (each fontpkg-<slug> needs a trusted publisher configured on PyPI)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  id-token: write
 
 jobs:
-  generate:
+  sync:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -16,8 +27,36 @@ jobs:
         with:
           python-version: "3.13"
       - run: uv sync --all-packages
-      - run: uv run fontpkg-gen build ${{ inputs.families }} --out build --wheel
+      - name: Sync changed families
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -n "${{ inputs.families }}" ]; then
+            uv run fontpkg-gen sync ${{ inputs.families }} --state state.json --out build --wheel
+          else
+            uv run fontpkg-gen sync --families-file families.txt --state state.json --out build --wheel
+          fi
       - uses: actions/upload-artifact@v4
         with:
           name: font-wheels
           path: build/*/dist/*.whl
+          if-no-files-found: ignore
+      - name: Publish wheels to PyPI
+        if: ${{ inputs.publish || (github.event_name == 'schedule' && vars.AUTO_PUBLISH == 'true') }}
+        run: |
+          shopt -s nullglob
+          wheels=(build/*/dist/*.whl)
+          if [ ${#wheels[@]} -eq 0 ]; then
+            echo "nothing to publish"
+            exit 0
+          fi
+          uv publish "${wheels[@]}"
+      - name: Commit updated state manifest
+        run: |
+          if ! git diff --quiet state.json 2>/dev/null || [ -n "$(git ls-files --others state.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add state.json
+            git commit -m "Update font state manifest"
+            git push
+          fi
