@@ -223,3 +223,9 @@ Open decisions: project/package naming (`fontgrab` vs `pyfontsource`), PyPI scal
 **User:** Created a Development vault + new PyPI token item. Asked how to get a CLI-valid path from the 1Password GUI.
 
 **Claude:** Pointed to "Copy Secret Reference" in the field's dropdown/right-click menu (enable Settings → Developer → 1Password Developer experience / CLI integration if absent). Noted references use field labels (rename to pypi-token for clarity) and the `op item get --format json` alternative. Next: paste reference into .env; Claude verifies op run resolution and rotates the Actions secret without seeing the value.
+
+---
+
+**User:** Set .env to the op:// secret reference; enabled CLI integration after Claude diagnosed it was off.
+
+**Claude:** Verified op resolves the reference (179-char pypi- token; only length/prefix shown). Rotated the GitHub Actions PYPI_TOKEN secret via op run (value never displayed). Proved the new token with an authenticated byte-identical re-upload of fontpkg-fira-code (exit 0). Meanwhile the old loop had published jetbrains-mono at 16:13 (throttle windows roll every ~80min). Stopped the old-token loop, relaunched the retry for the remaining 7 under op run with an 8h horizon. Old "poetry" token is now safe to delete at PyPI.
