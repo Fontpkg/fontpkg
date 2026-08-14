@@ -68,3 +68,9 @@ Open decisions: project/package naming (`fontgrab` vs `pyfontsource`), PyPI scal
 **User:** Asked to merge feature/fontpkg into main.
 
 **Claude:** Merged with --no-ff (merge commit 70625bb, 34 files); test suite re-run on main, 32 passing.
+
+---
+
+**User:** Created the GitHub repo (etjones/fontpkg); asked for a CI badge in the README and to push main.
+
+**Claude:** Added the actions/ci.yml badge to README.md, committed, pushed main (and feature/fontpkg) to origin.
