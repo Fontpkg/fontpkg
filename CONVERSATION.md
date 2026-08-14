@@ -80,3 +80,9 @@ Open decisions: project/package naming (`fontgrab` vs `pyfontsource`), PyPI scal
 **User:** Set up the Fontpkg GitHub organization; asked to transfer etjones/fontpkg to it.
 
 **Claude:** Transferred via the GitHub API (now Fontpkg/fontpkg), updated the local git remote and the README badge/links to the new owner, pushed.
+
+---
+
+**User:** Asked for a good GitHub sidebar topic list.
+
+**Claude:** Applied 16 topics to Fontpkg/fontpkg: fonts, typography, python, pypi, packaging, pip, uv, google-fonts, fontsource, variable-fonts, ttf, opentype, open-fonts, sil-ofl, matplotlib, pillow.
