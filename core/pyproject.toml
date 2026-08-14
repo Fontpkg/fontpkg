@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "fontpkg"
-version = "0.2.0"
+version = "0.2.1"
 description = "Fonts as Python project dependencies — a Fontsource analog for PyPI"
 readme = "README.md"
 requires-python = ">=3.10"
