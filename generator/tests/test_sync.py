@@ -37,7 +37,8 @@ def fake_upstream(static_family_dir: Path, monkeypatch):
 def test_first_sync_builds_and_records_state(fake_upstream, tmp_path: Path) -> None:
     calls, _ = fake_upstream
     state_path = tmp_path / "state.json"
-    report = sync_families(["testface"], state_path, tmp_path / "out")
+    catalog_path = tmp_path / "catalog.json"
+    report = sync_families(["testface"], state_path, tmp_path / "out", catalog_path=catalog_path)
     assert report.built == [("testface", "2.137")]
     assert report.unchanged == [] and report.failed == []
     state = load_state(state_path)
@@ -45,6 +46,13 @@ def test_first_sync_builds_and_records_state(fake_upstream, tmp_path: Path) -> N
     assert state["testface"]["version"] == "2.137"
     assert state["testface"]["package"] == "fontpkg-testface"
     assert calls["fetch"] == 1
+    entry = load_state(catalog_path)["testface"]
+    assert entry["package"] == "fontpkg-testface"
+    assert entry["styles"] == ["italic", "normal"]
+    assert entry["variable"] is False
+    assert entry["weights"] == [400]
+    assert entry["weight_range"] == [400, 400]
+    assert entry["category"] == ["SANS_SERIF"]
 
 
 def test_unchanged_family_is_skipped(fake_upstream, tmp_path: Path) -> None:

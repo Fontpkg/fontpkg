@@ -252,6 +252,14 @@ Recorded while implementing the MVP; deviations from or refinements of the secti
   runs) because **each new `fontpkg-<slug>` name needs a pending trusted publisher added
   on PyPI first** — PyPI has no bulk API for this, so the MVP names are a one-time manual
   step (or a first local `uv publish` with a token per package).
+- **Discoverability (Phase 3 started):** `catalog.json` at the repo root is the
+  machine-readable index of installable families (family, slug, package, version,
+  license, category, styles, variable/weights), updated by the same sync that builds
+  packages and committed by CI alongside `state.json`. The core CLI's `fontpkg search
+  <query>` fetches it from GitHub raw (override with `--catalog-url` or
+  `FONTPKG_CATALOG_URL`; accepts a local path) and marks installed families — the only
+  CLI command that touches the network; the library API stays offline. The catalog is
+  the intended data source for a future docs site with rendered specimens.
 - **Tests:** no network anywhere; fixture fonts are built in-memory with fontTools
   `FontBuilder`; generator↔core schema compatibility is covered by a roundtrip test.
   Live verification (fetch → build → wheel → clean-venv install → resolve → PIL render)

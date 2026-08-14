@@ -51,12 +51,12 @@ jobs:
             exit 0
           fi
           uv publish "${wheels[@]}"
-      - name: Commit updated state manifest
+      - name: Commit updated state manifest and catalog
         run: |
-          if ! git diff --quiet state.json 2>/dev/null || [ -n "$(git ls-files --others state.json)" ]; then
+          if ! git diff --quiet state.json catalog.json 2>/dev/null || [ -n "$(git ls-files --others state.json catalog.json)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add state.json
-            git commit -m "Update font state manifest"
+            git add state.json catalog.json
+            git commit -m "Update font state manifest and catalog"
             git push
           fi

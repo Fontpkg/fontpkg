@@ -1,0 +1,211 @@
+{
+  "fira-code": {
+    "category": [
+      "MONOSPACE"
+    ],
+    "family": "Fira Code",
+    "license": "OFL-1.1",
+    "package": "fontpkg-fira-code",
+    "slug": "fira-code",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "5.002",
+    "weight_range": [
+      300,
+      700
+    ],
+    "weights": []
+  },
+  "inter": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Inter",
+    "license": "OFL-1.1",
+    "package": "fontpkg-inter",
+    "slug": "inter",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "4.001",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "jetbrains-mono": {
+    "category": [
+      "MONOSPACE"
+    ],
+    "family": "JetBrains Mono",
+    "license": "OFL-1.1",
+    "package": "fontpkg-jetbrains-mono",
+    "slug": "jetbrains-mono",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.211",
+    "weight_range": [
+      100,
+      800
+    ],
+    "weights": []
+  },
+  "lato": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Lato",
+    "license": "OFL-1.1",
+    "package": "fontpkg-lato",
+    "slug": "lato",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": false,
+    "version": "2.015",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": [
+      100,
+      200,
+      300,
+      400,
+      500,
+      600,
+      700,
+      800,
+      900
+    ]
+  },
+  "merriweather": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "Merriweather",
+    "license": "OFL-1.1",
+    "package": "fontpkg-merriweather",
+    "slug": "merriweather",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.100",
+    "weight_range": [
+      300,
+      900
+    ],
+    "weights": []
+  },
+  "noto-sans": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Noto Sans",
+    "license": "OFL-1.1",
+    "package": "fontpkg-noto-sans",
+    "slug": "noto-sans",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.015",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "open-sans": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Open Sans",
+    "license": "OFL-1.1",
+    "package": "fontpkg-open-sans",
+    "slug": "open-sans",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "3.003",
+    "weight_range": [
+      300,
+      800
+    ],
+    "weights": []
+  },
+  "playfair-display": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "Playfair Display",
+    "license": "OFL-1.1",
+    "package": "fontpkg-playfair-display",
+    "slug": "playfair-display",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "1.203",
+    "weight_range": [
+      400,
+      900
+    ],
+    "weights": []
+  },
+  "roboto": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Roboto",
+    "license": "OFL-1.1",
+    "package": "fontpkg-roboto",
+    "slug": "roboto",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "3.015",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "source-sans-3": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Source Sans 3",
+    "license": "OFL-1.1",
+    "package": "fontpkg-source-sans-3",
+    "slug": "source-sans-3",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "3.052",
+    "weight_range": [
+      200,
+      900
+    ],
+    "weights": []
+  }
+}

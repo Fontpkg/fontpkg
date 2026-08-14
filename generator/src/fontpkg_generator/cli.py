@@ -26,6 +26,7 @@ def main(argv: list[str] | None = None) -> int:
     sync.add_argument("families", nargs="*", help="family slugs (default: --families-file)")
     sync.add_argument("--families-file", type=Path, default=None)
     sync.add_argument("--state", type=Path, default=Path("state.json"))
+    sync.add_argument("--catalog", type=Path, default=Path("catalog.json"))
     sync.add_argument("--out", type=Path, default=Path("build"))
     sync.add_argument("--wheel", action="store_true", help="also build wheels with uv build")
     args = parser.parse_args(argv)
@@ -44,7 +45,9 @@ def _sync(args: argparse.Namespace) -> int:
         return 2
     args.out.mkdir(parents=True, exist_ok=True)
     wheel_builder = _build_wheel if args.wheel else None
-    report = sync_families(families, args.state, args.out, wheel_builder=wheel_builder)
+    report = sync_families(
+        families, args.state, args.out, wheel_builder=wheel_builder, catalog_path=args.catalog
+    )
     for slug in report.unchanged:
         print(f"unchanged {slug}")
     for slug, version in report.built:

@@ -73,6 +73,8 @@ def build_package(family_dir: Path, out_dir: Path, source: SourceInfo | None = N
         "version": version,
         "license": spdx,
         "copyright": copyright_line,
+        "category": [str(c) for c in as_list(meta.get("category"))],
+        "subsets": [str(s) for s in as_list(meta.get("subsets"))],
         "axes": [
             {"tag": a["tag"], "min": a["min_value"], "max": a["max_value"]} for a in axes
         ],

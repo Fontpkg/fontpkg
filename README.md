@@ -3,20 +3,30 @@
 [![CI](https://github.com/Fontpkg/fontpkg/actions/workflows/ci.yml/badge.svg)](https://github.com/Fontpkg/fontpkg/actions/workflows/ci.yml)
 
 Fonts as ordinary Python project dependencies — a [Fontsource](https://fontsource.org)
-analog for PyPI. `uv add fontpkg-roboto` and the font is pinned, offline, and
-resolvable at runtime.
+analog for PyPI.
+
+## Usage
+
+```bash
+uv add fontpkg fontpkg-inter
+```
 
 ```python
 import fontpkg
 
-fontpkg.path("Roboto", weight=700, style="italic")   # -> Path to the .ttf
+font_path = fontpkg.path("inter")                    # Path to Inter 400/normal
+fontpkg.path("Inter", weight=700, style="italic")    # names are case/space-insensitive
 fontpkg.families()                                    # everything installed
 ```
+
+The font is pinned in your lockfile, downloaded at install time (never at runtime),
+and works offline forever.
 
 There is also a small CLI:
 
 ```bash
-fontpkg list
+fontpkg list                             # installed families
+fontpkg search mono                      # installable families (fetches the catalog)
 fontpkg path "Open Sans" --weight bold
 ```
 

@@ -3,19 +3,23 @@
 Fonts as ordinary Python project dependencies. Inspired by [Fontsource](https://fontsource.org).
 
 ```bash
-uv add fontpkg fontpkg-roboto
+uv add fontpkg fontpkg-inter
 ```
 
 ```python
 import fontpkg
 
-fontpkg.path("Roboto")                            # Path to 400/normal
-fontpkg.path("Roboto", weight=700, style="italic")
-fontpkg.path("Roboto", weight=650, nearest=True)
+font_path = fontpkg.path("inter")                 # Path to 400/normal
+fontpkg.path("Inter", weight=700, style="italic") # names are case/space-insensitive
+fontpkg.path("Inter", weight=650, nearest=True)
 
-fam = fontpkg.family("Roboto")   # .weights, .styles, .axes, .is_variable, .license
+fam = fontpkg.family("Inter")    # .weights, .styles, .axes, .is_variable, .license
 fontpkg.families()               # everything installed in the environment
 ```
+
+Find installable families with `fontpkg search <query>` (matches family, slug, or
+category; the only CLI command that touches the network) or `fontpkg list` for what
+is already installed.
 
 Integrations (extras `fontpkg[pil]`, `fontpkg[matplotlib]`):
 
