@@ -45,3 +45,5 @@ Open decisions: project/package naming (`fontgrab` vs `pyfontsource`), PyPI scal
 - 28 tests passing (no network; fixture fonts via fontTools FontBuilder; core↔generator schema roundtrip).
 - Live e2e verified: built `fontpkg-roboto` (3.015) and `fontpkg-inter` (4.001) wheels, installed into a clean venv, resolved paths/weights/styles, rendered six Inter VF weights via PIL (demo PNG sent).
 - Decisions recorded in DESIGN.md §8 (Python ≥3.10, OFL+Apache only for now — UFL deferred, head.fontRevision versioning + PEP 440 leading-zero caveat, static/ subdirs skipped, zip-install limitation, matplotlib VF limitation).
+
+**Claude (continued):** Batch-validated all 10 MVP families (Lato static-only, Fira Code no-italic, Playfair min-weight edge cases all behave). Added `fontpkg list` / `fontpkg path` CLI (console script + `python -m fontpkg`) with tests (32 passing total), and GitHub Actions CI (test matrix 3.10/3.12/3.13 + manual generate workflow uploading wheels). PyPI publishing deferred until names are registered.

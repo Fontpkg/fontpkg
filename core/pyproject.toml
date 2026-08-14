@@ -17,6 +17,9 @@ classifiers = [
     "Topic :: Text Processing :: Fonts",
 ]
 
+[project.scripts]
+fontpkg = "fontpkg.__main__:main"
+
 [project.optional-dependencies]
 pil = ["pillow>=9.0"]
 matplotlib = ["matplotlib>=3.6"]

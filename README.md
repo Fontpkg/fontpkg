@@ -11,6 +11,13 @@ fontpkg.path("Roboto", weight=700, style="italic")   # -> Path to the .ttf
 fontpkg.families()                                    # everything installed
 ```
 
+There is also a small CLI:
+
+```bash
+fontpkg list
+fontpkg path "Open Sans" --weight bold
+```
+
 ## Repository layout
 
 - [`core/`](core/) — the `fontpkg` runtime: entry-point discovery, weight/style

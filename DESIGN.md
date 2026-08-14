@@ -217,6 +217,16 @@ Recorded while implementing the MVP; deviations from or refinements of the secti
   matplotlib cannot set VF axes, so non-400 weights of VF-only families need the future
   `[static]` extra there (PIL helper handles VF axes properly).
 - **`fontpkg.system` deferred** to v2 (design §3.1 tier 2).
+- **CLI added to core:** `fontpkg list` / `fontpkg path <family> [--weight] [--style]
+  [--nearest]` (console script + `python -m fontpkg`). Roadmap's `fontpkg search`
+  (querying the not-yet-installed catalog) remains future work.
+- **Batch validation:** all 10 MVP families generated and verified in a clean venv
+  (Roboto, Inter, Open Sans, Lato, Source Sans 3, JetBrains Mono, Fira Code, Noto Sans,
+  Merriweather, Playfair Display). Lato exercises the static-only path (18 files);
+  Fira Code (no italic) and Playfair Display (min weight 400) exercise the error paths.
+- **CI:** GitHub Actions test matrix (3.10/3.12/3.13) + a manual `workflow_dispatch`
+  generate workflow that uploads wheels as artifacts. PyPI trusted publishing deferred
+  until the names are registered.
 - **Tests:** no network anywhere; fixture fonts are built in-memory with fontTools
   `FontBuilder`; generator↔core schema compatibility is covered by a roundtrip test.
   Live verification (fetch → build → wheel → clean-venv install → resolve → PIL render)
