@@ -187,3 +187,9 @@ Open decisions: project/package naming (`fontgrab` vs `pyfontsource`), PyPI scal
 **User:** Asked how important rotating the PyPI token is; whether it was exposed in plaintext.
 
 **Claude:** No exposure event: never committed (gitignored pre-commit, verified), never printed; moved only via env vars over TLS to PyPI and GitHub's encrypted secret store. Rotation still recommended as hygiene: (1) .env lives in the Dropbox-synced tree, so the plaintext token syncs to Dropbox servers/devices; (2) it's an old account-wide "poetry" token with unknown other homes. New token must stay account-scoped while creating new projects; can be narrowed post-org.
+
+---
+
+**User:** Set the PyPI trusted publisher to release.yml; asked how to test it.
+
+**Claude:** Cut fontpkg 0.2.1 (version-only bump) via tag v0.2.1 — release.yml has no token anymore, so a green run proves trusted publishing end-to-end. Run succeeded in 14s; 0.2.1 confirmed on PyPI (wheel+sdist). The default JSON endpoint briefly served the cached 0.2.0; the versioned endpoint confirmed.
