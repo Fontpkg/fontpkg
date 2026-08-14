@@ -74,3 +74,9 @@ Open decisions: project/package naming (`fontgrab` vs `pyfontsource`), PyPI scal
 **User:** Created the GitHub repo (etjones/fontpkg); asked for a CI badge in the README and to push main.
 
 **Claude:** Added the actions/ci.yml badge to README.md, committed, pushed main (and feature/fontpkg) to origin.
+
+---
+
+**User:** Set up the Fontpkg GitHub organization; asked to transfer etjones/fontpkg to it.
+
+**Claude:** Transferred via the GitHub API (now Fontpkg/fontpkg), updated the local git remote and the README badge/links to the new owner, pushed.

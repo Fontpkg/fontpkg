@@ -1,6 +1,6 @@
 # fontpkg
 
-[![CI](https://github.com/etjones/fontpkg/actions/workflows/ci.yml/badge.svg)](https://github.com/etjones/fontpkg/actions/workflows/ci.yml)
+[![CI](https://github.com/Fontpkg/fontpkg/actions/workflows/ci.yml/badge.svg)](https://github.com/Fontpkg/fontpkg/actions/workflows/ci.yml)
 
 Fonts as ordinary Python project dependencies — a [Fontsource](https://fontsource.org)
 analog for PyPI. `uv add fontpkg-roboto` and the font is pinned, offline, and
