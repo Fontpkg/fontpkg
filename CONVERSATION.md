@@ -193,3 +193,9 @@ Open decisions: project/package naming (`fontgrab` vs `pyfontsource`), PyPI scal
 **User:** Set the PyPI trusted publisher to release.yml; asked how to test it.
 
 **Claude:** Cut fontpkg 0.2.1 (version-only bump) via tag v0.2.1 — release.yml has no token anymore, so a green run proves trusted publishing end-to-end. Run succeeded in 14s; 0.2.1 confirmed on PyPI (wheel+sdist). The default JSON endpoint briefly served the cached 0.2.0; the versioned endpoint confirmed.
+
+---
+
+**User:** Asked for better cross-platform secret patterns than plaintext .env in Dropbox (their idea: non-Dropbox ~/project_secrets/<proj>/.env, but less automatic).
+
+**Claude:** Recommended 1Password CLI (already owned): .env keeps only op:// references (Dropbox/commit-safe), `op run --env-file=.env --` injects at runtime, 1P handles cross-machine sync + biometric unlock; justfile prefix makes it invisible. direnv as per-directory auto-loading glue (also improves their project_secrets idea). SOPS+age as the no-subscription versioned alternative. Skip OS keychains (no sync) and AWS SM (overkill locally). Offered to convert fontpkg's .env to op:// pattern when they create the vault item.
