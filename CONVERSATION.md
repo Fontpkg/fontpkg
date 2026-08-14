@@ -62,3 +62,9 @@ Open decisions: project/package naming (`fontgrab` vs `pyfontsource`), PyPI scal
 **User:** Asked what they need to do now.
 
 **Claude:** Listed the account-gated steps: (1) push repo to GitHub (gh repo create) and merge feature/fontpkg; (2) register PyPI names — time-sensitive — by publishing fontpkg (and flagship fontpkg-* names) with their credentials, TestPyPI dry run suggested; (3) configure Trusted Publishing for generate.yml; (4) request a PyPI org early; (5) optional courtesy email to Fontsource maintainers. Next build items after that: state.json delta pipeline, publish step in CI, top-200 run.
+
+---
+
+**User:** Asked to merge feature/fontpkg into main.
+
+**Claude:** Merged with --no-ff (merge commit 70625bb, 34 files); test suite re-run on main, 32 passing.
