@@ -30,7 +30,12 @@ def slugify(name: str) -> str:
     return re.sub(r"[\s_]+", "-", name.strip().lower())
 
 
-def build_package(family_dir: Path, out_dir: Path, source: SourceInfo | None = None) -> Path:
+def build_package(
+    family_dir: Path,
+    out_dir: Path,
+    source: SourceInfo | None = None,
+    post: int | None = None,
+) -> Path:
     meta = parse((family_dir / "METADATA.pb").read_text(encoding="utf-8"))
     name = meta["name"]
     license_key = meta.get("license", "")
@@ -86,8 +91,9 @@ def build_package(family_dir: Path, out_dir: Path, source: SourceInfo | None = N
         json.dumps(metadata, indent=2) + "\n", encoding="utf-8"
     )
     (module_dir / "__init__.py").write_text(_init_py(name), encoding="utf-8")
+    pkg_version = version if post is None else f"{version}.post{post}"
     (pkg_root / "pyproject.toml").write_text(
-        _pyproject(name, slug, module_name, version, spdx), encoding="utf-8"
+        _pyproject(name, slug, module_name, pkg_version, spdx), encoding="utf-8"
     )
     (pkg_root / "README.md").write_text(
         _readme(name, slug, spdx, copyright_line, source), encoding="utf-8"
@@ -152,6 +158,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = "{spdx}"
 license-files = ["LICENSE"]
+dependencies = ["fontpkg>=0.1.0"]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Developers",

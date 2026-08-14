@@ -22,6 +22,9 @@ def main(argv: list[str] | None = None) -> int:
         help="build from a local google/fonts family directory instead of fetching",
     )
     build.add_argument("--wheel", action="store_true", help="also build wheels with uv build")
+    build.add_argument(
+        "--post", type=int, default=None, help="append .postN to the package version"
+    )
     sync = sub.add_parser("sync", help="rebuild families whose upstream changed")
     sync.add_argument("families", nargs="*", help="family slugs (default: --families-file)")
     sync.add_argument("--families-file", type=Path, default=None)
@@ -62,7 +65,7 @@ def _build(args: argparse.Namespace) -> int:
     failures = 0
     for name in args.families:
         try:
-            pkg_root = _build_one(name, args.out, args.from_dir)
+            pkg_root = _build_one(name, args.out, args.from_dir, args.post)
         except (FamilyNotFound, UnsupportedLicense, FileNotFoundError) as err:
             print(f"SKIP {name}: {err}", file=sys.stderr)
             failures += 1
@@ -73,13 +76,13 @@ def _build(args: argparse.Namespace) -> int:
     return 1 if failures else 0
 
 
-def _build_one(name: str, out: Path, from_dir: Path | None) -> Path:
+def _build_one(name: str, out: Path, from_dir: Path | None, post: int | None = None) -> Path:
     if from_dir is not None:
-        return build_package(from_dir, out, source=None)
+        return build_package(from_dir, out, source=None, post=post)
     with tempfile.TemporaryDirectory(prefix="fontpkg-fetch-") as tmp:
         fetched = fetch_family(name, Path(tmp))
         source = SourceInfo(repo=REPO_URL, path=fetched.repo_path, commit=fetched.commit)
-        return build_package(fetched.family_dir, out, source=source)
+        return build_package(fetched.family_dir, out, source=source, post=post)
 
 
 def _build_wheel(pkg_root: Path) -> None:

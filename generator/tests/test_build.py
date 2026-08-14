@@ -31,8 +31,19 @@ def test_build_static_package_tree(static_family_dir: Path, tmp_path: Path) -> N
     assert 'name = "fontpkg-testface"' in pyproject
     assert 'version = "2.137"' in pyproject
     assert 'license = "OFL-1.1"' in pyproject
+    assert 'dependencies = ["fontpkg>=0.1.0"]' in pyproject
     assert '[project.entry-points."fontpkg.family"]' in pyproject
     assert 'testface = "fontpkg_testface"' in pyproject
+
+
+def test_post_release_versioning(static_family_dir: Path, tmp_path: Path) -> None:
+    pkg_root = build_package(static_family_dir, tmp_path / "out", post=1)
+    pyproject = (pkg_root / "pyproject.toml").read_text(encoding="utf-8")
+    assert 'version = "2.137.post1"' in pyproject
+    meta = json.loads(
+        (pkg_root / "src" / "fontpkg_testface" / "metadata.json").read_text(encoding="utf-8")
+    )
+    assert meta["version"] == "2.137"
 
 
 def test_build_variable_package_metadata(variable_family_dir: Path, tmp_path: Path) -> None:
