@@ -163,3 +163,9 @@ Open decisions: project/package naming (`fontgrab` vs `pyfontsource`), PyPI scal
 **User:** Asked to expand families.txt toward the top 200 while waiting on DNS.
 
 **Claude:** Generated families.txt from Google Fonts' own metadata endpoint (fonts.google.com/metadata/fonts, no API key): top 200 by popularity rank, excluding CJK-subset families (Noto JP/KR/SC/TC etc. — size, per design), Ubuntu (UFL), and brand fonts (Google Sans slipped the isOpenSource filter; added isBrandFont exclusion). Committed families.txt only; state.json/catalog.json deliberately unchanged so the live site never advertises packages PyPI's throttle hasn't allowed publishing. Full 200-family validation build running in background to scratch; failures will prune the list. Real sync + catalog + site update happen when publishing capacity exists.
+
+---
+
+**User:** Reported SSL_ERROR_BAD_CERT_DOMAIN at www.fontpkg.org (GitHub's *.github.io cert).
+
+**Claude:** Diagnosed as expected mid-setup state: DNS had gone live but the Pages custom domain wasn't set yet, so GitHub served its default cert. Set custom domain fontpkg.org via API; cert issuance (Let's Encrypt) in progress with a background watcher that enables HTTPS enforcement when issued. HTTP already serves the site. Updated README/config links and repo homepage to fontpkg.org; stopped the now-obsolete DNS watcher.
