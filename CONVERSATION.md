@@ -56,3 +56,9 @@ Open decisions: project/package naming (`fontgrab` vs `pyfontsource`), PyPI scal
 - Publishing is phased: 10 MVP families manual → top ~200 by popularity → full ~1,500 allowlist once the pipeline runs unattended (precedent: fontsource's ~1,500 npm packages, typeshed's thousands of types-* packages). Fallback for PyPI pushback: self-hosted PEP 503 index for the long tail.
 - Fonts are downloaded at install time only — bytes live in the wheel, cached by uv/pip; import/resolution are fully offline (deliberate inversion of pyfonts' plot-time fetching).
 - Update detection: state.json manifest (slug → upstream_commit + published_version); weekly CI diffs upstream commits, rebuilds/publishes deltas, commits manifest; new allowlist families auto-built, disappearing/license-changed families flagged for review. Consumers use normal dependency tooling (uv lock --upgrade, Dependabot). Future `fontpkg search` queries a static catalog index for not-yet-installed fonts.
+
+---
+
+**User:** Asked what they need to do now.
+
+**Claude:** Listed the account-gated steps: (1) push repo to GitHub (gh repo create) and merge feature/fontpkg; (2) register PyPI names — time-sensitive — by publishing fontpkg (and flagship fontpkg-* names) with their credentials, TestPyPI dry run suggested; (3) configure Trusted Publishing for generate.yml; (4) request a PyPI org early; (5) optional courtesy email to Fontsource maintainers. Next build items after that: state.json delta pipeline, publish step in CI, top-200 run.
