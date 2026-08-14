@@ -157,3 +157,9 @@ Open decisions: project/package naming (`fontgrab` vs `pyfontsource`), PyPI scal
 **User:** Route53 rejected a CNAME at the apex (fontpkg.org) with "RRSet of type CNAME ... not permitted at apex".
 
 **Claude:** Explained CNAMEs are forbidden at zone apex and Route53 ALIAS only targets AWS resources. Prescribed the standard GitHub Pages setup: apex A records to 185.199.108-111.153 (optionally AAAA 2606:50c0:8000-8003::153), and the CNAME on the www subdomain → fontpkg.github.io. Will wire the Pages custom domain + HTTPS + link updates once records are saved.
+
+---
+
+**User:** Asked to expand families.txt toward the top 200 while waiting on DNS.
+
+**Claude:** Generated families.txt from Google Fonts' own metadata endpoint (fonts.google.com/metadata/fonts, no API key): top 200 by popularity rank, excluding CJK-subset families (Noto JP/KR/SC/TC etc. — size, per design), Ubuntu (UFL), and brand fonts (Google Sans slipped the isOpenSource filter; added isBrandFont exclusion). Committed families.txt only; state.json/catalog.json deliberately unchanged so the live site never advertises packages PyPI's throttle hasn't allowed publishing. Full 200-family validation build running in background to scratch; failures will prune the list. Real sync + catalog + site update happen when publishing capacity exists.
