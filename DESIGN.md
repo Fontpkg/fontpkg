@@ -264,3 +264,18 @@ Recorded while implementing the MVP; deviations from or refinements of the secti
   `FontBuilder`; generator↔core schema compatibility is covered by a roundtrip test.
   Live verification (fetch → build → wheel → clean-venv install → resolve → PIL render)
   was run manually for Roboto + Inter and passed.
+
+## 9. Site hosting plan (2026-08-14)
+
+GitHub Pages limits: 1 GB published site, ~100 GB/month bandwidth. At ~3 MB/family of
+TTFs: 10 families = 30 MB (today), top-200 ≈ 600 MB (fits, tight), full ~1,500 ≈ 3-4.5 GB
+(exceeds Pages). Client-side scale is already solved by lazy loading; hosting size is the
+only constraint.
+
+Plan: buy **fontpkg.org** now and make it the Pages custom domain, so published URLs are
+hosting-independent. Stay on Pages through Phase 2. For Phase 3, move font binaries to
+object storage + CDN (Cloudflare R2: 10 GB free, free egress) behind fonts.fontpkg.org,
+leaving the HTML wherever is convenient. woff2 would halve asset sizes but is a format
+conversion — the OFL FAQ treats conversion as modification (RFN implications), so
+adopting it for site specimens is a deliberate decision to revisit, not a default;
+packages always ship unmodified TTF/OTF regardless.

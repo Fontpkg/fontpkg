@@ -139,3 +139,9 @@ Open decisions: project/package naming (`fontgrab` vs `pyfontsource`), PyPI scal
 - `fontpkg-gen site`: generates a static site from catalog.json + built packages — copies font binaries (bracket-free names), emits @font-face rules (truetype-variations with weight ranges for VFs), embeds the catalog as JSON in a vanilla-JS page.
 - Page features: live-typing preview (global input + per-card contenteditable), substring family filter, category chips, global weight slider driving VF axes, italic toggle, uv-add copy buttons, lazy font loading via IntersectionObserver (30MB of fonts load only as cards scroll into view), dark/light theme.
 - pages.yml: deploys to GitHub Pages on dispatch and after each font sync; enabled Pages (build_type=workflow) via API. 48 tests passing. Verified live in browser: typing, filtering, weight slider all work.
+
+---
+
+**User:** Asked whether 1,500 fonts will break GitHub Pages, and whether to buy fontpkg.org.
+
+**Claude:** Pages math: 1 GB site limit; ~3 MB/family avg → top-200 fits (~600 MB), full 1,500 (~3-4.5 GB) does not. Client side already fine via lazy loading. Recommended buying fontpkg.org now (decouples URLs from hosting; ~$12/yr) and pointing it at Pages; at full scale move font assets to Cloudflare R2 behind fonts.fontpkg.org. Flagged woff2 as OFL format-conversion gray area — deliberate decision later, packages stay unmodified TTF. Recorded as DESIGN.md §9. User actions: buy domain + CNAME to fontpkg.github.io; Claude wires repo side after.
