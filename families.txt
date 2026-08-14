@@ -1,5 +1,6 @@
 # Families tracked by the weekly sync (google/fonts directory names or fontpkg slugs).
 # Top 200 by Google Fonts popularity (2026-08-14), excluding CJK, UFL, and brand fonts.
+# tinos excluded: upstream ships no license file (google/fonts ofl/tinos).
 open-sans
 inter
 montserrat
@@ -99,8 +100,8 @@ tajawal
 cinzel
 lobster
 barlow-semi-condensed
-arvo
 merriweather-sans
+arvo
 gravitas-one
 domine
 comfortaa
@@ -173,9 +174,9 @@ literata
 righteous
 fira-sans-condensed
 chivo
+delius
 aleo
 dm-serif-text
-delius
 antic-slab
 bree-serif
 cardo
@@ -192,7 +193,6 @@ crete-round
 kumbh-sans
 hammersmith-one
 playfair
-tinos
 courier-prime
 acme
 titan-one
@@ -200,3 +200,4 @@ libre-barcode-39
 kaushan-script
 readex-pro
 amatic-sc
+tenor-sans
