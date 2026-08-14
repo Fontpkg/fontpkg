@@ -145,3 +145,9 @@ Open decisions: project/package naming (`fontgrab` vs `pyfontsource`), PyPI scal
 **User:** Asked whether 1,500 fonts will break GitHub Pages, and whether to buy fontpkg.org.
 
 **Claude:** Pages math: 1 GB site limit; ~3 MB/family avg → top-200 fits (~600 MB), full 1,500 (~3-4.5 GB) does not. Client side already fine via lazy loading. Recommended buying fontpkg.org now (decouples URLs from hosting; ~$12/yr) and pointing it at Pages; at full scale move font assets to Cloudflare R2 behind fonts.fontpkg.org. Flagged woff2 as OFL format-conversion gray area — deliberate decision later, packages stay unmodified TTF. Recorded as DESIGN.md §9. User actions: buy domain + CNAME to fontpkg.github.io; Claude wires repo side after.
+
+---
+
+**User:** Bought fontpkg.org (Route53 registration in progress); will confirm CNAME later. Said to build assuming the domain works shortly.
+
+**Claude:** fira-code + inter .post1 published (existing projects bypass the new-project throttle) — all live packages now carry the fontpkg dependency; 8 still queued. Pre-wired the domain: canonical/og meta tags + emoji favicon pointing at fontpkg.org in the site template. Added a font-request issue template (license checkbox, google-fonts link) + config linking the specimen site. Added `fontpkg search --category` filter with tests (49 passing). Domain repo-side wiring (Pages custom domain, HTTPS) waits for CNAME confirmation.

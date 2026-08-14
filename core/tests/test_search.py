@@ -58,6 +58,14 @@ def test_search_no_query_returns_all_sorted() -> None:
     assert [e["slug"] for e in search_catalog(CATALOG, None)] == ["inter", "merriweather"]
 
 
+def test_search_category_filter() -> None:
+    assert [e["slug"] for e in search_catalog(CATALOG, None, category="sans")] == ["inter"]
+    assert [e["slug"] for e in search_catalog(CATALOG, None, category="SANS SERIF")] == ["inter"]
+    only_serif = search_catalog(CATALOG, None, category="serif")
+    assert [e["slug"] for e in only_serif] == ["inter", "merriweather"]
+    assert search_catalog(CATALOG, "merri", category="sans_serif") == []
+
+
 def test_search_cli_output(catalog_file: Path, capsys, monkeypatch) -> None:
     monkeypatch.setattr(registry, "_cache", {})
     assert main(["search", "serif", "--catalog-url", str(catalog_file)]) == 0

@@ -15,8 +15,13 @@ def fetch_catalog(source: str | None = None) -> dict[str, dict]:
         return json.loads(response.read().decode("utf-8"))
 
 
-def search_catalog(catalog: dict[str, dict], query: str | None) -> list[dict]:
+def search_catalog(
+    catalog: dict[str, dict], query: str | None, category: str | None = None
+) -> list[dict]:
     entries = sorted(catalog.values(), key=lambda e: e["slug"])
+    if category:
+        c = category.strip().lower().replace("-", "_").replace(" ", "_")
+        entries = [e for e in entries if any(c in cat.lower() for cat in e.get("category", []))]
     if not query:
         return entries
     q = query.strip().lower()

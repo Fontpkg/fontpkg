@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Browse available fonts
+    url: https://fontpkg.org/
+    about: The specimen site lists every family already packaged.

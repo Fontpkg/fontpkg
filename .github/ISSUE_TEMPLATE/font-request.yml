@@ -1,0 +1,30 @@
+name: Font request
+description: Request a font family be packaged as fontpkg-<family>
+title: "[font request] "
+labels: [font-request]
+body:
+  - type: input
+    id: family
+    attributes:
+      label: Family name
+      description: As listed on fonts.google.com
+      placeholder: Space Grotesk
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Google Fonts link
+      placeholder: https://fonts.google.com/specimen/Space+Grotesk
+  - type: checkboxes
+    id: license
+    attributes:
+      label: License check
+      options:
+        - label: The family is OFL or Apache-2.0 licensed on Google Fonts (UFL/proprietary families cannot be packaged yet)
+          required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything else
+      description: Optional — what you're building, urgency, related families.

@@ -19,6 +19,9 @@ def main(argv: list[str] | None = None) -> int:
     search_cmd = sub.add_parser("search", help="search installable font families (network)")
     search_cmd.add_argument("query", nargs="?", help="match against family, slug, or category")
     search_cmd.add_argument(
+        "--category", default=None, help="restrict to a category (sans, serif, mono, ...)"
+    )
+    search_cmd.add_argument(
         "--catalog-url", default=None, help="catalog URL or file path (default: fontpkg repo)"
     )
     args = parser.parse_args(argv)
@@ -52,7 +55,7 @@ def _search(args: argparse.Namespace) -> int:
     except (urllib.error.URLError, OSError) as err:
         print(f"error: could not fetch catalog: {err}", file=sys.stderr)
         return 1
-    matches = search_catalog(catalog, args.query)
+    matches = search_catalog(catalog, args.query, category=args.category)
     if not matches:
         print(f"no installable families match {args.query!r}")
         return 0
