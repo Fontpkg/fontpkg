@@ -229,3 +229,9 @@ Open decisions: project/package naming (`fontgrab` vs `pyfontsource`), PyPI scal
 **User:** Set .env to the op:// secret reference; enabled CLI integration after Claude diagnosed it was off.
 
 **Claude:** Verified op resolves the reference (179-char pypi- token; only length/prefix shown). Rotated the GitHub Actions PYPI_TOKEN secret via op run (value never displayed). Proved the new token with an authenticated byte-identical re-upload of fontpkg-fira-code (exit 0). Meanwhile the old loop had published jetbrains-mono at 16:13 (throttle windows roll every ~80min). Stopped the old-token loop, relaunched the retry for the remaining 7 under op run with an 8h horizon. Old "poetry" token is now safe to delete at PyPI.
+
+---
+
+**User:** Was away from keyboard during 1Password prompts; asked if permissions went through.
+
+**Claude:** Background processes can't receive 1P authorization prompts (no GUI session), and foreground attempts timed out while user was away (app auto-locked). With user present, foreground op run authorized successfully and spawned the publish loop as a detached child (pid 2973) inheriting the resolved token — publishing the remaining 7 packages as throttle windows roll.
