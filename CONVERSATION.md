@@ -181,3 +181,9 @@ Open decisions: project/package naming (`fontgrab` vs `pyfontsource`), PyPI scal
 **User (mid-turn):** Reported the failed 0.2.0 CI run and PyPI's warning email (API token "poetry" used on fontpkg despite a Trusted Publisher; recommends token removal). Asked if the workflow should change.
 
 **Claude:** Clarified 0.2.0 IS live (failed run was the pre-fix tag attempt; dispatch re-run succeeded). Updated release.yml to drop the token and use trusted publishing exclusively for core (the earlier TP failure means the PyPI publisher config likely names a different workflow — user to set it to release.yml). generate.yml keeps the token for family packages (200 per-project publishers impractical until the PyPI org). Recommended rotating the old "poetry" token to a fresh dedicated one (it must be account-scoped to create new projects) and updating .env + the PYPI_TOKEN secret.
+
+---
+
+**User:** Asked how important rotating the PyPI token is; whether it was exposed in plaintext.
+
+**Claude:** No exposure event: never committed (gitignored pre-commit, verified), never printed; moved only via env vars over TLS to PyPI and GitHub's encrypted secret store. Rotation still recommended as hygiene: (1) .env lives in the Dropbox-synced tree, so the plaintext token syncs to Dropbox servers/devices; (2) it's an old account-wide "poetry" token with unknown other homes. New token must stay account-scoped while creating new projects; can be narrowed post-org.
