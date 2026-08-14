@@ -3,6 +3,7 @@ name: Release fontpkg core
 on:
   push:
     tags: ["v*"]
+  workflow_dispatch:
 
 permissions:
   id-token: write
@@ -20,3 +21,5 @@ jobs:
       - run: uv run pytest core/tests generator/tests
       - run: uv build --package fontpkg --out-dir dist
       - run: uv publish dist/*
+        env:
+          UV_PUBLISH_TOKEN: ${{ secrets.PYPI_TOKEN }}
