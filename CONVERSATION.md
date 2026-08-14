@@ -86,3 +86,9 @@ Open decisions: project/package naming (`fontgrab` vs `pyfontsource`), PyPI scal
 **User:** Asked for a good GitHub sidebar topic list.
 
 **Claude:** Applied 16 topics to Fontpkg/fontpkg: fonts, typography, python, pypi, packaging, pip, uv, google-fonts, fontsource, variable-fonts, ttf, opentype, open-fonts, sil-ofl, matplotlib, pillow.
+
+---
+
+**User:** Did a test publish of fontpkg to PyPI, set up trusted publishing for github.com/fontpkg/fontpkg, requested the fontpkg PyPI org. Asked for a better way to contact Fontsource's authors than a GitHub issue. (Project dir renamed to ~/Dropbox/Projects/fontpkg.)
+
+**Claude:** Fontsource org members are ayuhito (Ayu, public email hello@ayuhito.com, ayuhito.com) and jwr1. Recommended a short personal email to Ayu now, plus a GitHub Discussions post (enabled on fontsource/fontsource) as a public announcement once fontpkg is public/published; issue tracker is off-register. Offered to draft the email.
