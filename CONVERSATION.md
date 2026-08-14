@@ -109,3 +109,9 @@ Open decisions: project/package naming (`fontgrab` vs `pyfontsource`), PyPI scal
 - generate.yml rewritten: weekly cron (Mon 06:17 UTC) + manual dispatch, syncs deltas, uploads wheels, publish step gated on `publish` input or AUTO_PUBLISH repo var, auto-commits state.json.
 - release.yml: publishes core fontpkg on v* tags via trusted publishing (tests must pass first).
 - 38 tests passing. Remaining user actions: add pending trusted publishers on PyPI for the 10 fontpkg-<slug> names (or first manual token publish), tag v0.1.0 to exercise release.yml, optionally set AUTO_PUBLISH=true.
+
+---
+
+**User:** Put PYPI_TOKEN in .env; asked Claude to publish the first 10 MVP font packages.
+
+**Claude:** Added .env to .gitignore first (it wasn't ignored). Built wheels+sdists for all 10, published with the token via UV_PUBLISH_TOKEN. fontpkg-fira-code and fontpkg-inter landed immediately; PyPI's new-project creation throttle (429) hit on the third, so the remaining 8 are publishing via a background retry loop (idempotent with --check-url, 120s backoff).
