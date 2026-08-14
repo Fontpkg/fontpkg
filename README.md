@@ -3,7 +3,7 @@
 [![CI](https://github.com/Fontpkg/fontpkg/actions/workflows/ci.yml/badge.svg)](https://github.com/Fontpkg/fontpkg/actions/workflows/ci.yml)
 
 Fonts as ordinary Python project dependencies — a [Fontsource](https://fontsource.org)
-analog for PyPI.
+analog for PyPI. **[Browse the fonts →](https://fontpkg.github.io/fontpkg/)**
 
 ## Usage
 
