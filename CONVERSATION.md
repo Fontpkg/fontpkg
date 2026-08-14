@@ -235,3 +235,9 @@ Open decisions: project/package naming (`fontgrab` vs `pyfontsource`), PyPI scal
 **User:** Was away from keyboard during 1Password prompts; asked if permissions went through.
 
 **Claude:** Background processes can't receive 1P authorization prompts (no GUI session), and foreground attempts timed out while user was away (app auto-locked). With user present, foreground op run authorized successfully and spawned the publish loop as a detached child (pid 2973) inheriting the resolved token — publishing the remaining 7 packages as throttle windows roll.
+
+---
+
+**User:** Asked whether 1Password requires presence at every launch, and how cron/unattended jobs fit.
+
+**Claude:** Interactive: prompts only when the app is locked or a new app first asks; silent while unlocked (tunable auto-lock). Unattended: use 1Password Service Accounts (vault-scoped OP_SERVICE_ACCOUNT_TOKEN, headless op run), bootstrapped from the macOS Keychain via `security find-generic-password` — the irreducible root credential lives encrypted+machine-local, not Dropbox. Single-secret daemons can use the Keychain directly; CI keeps platform secret stores. Added the unattended pattern to persistent memory.
