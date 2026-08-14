@@ -43,6 +43,8 @@ jobs:
           if-no-files-found: ignore
       - name: Publish wheels to PyPI
         if: ${{ inputs.publish || (github.event_name == 'schedule' && vars.AUTO_PUBLISH == 'true') }}
+        env:
+          UV_PUBLISH_TOKEN: ${{ secrets.PYPI_TOKEN }}
         run: |
           shopt -s nullglob
           wheels=(build/*/dist/*.whl)

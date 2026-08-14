@@ -169,3 +169,9 @@ Open decisions: project/package naming (`fontgrab` vs `pyfontsource`), PyPI scal
 **User:** Reported SSL_ERROR_BAD_CERT_DOMAIN at www.fontpkg.org (GitHub's *.github.io cert).
 
 **Claude:** Diagnosed as expected mid-setup state: DNS had gone live but the Pages custom domain wasn't set yet, so GitHub served its default cert. Set custom domain fontpkg.org via API; cert issuance (Let's Encrypt) in progress with a background watcher that enables HTTPS enforcement when issued. HTTP already serves the site. Updated README/config links and repo homepage to fontpkg.org; stopped the now-obsolete DNS watcher.
+
+---
+
+**User:** Site confirmed working. Asked: are we just waiting on PyPI now — is everything else automated? Are we done?
+
+**Claude:** Found and closed two automation gaps: (1) published fontpkg 0.1.0 predated `fontpkg search` — bumped core to 0.2.0 and tagged v0.2.0 to exercise release.yml via trusted publishing; (2) weekly workflow had no publish credentials for family packages — stored PYPI_TOKEN as an Actions secret (from .env, at user's service; rotatable), wired it into generate.yml's publish step, and set AUTO_PUBLISH=true so scheduled runs publish autonomously. Remaining external wait: PyPI new-project throttle for the 8 MVP + 190 top-200 packages.
