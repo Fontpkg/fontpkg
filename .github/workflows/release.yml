@@ -20,6 +20,6 @@ jobs:
       - run: uv sync --all-packages
       - run: uv run pytest core/tests generator/tests
       - run: uv build --package fontpkg --out-dir dist
+      # core uses PyPI Trusted Publishing (publisher must name release.yml);
+      # family packages in generate.yml use the token until the PyPI org exists
       - run: uv publish dist/*
-        env:
-          UV_PUBLISH_TOKEN: ${{ secrets.PYPI_TOKEN }}
