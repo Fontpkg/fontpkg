@@ -252,3 +252,9 @@ Open decisions: project/package naming (`fontgrab` vs `pyfontsource`), PyPI scal
 - publish.yml: NEW daily workflow (09:41 UTC) running publish-pending + committing state — survives the user's restart, drains the queue at PyPI's daily rate with zero human action.
 - generate.yml publish step now uses publish-pending; pages.yml site build filters to published families only (site never advertises uninstallable packages — verified 6 families rendered).
 52 tests passing.
+
+---
+
+**User:** Asked what the process will be to change the publishing schedule once PyPI grants bulk permissions.
+
+**Claude:** No schedule change needed — publish-pending already attempts everything unpublished each run; the daily drip is PyPI's limit, not ours. Process when granted: dispatch "Sync font packages" (build top-200 into state) then "Publish pending packages" (drains queue in one pass); site auto-redeploys. If granted via an org: transfer existing fontpkg-* projects, swap to an org-scoped token (update the 1Password item; Claude re-runs gh secret set). Daily job then becomes a cheap no-op safety net. Same process scales to phase-3 (~1,300 more families).
