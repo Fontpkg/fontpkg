@@ -99,6 +99,7 @@ def _sync_one(
         "commit": fetched.commit,
         "version": version,
         "package": pkg_root.name,
+        "published": False,
     }
     catalog[meta["slug"]] = catalog_entry(meta)
     report.built.append((key, version))
@@ -107,3 +108,43 @@ def _sync_one(
 def _built_metadata(pkg_root: Path) -> dict:
     module_dir = next((pkg_root / "src").iterdir())
     return json.loads((module_dir / "metadata.json").read_text(encoding="utf-8"))
+
+
+@dataclass
+class PublishReport:
+    published: list[str] = field(default_factory=list)
+    skipped: list[str] = field(default_factory=list)
+
+
+def publish_pending(
+    state_path: Path,
+    out_dir: Path,
+    publisher: Callable[[Path], bool],
+    rebuild: bool = True,
+) -> PublishReport:
+    state = load_state(state_path)
+    report = PublishReport()
+    for key in sorted(state):
+        entry = state[key]
+        if entry.get("published"):
+            continue
+        pkg_root = out_dir / entry["package"]
+        if not any((pkg_root / "dist").glob("*.whl")) and rebuild:
+            _rebuild(key, out_dir)
+        if publisher(pkg_root):
+            entry["published"] = True
+            report.published.append(key)
+        else:
+            report.skipped.append(key)
+    save_state(state_path, state)
+    return report
+
+
+def _rebuild(key: str, out_dir: Path) -> None:
+    from fontpkg_generator.build import build_wheel
+
+    with tempfile.TemporaryDirectory(prefix="fontpkg-publish-") as tmp:
+        fetched = gh.fetch_family(key, Path(tmp))
+        source = SourceInfo(repo=gh.REPO_URL, path=fetched.repo_path, commit=fetched.commit)
+        pkg_root = build_package(fetched.family_dir, out_dir, source=source)
+    build_wheel(pkg_root)

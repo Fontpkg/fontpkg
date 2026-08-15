@@ -241,3 +241,14 @@ Open decisions: project/package naming (`fontgrab` vs `pyfontsource`), PyPI scal
 **User:** Asked whether 1Password requires presence at every launch, and how cron/unattended jobs fit.
 
 **Claude:** Interactive: prompts only when the app is locked or a new app first asks; silent while unlocked (tunable auto-lock). Unattended: use 1Password Service Accounts (vault-scoped OP_SERVICE_ACCOUNT_TOKEN, headless op run), bootstrapped from the macOS Keychain via `security find-generic-password` — the irreducible root credential lives encrypted+machine-local, not Dropbox. Single-secret daemons can use the Keychain directly; CI keeps platform secret stores. Added the unattended pattern to persistent memory.
+
+---
+
+**User:** Asked for a published-fonts report; restarting their computer; wants the project to continue autonomously until PyPI responds about the org.
+
+**Claude:** Daily quota confirmed reset: lato, merriweather, noto-sans published immediately (throttle = ~3 new projects/day). Now 6/10 live: fira-code, inter, jetbrains-mono, lato, merriweather, noto-sans; pending: open-sans, playfair-display, roboto, source-sans-3. Built full autonomy for the drip:
+- state.json entries now carry published: true/false (migrated); sync marks new builds unpublished.
+- `fontpkg-gen publish-pending`: rebuilds pending packages if needed, attempts publish (idempotent --check-url), flips the flag on success.
+- publish.yml: NEW daily workflow (09:41 UTC) running publish-pending + committing state — survives the user's restart, drains the queue at PyPI's daily rate with zero human action.
+- generate.yml publish step now uses publish-pending; pages.yml site build filters to published families only (site never advertises uninstallable packages — verified 6 families rendered).
+52 tests passing.

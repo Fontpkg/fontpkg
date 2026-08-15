@@ -41,18 +41,12 @@ jobs:
           name: font-wheels
           path: build/*/dist/*.whl
           if-no-files-found: ignore
-      - name: Publish wheels to PyPI
+      - name: Publish pending packages
         if: ${{ inputs.publish || (github.event_name == 'schedule' && vars.AUTO_PUBLISH == 'true') }}
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           UV_PUBLISH_TOKEN: ${{ secrets.PYPI_TOKEN }}
-        run: |
-          shopt -s nullglob
-          wheels=(build/*/dist/*.whl)
-          if [ ${#wheels[@]} -eq 0 ]; then
-            echo "nothing to publish"
-            exit 0
-          fi
-          uv publish "${wheels[@]}"
+        run: uv run fontpkg-gen publish-pending --state state.json --out build
       - name: Commit updated state manifest and catalog
         run: |
           if ! git diff --quiet state.json catalog.json 2>/dev/null || [ -n "$(git ls-files --others state.json catalog.json)" ]; then

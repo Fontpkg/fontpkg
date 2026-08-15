@@ -31,6 +31,26 @@ def test_static_site_output(static_family_dir: Path, tmp_path: Path) -> None:
     assert "__FAMILY_DATA__" not in html
 
 
+def test_site_state_filter_hides_unpublished(static_family_dir: Path, tmp_path: Path) -> None:
+    catalog_path, packages = _prepare(static_family_dir, tmp_path)
+    state_path = tmp_path / "state.json"
+    state_path.write_text(
+        json.dumps({"testface": {"package": "fontpkg-testface", "published": False}}),
+        encoding="utf-8",
+    )
+    out = build_site(catalog_path, packages, tmp_path / "site", state_path=state_path)
+    html = (out / "index.html").read_text(encoding="utf-8")
+    assert '"family": "Testface"' not in html
+
+    state_path.write_text(
+        json.dumps({"testface": {"package": "fontpkg-testface", "published": True}}),
+        encoding="utf-8",
+    )
+    out = build_site(catalog_path, packages, tmp_path / "site2", state_path=state_path)
+    html = (out / "index.html").read_text(encoding="utf-8")
+    assert '"family": "Testface"' in html
+
+
 def test_variable_site_font_faces(variable_family_dir: Path, tmp_path: Path) -> None:
     catalog_path, packages = _prepare(variable_family_dir, tmp_path)
     out = build_site(catalog_path, packages, tmp_path / "site")

@@ -4,10 +4,10 @@ import sys
 import tempfile
 from pathlib import Path
 
-from fontpkg_generator.build import SourceInfo, UnsupportedLicense, build_package
+from fontpkg_generator.build import SourceInfo, UnsupportedLicense, build_package, build_wheel
 from fontpkg_generator.gh import REPO_URL, FamilyNotFound, fetch_family
 from fontpkg_generator.site import build_site
-from fontpkg_generator.sync import sync_families
+from fontpkg_generator.sync import publish_pending, sync_families
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -37,14 +37,42 @@ def main(argv: list[str] | None = None) -> int:
     site.add_argument("--catalog", type=Path, default=Path("catalog.json"))
     site.add_argument("--packages", type=Path, default=Path("build"))
     site.add_argument("--out", type=Path, default=Path("site-dist"))
+    site.add_argument(
+        "--state", type=Path, default=None, help="limit the site to published families"
+    )
+    pending = sub.add_parser("publish-pending", help="publish families not yet on PyPI")
+    pending.add_argument("--state", type=Path, default=Path("state.json"))
+    pending.add_argument("--out", type=Path, default=Path("build"))
     args = parser.parse_args(argv)
     if args.command == "sync":
         return _sync(args)
     if args.command == "site":
-        out = build_site(args.catalog, args.packages, args.out)
+        out = build_site(args.catalog, args.packages, args.out, state_path=args.state)
         print(f"site written to {out}")
         return 0
+    if args.command == "publish-pending":
+        return _publish_pending(args)
     return _build(args)
+
+
+def _publish_pending(args: argparse.Namespace) -> int:
+    report = publish_pending(args.state, args.out, publisher=_uv_publish)
+    for key in report.published:
+        print(f"PUBLISHED {key}")
+    for key in report.skipped:
+        print(f"pending {key} (throttled or failed; will retry)")
+    return 0
+
+
+def _uv_publish(pkg_root: Path) -> bool:
+    name = pkg_root.name
+    result = subprocess.run(
+        ["uv", "publish", "--check-url", f"https://pypi.org/simple/{name}/"]
+        + [str(f) for f in sorted((pkg_root / "dist").glob("*"))],
+        capture_output=True,
+        text=True,
+    )
+    return result.returncode == 0
 
 
 def _sync(args: argparse.Namespace) -> int:

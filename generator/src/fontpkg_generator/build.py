@@ -1,6 +1,7 @@
 import json
 import re
 import shutil
+import subprocess
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -17,6 +18,13 @@ LICENSE_MAP = {
 
 class UnsupportedLicense(Exception):
     pass
+
+
+def build_wheel(pkg_root: Path) -> None:
+    subprocess.run(
+        ["uv", "build", "--wheel", "--out-dir", str(pkg_root / "dist"), str(pkg_root)],
+        check=True,
+    )
 
 
 @dataclass(frozen=True)

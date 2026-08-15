@@ -6,7 +6,7 @@ import pytest
 
 import fontpkg_generator.gh as gh
 from fontpkg_generator.gh import FetchResult
-from fontpkg_generator.sync import load_state, sync_families
+from fontpkg_generator.sync import load_state, publish_pending, sync_families
 
 
 @pytest.fixture
@@ -98,6 +98,39 @@ def test_wheel_builder_hook_called(fake_upstream, tmp_path: Path) -> None:
         ["testface"], tmp_path / "state.json", tmp_path / "out", wheel_builder=built.append
     )
     assert built == [tmp_path / "out" / "fontpkg-testface"]
+
+
+def test_new_build_is_marked_unpublished(fake_upstream, tmp_path: Path) -> None:
+    state_path = tmp_path / "state.json"
+    sync_families(["testface"], state_path, tmp_path / "out")
+    assert load_state(state_path)["testface"]["published"] is False
+
+
+def test_publish_pending_marks_success_and_skips(fake_upstream, tmp_path: Path) -> None:
+    state_path = tmp_path / "state.json"
+    out = tmp_path / "out"
+    sync_families(["testface"], state_path, out)
+    (out / "fontpkg-testface" / "dist").mkdir()
+    (out / "fontpkg-testface" / "dist" / "x.whl").write_bytes(b"")
+
+    report = publish_pending(state_path, out, publisher=lambda p: False, rebuild=False)
+    assert report.skipped == ["testface"]
+    assert load_state(state_path)["testface"]["published"] is False
+
+    attempts: list[Path] = []
+
+    def publisher(pkg_root: Path) -> bool:
+        attempts.append(pkg_root)
+        return True
+
+    report = publish_pending(state_path, out, publisher=publisher, rebuild=False)
+    assert report.published == ["testface"]
+    assert attempts == [out / "fontpkg-testface"]
+    assert load_state(state_path)["testface"]["published"] is True
+
+    report = publish_pending(state_path, out, publisher=publisher, rebuild=False)
+    assert report.published == [] and report.skipped == []
+    assert attempts == [out / "fontpkg-testface"]
 
 
 def test_state_json_is_sorted_and_stable(fake_upstream, tmp_path: Path) -> None:

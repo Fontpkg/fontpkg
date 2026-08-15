@@ -4,8 +4,19 @@ import shutil
 from pathlib import Path
 
 
-def build_site(catalog_path: Path, packages_dir: Path, out_dir: Path) -> Path:
+def build_site(
+    catalog_path: Path,
+    packages_dir: Path,
+    out_dir: Path,
+    state_path: Path | None = None,
+) -> Path:
     catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
+    if state_path is not None:
+        state = json.loads(state_path.read_text(encoding="utf-8"))
+        published = {e["package"] for e in state.values() if e.get("published")}
+        catalog = {
+            slug: entry for slug, entry in catalog.items() if entry["package"] in published
+        }
     fonts_dir = out_dir / "fonts"
     fonts_dir.mkdir(parents=True, exist_ok=True)
     css_rules: list[str] = []
