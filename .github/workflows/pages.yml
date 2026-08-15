@@ -24,10 +24,10 @@ jobs:
         with:
           python-version: "3.13"
       - run: uv sync --all-packages
-      - name: Build all font packages
+      - name: Build all tracked font packages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: uv run fontpkg-gen build $(grep -v '^#' families.txt | tr '\n' ' ') --out build
+        run: uv run fontpkg-gen build $(python3 -c "import json; print(' '.join(sorted(json.load(open('state.json')))))") --out build
       - name: Generate site
         run: uv run fontpkg-gen site --catalog catalog.json --packages build --out site-dist --state state.json
       - uses: actions/configure-pages@v5
