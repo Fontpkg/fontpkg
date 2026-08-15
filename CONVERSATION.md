@@ -266,3 +266,9 @@ Open decisions: project/package naming (`fontgrab` vs `pyfontsource`), PyPI scal
 **Claude:** Root-caused it: Claude's own gen-2 regeneration of families.txt added an isBrandFont filter to exclude Google Sans, and Google's metadata flags Roboto and ALL Noto families as brand fonts (they're Google trademarks, still OFL + in google/fonts) — 15 families silently dropped, and only the google-sans exclusion was verified, no diff review. Also fixed the symptom bug: pages.yml now builds from state.json so the site can never reference an unbuilt published package (the noto-sans FileNotFoundError).
 Fixes: regenerated families.txt WITHOUT the brand filter (explicit google-sans/-flex + tinos exclusions instead, with a warning comment); 15 families restored (roboto, roboto-condensed/flex/mono/serif/slab, noto-sans, noto-serif, noto-color-emoji, noto-kufi-arabic, noto-sans-arabic/khmer/tamil/telugu/thai; 15 tail families displaced from the top-200). All 13 newly-restored families validation-built (noto-color-emoji is 23MB — flagged for size watch). NEW CI guard test: every published/state family must appear in families.txt (or an explicit RETIRED_FAMILIES list) — silent drops now fail CI.
 Future-removal risk answer: yes, the vector was wholesale list regeneration against mutable upstream flags; even then, drops only ever stopped update-tracking — sync never deletes state entries, publishing never yanks PyPI, and the site builds from state — nothing user-facing disappears. The CI guard closes the silent-drop vector.
+
+---
+
+**User:** Asked to exclude noto-color-emoji until the big-font (CJK) decision is made.
+
+**Claude:** Removed it from families.txt (header comment documents why), backfilled tenor-sans to keep 200. It was never synced, so no state/catalog/PyPI cleanup needed; consistency guard passes.
