@@ -45,7 +45,7 @@
     "commit": "8b0a1d0f5983c89bc2b93f1b5fb55f9e252744b5",
     "package": "fontpkg-open-sans",
     "path": "ofl/opensans",
-    "published": false,
+    "published": true,
     "version": "3.003"
   },
   "playfairdisplay": {
