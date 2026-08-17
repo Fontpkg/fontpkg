@@ -1,4 +1,1331 @@
 {
+  "abeezee": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "ABeeZee",
+    "license": "OFL-1.1",
+    "package": "fontpkg-abeezee",
+    "slug": "abeezee",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.003",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "abel": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Abel",
+    "license": "OFL-1.1",
+    "package": "fontpkg-abel",
+    "slug": "abel",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.003",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "abril-fatface": {
+    "category": [
+      "DISPLAY"
+    ],
+    "family": "Abril Fatface",
+    "license": "OFL-1.1",
+    "package": "fontpkg-abril-fatface",
+    "slug": "abril-fatface",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.001",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "albert-sans": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Albert Sans",
+    "license": "OFL-1.1",
+    "package": "fontpkg-albert-sans",
+    "slug": "albert-sans",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "1.025",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "alegreya-sans": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Alegreya Sans",
+    "license": "OFL-1.1",
+    "package": "fontpkg-alegreya-sans",
+    "slug": "alegreya-sans",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": false,
+    "version": "2.004",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": [
+      100,
+      300,
+      400,
+      500,
+      700,
+      800,
+      900
+    ]
+  },
+  "alfa-slab-one": {
+    "category": [
+      "DISPLAY"
+    ],
+    "family": "Alfa Slab One",
+    "license": "OFL-1.1",
+    "package": "fontpkg-alfa-slab-one",
+    "slug": "alfa-slab-one",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "2.000",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "almarai": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Almarai",
+    "license": "OFL-1.1",
+    "package": "fontpkg-almarai",
+    "slug": "almarai",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.100",
+    "weight_range": [
+      300,
+      800
+    ],
+    "weights": [
+      300,
+      400,
+      700,
+      800
+    ]
+  },
+  "alumni-sans": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Alumni Sans",
+    "license": "OFL-1.1",
+    "package": "fontpkg-alumni-sans",
+    "slug": "alumni-sans",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "1.018",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "amiri": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "Amiri",
+    "license": "OFL-1.1",
+    "package": "fontpkg-amiri",
+    "slug": "amiri",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.002",
+    "weight_range": [
+      400,
+      700
+    ],
+    "weights": [
+      400,
+      700
+    ]
+  },
+  "andada-pro": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "Andada Pro",
+    "license": "OFL-1.1",
+    "package": "fontpkg-andada-pro",
+    "slug": "andada-pro",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "3.003",
+    "weight_range": [
+      400,
+      840
+    ],
+    "weights": []
+  },
+  "anek-telugu": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Anek Telugu",
+    "license": "OFL-1.1",
+    "package": "fontpkg-anek-telugu",
+    "slug": "anek-telugu",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "1.003",
+    "weight_range": [
+      100,
+      800
+    ],
+    "weights": []
+  },
+  "angkor": {
+    "category": [
+      "DISPLAY"
+    ],
+    "family": "Angkor",
+    "license": "OFL-1.1",
+    "package": "fontpkg-angkor",
+    "slug": "angkor",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "8.000",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "antic-slab": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "Antic Slab",
+    "license": "OFL-1.1",
+    "package": "fontpkg-antic-slab",
+    "slug": "antic-slab",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.002",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "anton": {
+    "category": [
+      "DISPLAY"
+    ],
+    "family": "Anton",
+    "license": "OFL-1.1",
+    "package": "fontpkg-anton",
+    "slug": "anton",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "2.116",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "archivo": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Archivo",
+    "license": "OFL-1.1",
+    "package": "fontpkg-archivo",
+    "slug": "archivo",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.001",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "archivo-black": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Archivo Black",
+    "license": "OFL-1.1",
+    "package": "fontpkg-archivo-black",
+    "slug": "archivo-black",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.006",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "archivo-narrow": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Archivo Narrow",
+    "license": "OFL-1.1",
+    "package": "fontpkg-archivo-narrow",
+    "slug": "archivo-narrow",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "3.002",
+    "weight_range": [
+      400,
+      700
+    ],
+    "weights": []
+  },
+  "arimo": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Arimo",
+    "license": "OFL-1.1",
+    "package": "fontpkg-arimo",
+    "slug": "arimo",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "1.341",
+    "weight_range": [
+      400,
+      700
+    ],
+    "weights": []
+  },
+  "arvo": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "Arvo",
+    "license": "OFL-1.1",
+    "package": "fontpkg-arvo",
+    "slug": "arvo",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.006",
+    "weight_range": [
+      400,
+      700
+    ],
+    "weights": [
+      400,
+      700
+    ]
+  },
+  "asap": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Asap",
+    "license": "OFL-1.1",
+    "package": "fontpkg-asap",
+    "slug": "asap",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "3.002",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "assistant": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Assistant",
+    "license": "OFL-1.1",
+    "package": "fontpkg-assistant",
+    "slug": "assistant",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "3.000",
+    "weight_range": [
+      200,
+      800
+    ],
+    "weights": []
+  },
+  "atkinson-hyperlegible": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Atkinson Hyperlegible",
+    "license": "OFL-1.1",
+    "package": "fontpkg-atkinson-hyperlegible",
+    "slug": "atkinson-hyperlegible",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.006",
+    "weight_range": [
+      400,
+      700
+    ],
+    "weights": [
+      400,
+      700
+    ]
+  },
+  "baloo-2": {
+    "category": [
+      "DISPLAY"
+    ],
+    "family": "Baloo 2",
+    "license": "OFL-1.1",
+    "package": "fontpkg-baloo-2",
+    "slug": "baloo-2",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "1.700",
+    "weight_range": [
+      400,
+      800
+    ],
+    "weights": []
+  },
+  "barlow": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Barlow",
+    "license": "OFL-1.1",
+    "package": "fontpkg-barlow",
+    "slug": "barlow",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.408",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": [
+      100,
+      200,
+      300,
+      400,
+      500,
+      600,
+      700,
+      800,
+      900
+    ]
+  },
+  "barlow-condensed": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Barlow Condensed",
+    "license": "OFL-1.1",
+    "package": "fontpkg-barlow-condensed",
+    "slug": "barlow-condensed",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.408",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": [
+      100,
+      200,
+      300,
+      400,
+      500,
+      600,
+      700,
+      800,
+      900
+    ]
+  },
+  "barlow-semi-condensed": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Barlow Semi Condensed",
+    "license": "OFL-1.1",
+    "package": "fontpkg-barlow-semi-condensed",
+    "slug": "barlow-semi-condensed",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.408",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": [
+      100,
+      200,
+      300,
+      400,
+      500,
+      600,
+      700,
+      800,
+      900
+    ]
+  },
+  "be-vietnam-pro": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Be Vietnam Pro",
+    "license": "OFL-1.1",
+    "package": "fontpkg-be-vietnam-pro",
+    "slug": "be-vietnam-pro",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.002",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": [
+      100,
+      200,
+      300,
+      400,
+      500,
+      600,
+      700,
+      800,
+      900
+    ]
+  },
+  "bebas-neue": {
+    "category": [
+      "DISPLAY",
+      "SANS_SERIF"
+    ],
+    "family": "Bebas Neue",
+    "license": "OFL-1.1",
+    "package": "fontpkg-bebas-neue",
+    "slug": "bebas-neue",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "2.000",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "bitter": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "Bitter",
+    "license": "OFL-1.1",
+    "package": "fontpkg-bitter",
+    "slug": "bitter",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "3.021",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "black-ops-one": {
+    "category": [
+      "DISPLAY"
+    ],
+    "family": "Black Ops One",
+    "license": "OFL-1.1",
+    "package": "fontpkg-black-ops-one",
+    "slug": "black-ops-one",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.004",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "bodoni-moda": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "Bodoni Moda",
+    "license": "OFL-1.1",
+    "package": "fontpkg-bodoni-moda",
+    "slug": "bodoni-moda",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.005",
+    "weight_range": [
+      400,
+      900
+    ],
+    "weights": []
+  },
+  "bree-serif": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "Bree Serif",
+    "license": "OFL-1.1",
+    "package": "fontpkg-bree-serif",
+    "slug": "bree-serif",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.002",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "bricolage-grotesque": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Bricolage Grotesque",
+    "license": "OFL-1.1",
+    "package": "fontpkg-bricolage-grotesque",
+    "slug": "bricolage-grotesque",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "1.001",
+    "weight_range": [
+      200,
+      800
+    ],
+    "weights": []
+  },
+  "bungee": {
+    "category": [
+      "DISPLAY"
+    ],
+    "family": "Bungee",
+    "license": "OFL-1.1",
+    "package": "fontpkg-bungee",
+    "slug": "bungee",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "2.000",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "cabin": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Cabin",
+    "license": "OFL-1.1",
+    "package": "fontpkg-cabin",
+    "slug": "cabin",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "3.001",
+    "weight_range": [
+      400,
+      700
+    ],
+    "weights": []
+  },
+  "cairo": {
+    "category": [
+      "DISPLAY",
+      "SANS_SERIF"
+    ],
+    "family": "Cairo",
+    "license": "OFL-1.1",
+    "package": "fontpkg-cairo",
+    "slug": "cairo",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "3.130",
+    "weight_range": [
+      200,
+      1000
+    ],
+    "weights": []
+  },
+  "cardo": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "Cardo",
+    "license": "OFL-1.1",
+    "package": "fontpkg-cardo",
+    "slug": "cardo",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.045",
+    "weight_range": [
+      400,
+      700
+    ],
+    "weights": [
+      400,
+      700
+    ]
+  },
+  "catamaran": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Catamaran",
+    "license": "OFL-1.1",
+    "package": "fontpkg-catamaran",
+    "slug": "catamaran",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.000",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "caveat": {
+    "category": [
+      "HANDWRITING"
+    ],
+    "family": "Caveat",
+    "license": "OFL-1.1",
+    "package": "fontpkg-caveat",
+    "slug": "caveat",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.000",
+    "weight_range": [
+      400,
+      700
+    ],
+    "weights": []
+  },
+  "chakra-petch": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Chakra Petch",
+    "license": "OFL-1.1",
+    "package": "fontpkg-chakra-petch",
+    "slug": "chakra-petch",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.000",
+    "weight_range": [
+      300,
+      700
+    ],
+    "weights": [
+      300,
+      400,
+      500,
+      600,
+      700
+    ]
+  },
+  "changa-one": {
+    "category": [
+      "DISPLAY"
+    ],
+    "family": "Changa One",
+    "license": "OFL-1.1",
+    "package": "fontpkg-changa-one",
+    "slug": "changa-one",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.003",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "chivo": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Chivo",
+    "license": "OFL-1.1",
+    "package": "fontpkg-chivo",
+    "slug": "chivo",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.002",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "cinzel": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "Cinzel",
+    "license": "OFL-1.1",
+    "package": "fontpkg-cinzel",
+    "slug": "cinzel",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.000",
+    "weight_range": [
+      400,
+      900
+    ],
+    "weights": []
+  },
+  "comfortaa": {
+    "category": [
+      "DISPLAY"
+    ],
+    "family": "Comfortaa",
+    "license": "OFL-1.1",
+    "package": "fontpkg-comfortaa",
+    "slug": "comfortaa",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "3.105",
+    "weight_range": [
+      300,
+      700
+    ],
+    "weights": []
+  },
+  "cormorant": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "Cormorant",
+    "license": "OFL-1.1",
+    "package": "fontpkg-cormorant",
+    "slug": "cormorant",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "4.000",
+    "weight_range": [
+      300,
+      700
+    ],
+    "weights": []
+  },
+  "cormorant-garamond": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "Cormorant Garamond",
+    "license": "OFL-1.1",
+    "package": "fontpkg-cormorant-garamond",
+    "slug": "cormorant-garamond",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "4.001",
+    "weight_range": [
+      300,
+      700
+    ],
+    "weights": []
+  },
+  "crimson-pro": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "Crimson Pro",
+    "license": "OFL-1.1",
+    "package": "fontpkg-crimson-pro",
+    "slug": "crimson-pro",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "1.003",
+    "weight_range": [
+      200,
+      900
+    ],
+    "weights": []
+  },
+  "crimson-text": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "Crimson Text",
+    "license": "OFL-1.1",
+    "package": "fontpkg-crimson-text",
+    "slug": "crimson-text",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.100",
+    "weight_range": [
+      400,
+      700
+    ],
+    "weights": [
+      400,
+      600,
+      700
+    ]
+  },
+  "dancing-script": {
+    "category": [
+      "HANDWRITING"
+    ],
+    "family": "Dancing Script",
+    "license": "OFL-1.1",
+    "package": "fontpkg-dancing-script",
+    "slug": "dancing-script",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.001",
+    "weight_range": [
+      400,
+      700
+    ],
+    "weights": []
+  },
+  "delius": {
+    "category": [
+      "HANDWRITING"
+    ],
+    "family": "Delius",
+    "license": "OFL-1.1",
+    "package": "fontpkg-delius",
+    "slug": "delius",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.001",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "dm-mono": {
+    "category": [
+      "MONOSPACE"
+    ],
+    "family": "DM Mono",
+    "license": "OFL-1.1",
+    "package": "fontpkg-dm-mono",
+    "slug": "dm-mono",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.000",
+    "weight_range": [
+      300,
+      500
+    ],
+    "weights": [
+      300,
+      400,
+      500
+    ]
+  },
+  "dm-sans": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "DM Sans",
+    "license": "OFL-1.1",
+    "package": "fontpkg-dm-sans",
+    "slug": "dm-sans",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "4.004",
+    "weight_range": [
+      100,
+      1000
+    ],
+    "weights": []
+  },
+  "dm-serif-display": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "DM Serif Display",
+    "license": "OFL-1.1",
+    "package": "fontpkg-dm-serif-display",
+    "slug": "dm-serif-display",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": false,
+    "version": "5.200",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "dm-serif-text": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "DM Serif Text",
+    "license": "OFL-1.1",
+    "package": "fontpkg-dm-serif-text",
+    "slug": "dm-serif-text",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": false,
+    "version": "5.200",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "domine": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "Domine",
+    "license": "OFL-1.1",
+    "package": "fontpkg-domine",
+    "slug": "domine",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.000",
+    "weight_range": [
+      400,
+      700
+    ],
+    "weights": []
+  },
+  "dosis": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Dosis",
+    "license": "OFL-1.1",
+    "package": "fontpkg-dosis",
+    "slug": "dosis",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "3.002",
+    "weight_range": [
+      200,
+      800
+    ],
+    "weights": []
+  },
+  "eb-garamond": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "EB Garamond",
+    "license": "OFL-1.1",
+    "package": "fontpkg-eb-garamond",
+    "slug": "eb-garamond",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "1.003",
+    "weight_range": [
+      400,
+      800
+    ],
+    "weights": []
+  },
+  "encode-sans": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Encode Sans",
+    "license": "OFL-1.1",
+    "package": "fontpkg-encode-sans",
+    "slug": "encode-sans",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "3.002",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "epilogue": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Epilogue",
+    "license": "OFL-1.1",
+    "package": "fontpkg-epilogue",
+    "slug": "epilogue",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.112",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "exo": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Exo",
+    "license": "OFL-1.1",
+    "package": "fontpkg-exo",
+    "slug": "exo",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.001",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "exo-2": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Exo 2",
+    "license": "OFL-1.1",
+    "package": "fontpkg-exo-2",
+    "slug": "exo-2",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.010",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "figtree": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Figtree",
+    "license": "OFL-1.1",
+    "package": "fontpkg-figtree",
+    "slug": "figtree",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.002",
+    "weight_range": [
+      300,
+      900
+    ],
+    "weights": []
+  },
   "fira-code": {
     "category": [
       "MONOSPACE"
@@ -18,6 +1345,521 @@
     ],
     "weights": []
   },
+  "fira-sans": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Fira Sans",
+    "license": "OFL-1.1",
+    "package": "fontpkg-fira-sans",
+    "slug": "fira-sans",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": false,
+    "version": "4.203",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": [
+      100,
+      200,
+      300,
+      400,
+      500,
+      600,
+      700,
+      800,
+      900
+    ]
+  },
+  "fira-sans-condensed": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Fira Sans Condensed",
+    "license": "OFL-1.1",
+    "package": "fontpkg-fira-sans-condensed",
+    "slug": "fira-sans-condensed",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": false,
+    "version": "4.203",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": [
+      100,
+      200,
+      300,
+      400,
+      500,
+      600,
+      700,
+      800,
+      900
+    ]
+  },
+  "fjalla-one": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Fjalla One",
+    "license": "OFL-1.1",
+    "package": "fontpkg-fjalla-one",
+    "slug": "fjalla-one",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.002",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "frank-ruhl-libre": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "Frank Ruhl Libre",
+    "license": "OFL-1.1",
+    "package": "fontpkg-frank-ruhl-libre",
+    "slug": "frank-ruhl-libre",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "6.004",
+    "weight_range": [
+      300,
+      900
+    ],
+    "weights": []
+  },
+  "fraunces": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "Fraunces",
+    "license": "OFL-1.1",
+    "package": "fontpkg-fraunces",
+    "slug": "fraunces",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "1.000",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "fredoka": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Fredoka",
+    "license": "OFL-1.1",
+    "package": "fontpkg-fredoka",
+    "slug": "fredoka",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.001",
+    "weight_range": [
+      300,
+      700
+    ],
+    "weights": []
+  },
+  "geist": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Geist",
+    "license": "OFL-1.1",
+    "package": "fontpkg-geist",
+    "slug": "geist",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "1.800",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "geist-mono": {
+    "category": [
+      "MONOSPACE"
+    ],
+    "family": "Geist Mono",
+    "license": "OFL-1.1",
+    "package": "fontpkg-geist-mono",
+    "slug": "geist-mono",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "1.701",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "geologica": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Geologica",
+    "license": "OFL-1.1",
+    "package": "fontpkg-geologica",
+    "slug": "geologica",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "1.010",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "gravitas-one": {
+    "category": [
+      "DISPLAY"
+    ],
+    "family": "Gravitas One",
+    "license": "OFL-1.1",
+    "package": "fontpkg-gravitas-one",
+    "slug": "gravitas-one",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.001",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "great-vibes": {
+    "category": [
+      "HANDWRITING"
+    ],
+    "family": "Great Vibes",
+    "license": "OFL-1.1",
+    "package": "fontpkg-great-vibes",
+    "slug": "great-vibes",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.103",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "hanken-grotesk": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Hanken Grotesk",
+    "license": "OFL-1.1",
+    "package": "fontpkg-hanken-grotesk",
+    "slug": "hanken-grotesk",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "3.013",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "heebo": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Heebo",
+    "license": "OFL-1.1",
+    "package": "fontpkg-heebo",
+    "slug": "heebo",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "3.100",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "hind": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Hind",
+    "license": "OFL-1.1",
+    "package": "fontpkg-hind",
+    "slug": "hind",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "2.001",
+    "weight_range": [
+      300,
+      700
+    ],
+    "weights": [
+      300,
+      400,
+      500,
+      600,
+      700
+    ]
+  },
+  "hind-siliguri": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Hind Siliguri",
+    "license": "OFL-1.1",
+    "package": "fontpkg-hind-siliguri",
+    "slug": "hind-siliguri",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.001",
+    "weight_range": [
+      300,
+      700
+    ],
+    "weights": [
+      300,
+      400,
+      500,
+      600,
+      700
+    ]
+  },
+  "ibm-plex-mono": {
+    "category": [
+      "MONOSPACE"
+    ],
+    "family": "IBM Plex Mono",
+    "license": "OFL-1.1",
+    "package": "fontpkg-ibm-plex-mono",
+    "slug": "ibm-plex-mono",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": false,
+    "version": "2.003",
+    "weight_range": [
+      100,
+      700
+    ],
+    "weights": [
+      100,
+      200,
+      300,
+      400,
+      500,
+      600,
+      700
+    ]
+  },
+  "ibm-plex-sans": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "IBM Plex Sans",
+    "license": "OFL-1.1",
+    "package": "fontpkg-ibm-plex-sans",
+    "slug": "ibm-plex-sans",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "3.201",
+    "weight_range": [
+      100,
+      700
+    ],
+    "weights": []
+  },
+  "ibm-plex-sans-arabic": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "IBM Plex Sans Arabic",
+    "license": "OFL-1.1",
+    "package": "fontpkg-ibm-plex-sans-arabic",
+    "slug": "ibm-plex-sans-arabic",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.101",
+    "weight_range": [
+      100,
+      700
+    ],
+    "weights": [
+      100,
+      200,
+      300,
+      400,
+      500,
+      600,
+      700
+    ]
+  },
+  "ibm-plex-serif": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "IBM Plex Serif",
+    "license": "OFL-1.1",
+    "package": "fontpkg-ibm-plex-serif",
+    "slug": "ibm-plex-serif",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": false,
+    "version": "2.006",
+    "weight_range": [
+      100,
+      700
+    ],
+    "weights": [
+      100,
+      200,
+      300,
+      400,
+      500,
+      600,
+      700
+    ]
+  },
+  "inconsolata": {
+    "category": [
+      "SANS_SERIF",
+      "MONOSPACE"
+    ],
+    "family": "Inconsolata",
+    "license": "OFL-1.1",
+    "package": "fontpkg-inconsolata",
+    "slug": "inconsolata",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "3.001",
+    "weight_range": [
+      200,
+      900
+    ],
+    "weights": []
+  },
+  "indie-flower": {
+    "category": [
+      "HANDWRITING"
+    ],
+    "family": "Indie Flower",
+    "license": "OFL-1.1",
+    "package": "fontpkg-indie-flower",
+    "slug": "indie-flower",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "2.000",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "instrument-sans": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Instrument Sans",
+    "license": "OFL-1.1",
+    "package": "fontpkg-instrument-sans",
+    "slug": "instrument-sans",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "1.000",
+    "weight_range": [
+      400,
+      700
+    ],
+    "weights": []
+  },
+  "instrument-serif": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "Instrument Serif",
+    "license": "OFL-1.1",
+    "package": "fontpkg-instrument-serif",
+    "slug": "instrument-serif",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.000",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
   "inter": {
     "category": [
       "SANS_SERIF"
@@ -32,6 +1874,26 @@
     ],
     "variable": true,
     "version": "4.001",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "inter-tight": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Inter Tight",
+    "license": "OFL-1.1",
+    "package": "fontpkg-inter-tight",
+    "slug": "inter-tight",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "3.004",
     "weight_range": [
       100,
       900
@@ -54,6 +1916,119 @@
     "version": "2.211",
     "weight_range": [
       100,
+      800
+    ],
+    "weights": []
+  },
+  "josefin-sans": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Josefin Sans",
+    "license": "OFL-1.1",
+    "package": "fontpkg-josefin-sans",
+    "slug": "josefin-sans",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.001",
+    "weight_range": [
+      100,
+      700
+    ],
+    "weights": []
+  },
+  "jost": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Jost",
+    "license": "OFL-1.1",
+    "package": "fontpkg-jost",
+    "slug": "jost",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "3.710",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "kalam": {
+    "category": [
+      "HANDWRITING"
+    ],
+    "family": "Kalam",
+    "license": "OFL-1.1",
+    "package": "fontpkg-kalam",
+    "slug": "kalam",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "2.001",
+    "weight_range": [
+      300,
+      700
+    ],
+    "weights": [
+      300,
+      400,
+      700
+    ]
+  },
+  "kanit": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Kanit",
+    "license": "OFL-1.1",
+    "package": "fontpkg-kanit",
+    "slug": "kanit",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": false,
+    "version": "2.000",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": [
+      100,
+      200,
+      300,
+      400,
+      500,
+      600,
+      700,
+      800,
+      900
+    ]
+  },
+  "karla": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Karla",
+    "license": "OFL-1.1",
+    "package": "fontpkg-karla",
+    "slug": "karla",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.004",
+    "weight_range": [
+      200,
       800
     ],
     "weights": []
@@ -88,6 +2063,288 @@
       900
     ]
   },
+  "league-spartan": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "League Spartan",
+    "license": "OFL-1.1",
+    "package": "fontpkg-league-spartan",
+    "slug": "league-spartan",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.002",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "lexend": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Lexend",
+    "license": "OFL-1.1",
+    "package": "fontpkg-lexend",
+    "slug": "lexend",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "1.007",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "lexend-deca": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Lexend Deca",
+    "license": "OFL-1.1",
+    "package": "fontpkg-lexend-deca",
+    "slug": "lexend-deca",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "1.007",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "libre-baskerville": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "Libre Baskerville",
+    "license": "OFL-1.1",
+    "package": "fontpkg-libre-baskerville",
+    "slug": "libre-baskerville",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.005",
+    "weight_range": [
+      400,
+      700
+    ],
+    "weights": []
+  },
+  "libre-franklin": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Libre Franklin",
+    "license": "OFL-1.1",
+    "package": "fontpkg-libre-franklin",
+    "slug": "libre-franklin",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "3.000",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "lilita-one": {
+    "category": [
+      "DISPLAY"
+    ],
+    "family": "Lilita One",
+    "license": "OFL-1.1",
+    "package": "fontpkg-lilita-one",
+    "slug": "lilita-one",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.002",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "literata": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "Literata",
+    "license": "OFL-1.1",
+    "package": "fontpkg-literata",
+    "slug": "literata",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "3.103",
+    "weight_range": [
+      200,
+      900
+    ],
+    "weights": []
+  },
+  "lobster": {
+    "category": [
+      "DISPLAY"
+    ],
+    "family": "Lobster",
+    "license": "OFL-1.1",
+    "package": "fontpkg-lobster",
+    "slug": "lobster",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "2.100",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "lobster-two": {
+    "category": [
+      "DISPLAY"
+    ],
+    "family": "Lobster Two",
+    "license": "OFL-1.1",
+    "package": "fontpkg-lobster-two",
+    "slug": "lobster-two",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.006",
+    "weight_range": [
+      400,
+      700
+    ],
+    "weights": [
+      400,
+      700
+    ]
+  },
+  "lora": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "Lora",
+    "license": "OFL-1.1",
+    "package": "fontpkg-lora",
+    "slug": "lora",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "3.008",
+    "weight_range": [
+      400,
+      700
+    ],
+    "weights": []
+  },
+  "luckiest-guy": {
+    "category": [
+      "DISPLAY"
+    ],
+    "family": "Luckiest Guy",
+    "license": "Apache-2.0",
+    "package": "fontpkg-luckiest-guy",
+    "slug": "luckiest-guy",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.001",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "manrope": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Manrope",
+    "license": "OFL-1.1",
+    "package": "fontpkg-manrope",
+    "slug": "manrope",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "4.504",
+    "weight_range": [
+      200,
+      800
+    ],
+    "weights": []
+  },
+  "marcellus": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "Marcellus",
+    "license": "OFL-1.1",
+    "package": "fontpkg-marcellus",
+    "slug": "marcellus",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.000",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "maven-pro": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Maven Pro",
+    "license": "OFL-1.1",
+    "package": "fontpkg-maven-pro",
+    "slug": "maven-pro",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.103",
+    "weight_range": [
+      400,
+      900
+    ],
+    "weights": []
+  },
   "merriweather": {
     "category": [
       "SERIF"
@@ -108,6 +2365,184 @@
     ],
     "weights": []
   },
+  "merriweather-sans": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Merriweather Sans",
+    "license": "OFL-1.1",
+    "package": "fontpkg-merriweather-sans",
+    "slug": "merriweather-sans",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.001",
+    "weight_range": [
+      300,
+      800
+    ],
+    "weights": []
+  },
+  "montserrat": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Montserrat",
+    "license": "OFL-1.1",
+    "package": "fontpkg-montserrat",
+    "slug": "montserrat",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "9.000",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "montserrat-alternates": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Montserrat Alternates",
+    "license": "OFL-1.1",
+    "package": "fontpkg-montserrat-alternates",
+    "slug": "montserrat-alternates",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": false,
+    "version": "7.200",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": [
+      100,
+      200,
+      300,
+      400,
+      500,
+      600,
+      700,
+      800,
+      900
+    ]
+  },
+  "mukta": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Mukta",
+    "license": "OFL-1.1",
+    "package": "fontpkg-mukta",
+    "slug": "mukta",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "2.538",
+    "weight_range": [
+      200,
+      800
+    ],
+    "weights": [
+      200,
+      300,
+      400,
+      500,
+      600,
+      700,
+      800
+    ]
+  },
+  "mulish": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Mulish",
+    "license": "OFL-1.1",
+    "package": "fontpkg-mulish",
+    "slug": "mulish",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "3.603",
+    "weight_range": [
+      200,
+      1000
+    ],
+    "weights": []
+  },
+  "news-cycle": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "News Cycle",
+    "license": "OFL-1.1",
+    "package": "fontpkg-news-cycle",
+    "slug": "news-cycle",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "0.510",
+    "weight_range": [
+      400,
+      700
+    ],
+    "weights": [
+      400,
+      700
+    ]
+  },
+  "newsreader": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "Newsreader",
+    "license": "OFL-1.1",
+    "package": "fontpkg-newsreader",
+    "slug": "newsreader",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "1.003",
+    "weight_range": [
+      200,
+      800
+    ],
+    "weights": []
+  },
+  "noto-kufi-arabic": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Noto Kufi Arabic",
+    "license": "OFL-1.1",
+    "package": "fontpkg-noto-kufi-arabic",
+    "slug": "noto-kufi-arabic",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.109",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
   "noto-sans": {
     "category": [
       "SANS_SERIF"
@@ -122,6 +2557,202 @@
     ],
     "variable": true,
     "version": "2.015",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "noto-sans-arabic": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Noto Sans Arabic",
+    "license": "OFL-1.1",
+    "package": "fontpkg-noto-sans-arabic",
+    "slug": "noto-sans-arabic",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.012",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "noto-sans-khmer": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Noto Sans Khmer",
+    "license": "OFL-1.1",
+    "package": "fontpkg-noto-sans-khmer",
+    "slug": "noto-sans-khmer",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.004",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "noto-sans-tamil": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Noto Sans Tamil",
+    "license": "OFL-1.1",
+    "package": "fontpkg-noto-sans-tamil",
+    "slug": "noto-sans-tamil",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.004",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "noto-sans-telugu": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Noto Sans Telugu",
+    "license": "OFL-1.1",
+    "package": "fontpkg-noto-sans-telugu",
+    "slug": "noto-sans-telugu",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.005",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "noto-sans-thai": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Noto Sans Thai",
+    "license": "OFL-1.1",
+    "package": "fontpkg-noto-sans-thai",
+    "slug": "noto-sans-thai",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.002",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "noto-serif": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "Noto Serif",
+    "license": "OFL-1.1",
+    "package": "fontpkg-noto-serif",
+    "slug": "noto-serif",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.015",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "nunito": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Nunito",
+    "license": "OFL-1.1",
+    "package": "fontpkg-nunito",
+    "slug": "nunito",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "3.602",
+    "weight_range": [
+      200,
+      1000
+    ],
+    "weights": []
+  },
+  "nunito-sans": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Nunito Sans",
+    "license": "OFL-1.1",
+    "package": "fontpkg-nunito-sans",
+    "slug": "nunito-sans",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "3.101",
+    "weight_range": [
+      200,
+      1000
+    ],
+    "weights": []
+  },
+  "oleo-script": {
+    "category": [
+      "DISPLAY"
+    ],
+    "family": "Oleo Script",
+    "license": "OFL-1.1",
+    "package": "fontpkg-oleo-script",
+    "slug": "oleo-script",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.002",
+    "weight_range": [
+      400,
+      700
+    ],
+    "weights": [
+      400,
+      700
+    ]
+  },
+  "onest": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Onest",
+    "license": "OFL-1.1",
+    "package": "fontpkg-onest",
+    "slug": "onest",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.001",
     "weight_range": [
       100,
       900
@@ -148,6 +2779,170 @@
     ],
     "weights": []
   },
+  "orbitron": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Orbitron",
+    "license": "OFL-1.1",
+    "package": "fontpkg-orbitron",
+    "slug": "orbitron",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.001",
+    "weight_range": [
+      400,
+      900
+    ],
+    "weights": []
+  },
+  "oswald": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Oswald",
+    "license": "OFL-1.1",
+    "package": "fontpkg-oswald",
+    "slug": "oswald",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "4.103",
+    "weight_range": [
+      200,
+      700
+    ],
+    "weights": []
+  },
+  "outfit": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Outfit",
+    "license": "OFL-1.1",
+    "package": "fontpkg-outfit",
+    "slug": "outfit",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "1.100",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "overpass": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Overpass",
+    "license": "OFL-1.1",
+    "package": "fontpkg-overpass",
+    "slug": "overpass",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "4.000",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "oxygen": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Oxygen",
+    "license": "OFL-1.1",
+    "package": "fontpkg-oxygen",
+    "slug": "oxygen",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "0.201",
+    "weight_range": [
+      300,
+      700
+    ],
+    "weights": [
+      300,
+      400,
+      700
+    ]
+  },
+  "pacifico": {
+    "category": [
+      "HANDWRITING"
+    ],
+    "family": "Pacifico",
+    "license": "OFL-1.1",
+    "package": "fontpkg-pacifico",
+    "slug": "pacifico",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "3.001",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "permanent-marker": {
+    "category": [
+      "HANDWRITING"
+    ],
+    "family": "Permanent Marker",
+    "license": "Apache-2.0",
+    "package": "fontpkg-permanent-marker",
+    "slug": "permanent-marker",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.001",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "play": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Play",
+    "license": "OFL-1.1",
+    "package": "fontpkg-play",
+    "slug": "play",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "2.101",
+    "weight_range": [
+      400,
+      700
+    ],
+    "weights": [
+      400,
+      700
+    ]
+  },
   "playfair-display": {
     "category": [
       "SERIF"
@@ -168,6 +2963,403 @@
     ],
     "weights": []
   },
+  "plus-jakarta-sans": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Plus Jakarta Sans",
+    "license": "OFL-1.1",
+    "package": "fontpkg-plus-jakarta-sans",
+    "slug": "plus-jakarta-sans",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.071",
+    "weight_range": [
+      200,
+      800
+    ],
+    "weights": []
+  },
+  "poppins": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Poppins",
+    "license": "OFL-1.1",
+    "package": "fontpkg-poppins",
+    "slug": "poppins",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": false,
+    "version": "4.004",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": [
+      100,
+      200,
+      300,
+      400,
+      500,
+      600,
+      700,
+      800,
+      900
+    ]
+  },
+  "prata": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "Prata",
+    "license": "OFL-1.1",
+    "package": "fontpkg-prata",
+    "slug": "prata",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "2.000",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "press-start-2p": {
+    "category": [
+      "DISPLAY"
+    ],
+    "family": "Press Start 2P",
+    "license": "OFL-1.1",
+    "package": "fontpkg-press-start-2p",
+    "slug": "press-start-2p",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "3.000",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "prompt": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Prompt",
+    "license": "OFL-1.1",
+    "package": "fontpkg-prompt",
+    "slug": "prompt",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.001",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": [
+      100,
+      200,
+      300,
+      400,
+      500,
+      600,
+      700,
+      800,
+      900
+    ]
+  },
+  "pt-sans": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "PT Sans",
+    "license": "OFL-1.1",
+    "package": "fontpkg-pt-sans",
+    "slug": "pt-sans",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": false,
+    "version": "2.003",
+    "weight_range": [
+      400,
+      700
+    ],
+    "weights": [
+      400,
+      700
+    ]
+  },
+  "pt-sans-narrow": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "PT Sans Narrow",
+    "license": "OFL-1.1",
+    "package": "fontpkg-pt-sans-narrow",
+    "slug": "pt-sans-narrow",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "2.003",
+    "weight_range": [
+      400,
+      700
+    ],
+    "weights": [
+      400,
+      700
+    ]
+  },
+  "pt-serif": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "PT Serif",
+    "license": "OFL-1.1",
+    "package": "fontpkg-pt-serif",
+    "slug": "pt-serif",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.000",
+    "weight_range": [
+      400,
+      700
+    ],
+    "weights": [
+      400,
+      700
+    ]
+  },
+  "public-sans": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Public Sans",
+    "license": "OFL-1.1",
+    "package": "fontpkg-public-sans",
+    "slug": "public-sans",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.001",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "questrial": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Questrial",
+    "license": "OFL-1.1",
+    "package": "fontpkg-questrial",
+    "slug": "questrial",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "2.000",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "quicksand": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Quicksand",
+    "license": "OFL-1.1",
+    "package": "fontpkg-quicksand",
+    "slug": "quicksand",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "3.006",
+    "weight_range": [
+      300,
+      700
+    ],
+    "weights": []
+  },
+  "rajdhani": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Rajdhani",
+    "license": "OFL-1.1",
+    "package": "fontpkg-rajdhani",
+    "slug": "rajdhani",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.201",
+    "weight_range": [
+      300,
+      700
+    ],
+    "weights": [
+      300,
+      400,
+      500,
+      600,
+      700
+    ]
+  },
+  "raleway": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Raleway",
+    "license": "OFL-1.1",
+    "package": "fontpkg-raleway",
+    "slug": "raleway",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "4.026",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "ramabhadra": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Ramabhadra",
+    "license": "OFL-1.1",
+    "package": "fontpkg-ramabhadra",
+    "slug": "ramabhadra",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.000",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "red-hat-display": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Red Hat Display",
+    "license": "OFL-1.1",
+    "package": "fontpkg-red-hat-display",
+    "slug": "red-hat-display",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "1.030",
+    "weight_range": [
+      300,
+      900
+    ],
+    "weights": []
+  },
+  "red-hat-text": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Red Hat Text",
+    "license": "OFL-1.1",
+    "package": "fontpkg-red-hat-text",
+    "slug": "red-hat-text",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "1.030",
+    "weight_range": [
+      300,
+      700
+    ],
+    "weights": []
+  },
+  "rethink-sans": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Rethink Sans",
+    "license": "OFL-1.1",
+    "package": "fontpkg-rethink-sans",
+    "slug": "rethink-sans",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "1.001",
+    "weight_range": [
+      400,
+      800
+    ],
+    "weights": []
+  },
+  "righteous": {
+    "category": [
+      "DISPLAY"
+    ],
+    "family": "Righteous",
+    "license": "OFL-1.1",
+    "package": "fontpkg-righteous",
+    "slug": "righteous",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.000",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
   "roboto": {
     "category": [
       "SANS_SERIF"
@@ -184,6 +3376,469 @@
     "version": "3.015",
     "weight_range": [
       100,
+      900
+    ],
+    "weights": []
+  },
+  "roboto-condensed": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Roboto Condensed",
+    "license": "OFL-1.1",
+    "package": "fontpkg-roboto-condensed",
+    "slug": "roboto-condensed",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "3.008",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "roboto-flex": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Roboto Flex",
+    "license": "OFL-1.1",
+    "package": "fontpkg-roboto-flex",
+    "slug": "roboto-flex",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "3.200",
+    "weight_range": [
+      100,
+      1000
+    ],
+    "weights": []
+  },
+  "roboto-mono": {
+    "category": [
+      "MONOSPACE"
+    ],
+    "family": "Roboto Mono",
+    "license": "OFL-1.1",
+    "package": "fontpkg-roboto-mono",
+    "slug": "roboto-mono",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "3.001",
+    "weight_range": [
+      100,
+      700
+    ],
+    "weights": []
+  },
+  "roboto-serif": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "Roboto Serif",
+    "license": "OFL-1.1",
+    "package": "fontpkg-roboto-serif",
+    "slug": "roboto-serif",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "1.008",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "roboto-slab": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "Roboto Slab",
+    "license": "Apache-2.0",
+    "package": "fontpkg-roboto-slab",
+    "slug": "roboto-slab",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.002",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "rowdies": {
+    "category": [
+      "DISPLAY"
+    ],
+    "family": "Rowdies",
+    "license": "OFL-1.1",
+    "package": "fontpkg-rowdies",
+    "slug": "rowdies",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.000",
+    "weight_range": [
+      300,
+      700
+    ],
+    "weights": [
+      300,
+      400,
+      700
+    ]
+  },
+  "rubik": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Rubik",
+    "license": "OFL-1.1",
+    "package": "fontpkg-rubik",
+    "slug": "rubik",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.300",
+    "weight_range": [
+      300,
+      900
+    ],
+    "weights": []
+  },
+  "russo-one": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Russo One",
+    "license": "OFL-1.1",
+    "package": "fontpkg-russo-one",
+    "slug": "russo-one",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.000",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "saira": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Saira",
+    "license": "OFL-1.1",
+    "package": "fontpkg-saira",
+    "slug": "saira",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "1.101",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "saira-condensed": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Saira Condensed",
+    "license": "OFL-1.1",
+    "package": "fontpkg-saira-condensed",
+    "slug": "saira-condensed",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "0.072",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": [
+      100,
+      200,
+      300,
+      400,
+      500,
+      600,
+      700,
+      800,
+      900
+    ]
+  },
+  "sanchez": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "Sanchez",
+    "license": "OFL-1.1",
+    "package": "fontpkg-sanchez",
+    "slug": "sanchez",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.001",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "sarabun": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Sarabun",
+    "license": "OFL-1.1",
+    "package": "fontpkg-sarabun",
+    "slug": "sarabun",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.000",
+    "weight_range": [
+      100,
+      800
+    ],
+    "weights": [
+      100,
+      200,
+      300,
+      400,
+      500,
+      600,
+      700,
+      800
+    ]
+  },
+  "satisfy": {
+    "category": [
+      "HANDWRITING"
+    ],
+    "family": "Satisfy",
+    "license": "Apache-2.0",
+    "package": "fontpkg-satisfy",
+    "slug": "satisfy",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.001",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "schibsted-grotesk": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Schibsted Grotesk",
+    "license": "OFL-1.1",
+    "package": "fontpkg-schibsted-grotesk",
+    "slug": "schibsted-grotesk",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "1.100",
+    "weight_range": [
+      400,
+      900
+    ],
+    "weights": []
+  },
+  "shadows-into-light": {
+    "category": [
+      "HANDWRITING"
+    ],
+    "family": "Shadows Into Light",
+    "license": "OFL-1.1",
+    "package": "fontpkg-shadows-into-light",
+    "slug": "shadows-into-light",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.000",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "share-tech": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Share Tech",
+    "license": "OFL-1.1",
+    "package": "fontpkg-share-tech",
+    "slug": "share-tech",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.100",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "signika": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Signika",
+    "license": "OFL-1.1",
+    "package": "fontpkg-signika",
+    "slug": "signika",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.003",
+    "weight_range": [
+      300,
+      700
+    ],
+    "weights": []
+  },
+  "slabo-27px": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "Slabo 27px",
+    "license": "OFL-1.1",
+    "package": "fontpkg-slabo-27px",
+    "slug": "slabo-27px",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.020",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "smooch-sans": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Smooch Sans",
+    "license": "OFL-1.1",
+    "package": "fontpkg-smooch-sans",
+    "slug": "smooch-sans",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "1.010",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "sofia-sans": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Sofia Sans",
+    "license": "OFL-1.1",
+    "package": "fontpkg-sofia-sans",
+    "slug": "sofia-sans",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "4.101",
+    "weight_range": [
+      1,
+      1000
+    ],
+    "weights": []
+  },
+  "sora": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Sora",
+    "license": "OFL-1.1",
+    "package": "fontpkg-sora",
+    "slug": "sora",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.000",
+    "weight_range": [
+      100,
+      800
+    ],
+    "weights": []
+  },
+  "source-code-pro": {
+    "category": [
+      "MONOSPACE"
+    ],
+    "family": "Source Code Pro",
+    "license": "OFL-1.1",
+    "package": "fontpkg-source-code-pro",
+    "slug": "source-code-pro",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "1.026",
+    "weight_range": [
+      200,
       900
     ],
     "weights": []
@@ -207,5 +3862,419 @@
       900
     ],
     "weights": []
+  },
+  "source-serif-4": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "Source Serif 4",
+    "license": "OFL-1.1",
+    "package": "fontpkg-source-serif-4",
+    "slug": "source-serif-4",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "4.004",
+    "weight_range": [
+      200,
+      900
+    ],
+    "weights": []
+  },
+  "space-grotesk": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Space Grotesk",
+    "license": "OFL-1.1",
+    "package": "fontpkg-space-grotesk",
+    "slug": "space-grotesk",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.000",
+    "weight_range": [
+      300,
+      700
+    ],
+    "weights": []
+  },
+  "space-mono": {
+    "category": [
+      "MONOSPACE"
+    ],
+    "family": "Space Mono",
+    "license": "OFL-1.1",
+    "package": "fontpkg-space-mono",
+    "slug": "space-mono",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.003",
+    "weight_range": [
+      400,
+      700
+    ],
+    "weights": [
+      400,
+      700
+    ]
+  },
+  "spectral": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "Spectral",
+    "license": "OFL-1.1",
+    "package": "fontpkg-spectral",
+    "slug": "spectral",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": false,
+    "version": "2.005",
+    "weight_range": [
+      200,
+      800
+    ],
+    "weights": [
+      200,
+      300,
+      400,
+      500,
+      600,
+      700,
+      800
+    ]
+  },
+  "syne": {
+    "category": [
+      "DISPLAY",
+      "SANS_SERIF"
+    ],
+    "family": "Syne",
+    "license": "OFL-1.1",
+    "package": "fontpkg-syne",
+    "slug": "syne",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.200",
+    "weight_range": [
+      400,
+      800
+    ],
+    "weights": []
+  },
+  "tajawal": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Tajawal",
+    "license": "OFL-1.1",
+    "package": "fontpkg-tajawal",
+    "slug": "tajawal",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.700",
+    "weight_range": [
+      200,
+      900
+    ],
+    "weights": [
+      200,
+      300,
+      400,
+      500,
+      700,
+      800,
+      900
+    ]
+  },
+  "teko": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Teko",
+    "license": "OFL-1.1",
+    "package": "fontpkg-teko",
+    "slug": "teko",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.000",
+    "weight_range": [
+      300,
+      700
+    ],
+    "weights": []
+  },
+  "tenor-sans": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Tenor Sans",
+    "license": "OFL-1.1",
+    "package": "fontpkg-tenor-sans",
+    "slug": "tenor-sans",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.001",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "titan-one": {
+    "category": [
+      "DISPLAY"
+    ],
+    "family": "Titan One",
+    "license": "OFL-1.1",
+    "package": "fontpkg-titan-one",
+    "slug": "titan-one",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.001",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "titillium-web": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Titillium Web",
+    "license": "OFL-1.1",
+    "package": "fontpkg-titillium-web",
+    "slug": "titillium-web",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.002",
+    "weight_range": [
+      200,
+      900
+    ],
+    "weights": [
+      200,
+      300,
+      400,
+      600,
+      700,
+      900
+    ]
+  },
+  "unbounded": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Unbounded",
+    "license": "OFL-1.1",
+    "package": "fontpkg-unbounded",
+    "slug": "unbounded",
+    "styles": [
+      "normal"
+    ],
+    "variable": true,
+    "version": "1.701",
+    "weight_range": [
+      200,
+      900
+    ],
+    "weights": []
+  },
+  "urbanist": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Urbanist",
+    "license": "OFL-1.1",
+    "package": "fontpkg-urbanist",
+    "slug": "urbanist",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "1.303",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "varela-round": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Varela Round",
+    "license": "OFL-1.1",
+    "package": "fontpkg-varela-round",
+    "slug": "varela-round",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "3.010",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "viga": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Viga",
+    "license": "OFL-1.1",
+    "package": "fontpkg-viga",
+    "slug": "viga",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.001",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "vollkorn": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "Vollkorn",
+    "license": "OFL-1.1",
+    "package": "fontpkg-vollkorn",
+    "slug": "vollkorn",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "5.001",
+    "weight_range": [
+      400,
+      900
+    ],
+    "weights": []
+  },
+  "work-sans": {
+    "category": [
+      "SANS_SERIF"
+    ],
+    "family": "Work Sans",
+    "license": "OFL-1.1",
+    "package": "fontpkg-work-sans",
+    "slug": "work-sans",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": true,
+    "version": "2.012",
+    "weight_range": [
+      100,
+      900
+    ],
+    "weights": []
+  },
+  "yellowtail": {
+    "category": [
+      "HANDWRITING"
+    ],
+    "family": "Yellowtail",
+    "license": "Apache-2.0",
+    "package": "fontpkg-yellowtail",
+    "slug": "yellowtail",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.002",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "zeyada": {
+    "category": [
+      "HANDWRITING"
+    ],
+    "family": "Zeyada",
+    "license": "OFL-1.1",
+    "package": "fontpkg-zeyada",
+    "slug": "zeyada",
+    "styles": [
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.002",
+    "weight_range": [
+      400,
+      400
+    ],
+    "weights": [
+      400
+    ]
+  },
+  "zilla-slab": {
+    "category": [
+      "SERIF"
+    ],
+    "family": "Zilla Slab",
+    "license": "OFL-1.1",
+    "package": "fontpkg-zilla-slab",
+    "slug": "zilla-slab",
+    "styles": [
+      "italic",
+      "normal"
+    ],
+    "variable": false,
+    "version": "1.002",
+    "weight_range": [
+      300,
+      700
+    ],
+    "weights": [
+      300,
+      400,
+      500,
+      600,
+      700
+    ]
   }
 }
