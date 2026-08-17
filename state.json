@@ -24,7 +24,7 @@
     "commit": "fffdadf0f0c9cc1ec8b407063424a8bfbee05611",
     "package": "fontpkg-albert-sans",
     "path": "ofl/albertsans",
-    "published": false,
+    "published": true,
     "version": "1.025"
   },
   "alegreyasans": {
