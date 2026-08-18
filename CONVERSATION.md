@@ -298,3 +298,9 @@ Future-removal risk answer: yes, the vector was wholesale list regeneration agai
 **User:** Browser pane had shown the raw template (editor preview hook) — clarified with a local serve of the real build; user confirmed everything looks great.
 
 **Claude:** Local site served on :8734 showing 14 families + count + auto-appearing Display chip; live deploy verified (count element + 14 families on fontpkg.org). Steady state: daily popularity-ordered publish drip (roboto/montserrat/poppins next), site auto-redeploys after each publish, awaiting PyPI org approval to drain the remaining ~186.
+
+---
+
+**User:** Putting the project to bed until PyPI responds about the org.
+
+**Claude:** Parked. Resume checklist when PyPI answers: (1) if org granted — transfer existing fontpkg-* projects to the org, mint org-scoped token, update the 1Password item, Claude rotates the Actions secret; (2) dispatch "Sync font packages" then "Publish pending packages" to drain the ~186 remaining top-200 (or just let the daily drip continue if limits stay); (3) site follows automatically. Meanwhile everything runs unattended: weekly sync (Mon 06:17 UTC), daily popularity-ordered publish (09:41 UTC), site redeploy after each, CI guards. Other parked threads: Fontsource collaboration deep-dive (google-font-metadata adoption, ID audit — new session), large-font/CJK + noto-color-emoji decision, R2/CDN at phase 3, reserving fontsource-py/pyfontsource pointer packages with Ayu's blessing.
