@@ -5,7 +5,7 @@ import tempfile
 from pathlib import Path
 
 from fontpkg_generator.build import SourceInfo, UnsupportedLicense, build_package, build_wheel
-from fontpkg_generator.gh import REPO_URL, FamilyNotFound, fetch_family
+from fontpkg_generator.gh import REPO_URL, FamilyNotFound, fetch_family, google_dirname
 from fontpkg_generator.site import build_site
 from fontpkg_generator.sync import publish_pending, sync_families
 
@@ -43,6 +43,12 @@ def main(argv: list[str] | None = None) -> int:
     pending = sub.add_parser("publish-pending", help="publish families not yet on PyPI")
     pending.add_argument("--state", type=Path, default=Path("state.json"))
     pending.add_argument("--out", type=Path, default=Path("build"))
+    pending.add_argument(
+        "--priority-file",
+        type=Path,
+        default=None,
+        help="publish in this file's order (e.g. families.txt) instead of alphabetically",
+    )
     args = parser.parse_args(argv)
     if args.command == "sync":
         return _sync(args)
@@ -56,7 +62,11 @@ def main(argv: list[str] | None = None) -> int:
 
 
 def _publish_pending(args: argparse.Namespace) -> int:
-    report = publish_pending(args.state, args.out, publisher=_uv_publish)
+    priority = None
+    if args.priority_file is not None:
+        lines = args.priority_file.read_text(encoding="utf-8").splitlines()
+        priority = [google_dirname(ln) for ln in lines if ln.strip() and not ln.startswith("#")]
+    report = publish_pending(args.state, args.out, publisher=_uv_publish, priority=priority)
     for key in report.published:
         print(f"PUBLISHED {key}")
     for key in report.skipped:

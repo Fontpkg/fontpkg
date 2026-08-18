@@ -133,6 +133,30 @@ def test_publish_pending_marks_success_and_skips(fake_upstream, tmp_path: Path) 
     assert attempts == [out / "fontpkg-testface"]
 
 
+def test_publish_pending_respects_priority_order(tmp_path: Path) -> None:
+    state_path = tmp_path / "state.json"
+    state_path.write_text(
+        json.dumps(
+            {
+                "abel": {"package": "fontpkg-abel", "published": False},
+                "roboto": {"package": "fontpkg-roboto", "published": False},
+                "zeyada": {"package": "fontpkg-zeyada", "published": False},
+            }
+        ),
+        encoding="utf-8",
+    )
+    attempted: list[str] = []
+
+    def publisher(pkg_root: Path) -> bool:
+        attempted.append(pkg_root.name)
+        return False
+
+    publish_pending(
+        state_path, tmp_path, publisher=publisher, rebuild=False, priority=["roboto", "zeyada"]
+    )
+    assert attempted == ["fontpkg-roboto", "fontpkg-zeyada", "fontpkg-abel"]
+
+
 def test_state_json_is_sorted_and_stable(fake_upstream, tmp_path: Path) -> None:
     state_path = tmp_path / "state.json"
     sync_families(["testface"], state_path, tmp_path / "out")

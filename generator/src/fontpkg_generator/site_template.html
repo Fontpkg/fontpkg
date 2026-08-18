@@ -51,6 +51,7 @@ h1 code { font-family: ui-monospace, monospace; }
 }
 .chip.active { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); }
 .slider-group { display: flex; align-items: center; gap: .5rem; font-size: .85rem; color: var(--muted); }
+.count { color: var(--muted); font-size: .85rem; white-space: nowrap; }
 .grid {
   max-width: 1100px; margin: 0 auto; padding: 1.25rem;
   display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1rem;
@@ -98,6 +99,7 @@ footer a { color: var(--accent); text-decoration: none; }
 </header>
 <div class="controls">
   <input id="search" type="text" placeholder="Filter families… (e.g. got)">
+  <span class="count" id="count"></span>
   <div class="chips" id="categories"></div>
   <input id="preview" type="text" placeholder="Type to preview in every font…">
   <span class="slider-group">
@@ -197,6 +199,11 @@ function applyFilter() {
     if (show) visible += 1;
   }
   document.getElementById("empty").style.display = visible ? "none" : "block";
+  const total = FAMILIES.length.toLocaleString("en-US");
+  document.getElementById("count").textContent =
+    visible === FAMILIES.length
+      ? `${total} font families`
+      : `${visible.toLocaleString("en-US")} of ${total} font families`;
 }
 
 const seen = new Set(FAMILIES.flatMap((f) => f.category || []));

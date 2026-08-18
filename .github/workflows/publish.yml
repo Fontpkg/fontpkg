@@ -21,7 +21,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           UV_PUBLISH_TOKEN: ${{ secrets.PYPI_TOKEN }}
-        run: uv run fontpkg-gen publish-pending --state state.json --out build
+        run: uv run fontpkg-gen publish-pending --state state.json --out build --priority-file families.txt
       - name: Commit updated state
         run: |
           if ! git diff --quiet state.json; then

@@ -121,10 +121,15 @@ def publish_pending(
     out_dir: Path,
     publisher: Callable[[Path], bool],
     rebuild: bool = True,
+    priority: list[str] | None = None,
 ) -> PublishReport:
     state = load_state(state_path)
     report = PublishReport()
-    for key in sorted(state):
+    order = sorted(state)
+    if priority:
+        rank = {key: i for i, key in enumerate(priority)}
+        order.sort(key=lambda k: (rank.get(k, len(rank)), k))
+    for key in order:
         entry = state[key]
         if entry.get("published"):
             continue
