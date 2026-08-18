@@ -292,3 +292,9 @@ Future-removal risk answer: yes, the vector was wholesale list regeneration agai
 **User:** Asked why fontpkg.org shows 10 families when 14 are published.
 
 **Claude:** Wiring gap: pages.yml redeployed only after the weekly sync (and manual dispatch), while packages flip to published in the daily 09:41 publish job — so the site lagged at Monday-morning state. Fixed pages.yml to also trigger on "Publish pending packages" completing; dispatched a catch-up deploy showing all 14.
+
+---
+
+**User:** Browser pane had shown the raw template (editor preview hook) — clarified with a local serve of the real build; user confirmed everything looks great.
+
+**Claude:** Local site served on :8734 showing 14 families + count + auto-appearing Display chip; live deploy verified (count element + 14 families on fontpkg.org). Steady state: daily popularity-ordered publish drip (roboto/montserrat/poppins next), site auto-redeploys after each publish, awaiting PyPI org approval to drain the remaining ~186.
