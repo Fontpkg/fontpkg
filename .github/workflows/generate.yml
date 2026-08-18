@@ -22,8 +22,8 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v5
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v10
         with:
           python-version: "3.13"
       - run: uv sync --all-packages
@@ -36,7 +36,7 @@ jobs:
           else
             uv run fontpkg-gen sync --families-file families.txt --state state.json --out build --wheel
           fi
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: font-wheels
           path: build/*/dist/*.whl

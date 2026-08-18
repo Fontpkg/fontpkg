@@ -2,8 +2,8 @@
 # Top 200 by Google Fonts popularity (2026-08-15).
 # Excluded: CJK-subset families (size), Ubuntu (UFL), google-sans/-flex (not in
 # google/fonts), tinos (upstream ships no license file). Do NOT filter on
-# noto-color-emoji excluded pending the large-font (CJK/emoji) size decision.
 # isBrandFont: Google marks Roboto and all Noto families as brand fonts.
+# noto-color-emoji excluded pending the large-font (CJK/emoji) size decision.
 roboto
 open-sans
 inter
