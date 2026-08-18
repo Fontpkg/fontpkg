@@ -31,21 +31,21 @@
     "commit": "88c2351fb58bf5dfedb96934de48be9a606c7d2e",
     "package": "fontpkg-alegreya-sans",
     "path": "ofl/alegreyasans",
-    "published": false,
+    "published": true,
     "version": "2.004"
   },
   "alfaslabone": {
     "commit": "ae38321d5a5ff3a2125357402dd332998e6bf41b",
     "package": "fontpkg-alfa-slab-one",
     "path": "ofl/alfaslabone",
-    "published": false,
+    "published": true,
     "version": "2.000"
   },
   "almarai": {
     "commit": "3d8d20e89d99f25cadd5aa26953f7b070235ac8f",
     "package": "fontpkg-almarai",
     "path": "ofl/almarai",
-    "published": false,
+    "published": true,
     "version": "1.100"
   },
   "alumnisans": {
