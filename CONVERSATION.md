@@ -286,3 +286,9 @@ Future-removal risk answer: yes, the vector was wholesale list regeneration agai
 **Claude:** Recommended keeping fontpkg. Key analogy: Fontsource consumes Google Fonts wholesale and isn't called google-fonts-js — a synced data dependency isn't an identity. Costs of the fontsource name: implies their governance (only defensible if the project effectively moves under their org), turns every deliberate divergence (complete TTFs, font-version versioning, Python API) into perceived unfaithfulness, abandons sunk identity (fontpkg.org live, 6 published packages, org request), and couples the name to the collaboration's future mood. Recommended instead: blessed tagline ("Fontsource's sibling for Python" / "powered by Fontsource metadata"), reserve fontsource/fontsource-py/pyfontsource on PyPI as pointer packages depending on fontpkg (squat protection + discoverability, with Ayu's blessing), cross-listing between their API/docs and fontpkg.org, and note that moving the repo into their org later remains possible without renaming.
 
 **Follow-up:** setup-uv@v10 failed to resolve (Astral stopped publishing floating major tags after v7) — pinned exactly to v10.0.1; all actions/* floating majors verified to exist. CI green in 15s with zero "Node.js 20" warnings. Also observed while pushing: the Monday sync built the full top-200 into state/catalog and daily publishing has continued autonomously — 14 published, 186 pending, draining at PyPI's daily rate.
+
+---
+
+**User:** Asked why fontpkg.org shows 10 families when 14 are published.
+
+**Claude:** Wiring gap: pages.yml redeployed only after the weekly sync (and manual dispatch), while packages flip to published in the daily 09:41 publish job — so the site lagged at Monday-morning state. Fixed pages.yml to also trigger on "Publish pending packages" completing; dispatched a catch-up deploy showing all 14.
