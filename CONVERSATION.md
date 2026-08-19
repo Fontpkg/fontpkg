@@ -310,3 +310,9 @@ Future-removal risk answer: yes, the vector was wholesale list regeneration agai
 **User:** Noticed pypi.org/project/fontpkg has no fontpkg.org links; asked if a package update is needed to refresh the README.
 
 **Claude:** Yes — PyPI renders the README baked into each upload. Two gaps fixed: core/README.md never had the site link (only the repo root README did), and core/pyproject.toml lacked [project.urls] (no sidebar links). Added both; also added [project.urls] + fontpkg.org link to the generated family-package template so the ~186 pending packages publish with proper links. Bumped core to 0.2.2, tagged; release.yml publishes via trusted publishing. 55 tests passing.
+
+---
+
+**User:** Asked why pypi.org/project/fontpkg lacks fontpkg.org links; does the package need an update?
+
+**Claude:** Yes — PyPI renders the uploaded README. Fixed both gaps (core/README.md never had the link; no [project.urls]) and templated the same into generated family packages. Released 0.2.2 via trusted publishing; verified urls + readme link live on PyPI. Overnight drip: 18 packages published.
