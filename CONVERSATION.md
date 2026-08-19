@@ -316,3 +316,9 @@ Future-removal risk answer: yes, the vector was wholesale list regeneration agai
 **User:** Asked why pypi.org/project/fontpkg lacks fontpkg.org links; does the package need an update?
 
 **Claude:** Yes — PyPI renders the uploaded README. Fixed both gaps (core/README.md never had the link; no [project.urls]) and templated the same into generated family packages. Released 0.2.2 via trusted publishing; verified urls + readme link live on PyPI. Overnight drip: 18 packages published.
+
+---
+
+**User:** The daily publish exhausts their personal PyPI new-project quota by ~5am US Central; asked to move the job to the end of the (likely UTC) quota day so their own daytime publishes come first.
+
+**Claude:** Moved publish.yml's cron from 09:41 UTC to 23:17 UTC (~5-6pm Central) with an explanatory comment — fontpkg now sweeps whatever quota remains at day's end. Caveats noted: PyPI hasn't documented whether the limit resets at UTC midnight or rolls per-24h (if rolling, timing matters less, but end-of-day still biases toward the user's manual publishes); the Monday 06:17 sync's publish step can still consume quota when newly added families sync — acceptable since new-family additions are deliberate events.

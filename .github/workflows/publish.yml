@@ -2,7 +2,9 @@ name: Publish pending packages
 
 on:
   schedule:
-    - cron: "41 9 * * *"
+    # Late UTC day: leave PyPI's daily new-project quota free for manual
+    # publishing during US working hours, and sweep up whatever remains.
+    - cron: "17 23 * * *"
   workflow_dispatch:
 
 permissions:
