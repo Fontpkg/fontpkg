@@ -1,5 +1,6 @@
 import json
 import os
+import time
 import urllib.error
 import urllib.request
 from dataclasses import dataclass
@@ -10,6 +11,12 @@ REPO_URL = "https://github.com/google/fonts"
 LICENSE_DIRS = ("ofl", "apache", "ufl")
 KEEP_NAMES = {"METADATA.pb", "OFL.txt", "LICENSE.txt", "UFL.txt"}
 KEEP_SUFFIXES = (".ttf", ".otf")
+
+# Seconds to sleep before every outbound request. A large families.txt makes
+# thousands of sequential calls in a short window, which GitHub's abuse-detection
+# heuristics can flag even well under the documented hourly quota — pacing keeps
+# this client looking (and behaving) less like a burst scraper.
+REQUEST_DELAY = float(os.environ.get("FONTPKG_GH_REQUEST_DELAY", "0.4"))
 
 
 class FamilyNotFound(Exception):
@@ -77,10 +84,12 @@ def _request(url: str) -> urllib.request.Request:
 
 
 def _get_json(url: str) -> dict | list:
+    time.sleep(REQUEST_DELAY)
     with urllib.request.urlopen(_request(url), timeout=60) as response:
         return json.load(response)
 
 
 def _download(url: str, dest: Path) -> None:
+    time.sleep(REQUEST_DELAY)
     with urllib.request.urlopen(_request(url), timeout=120) as response:
         dest.write_bytes(response.read())

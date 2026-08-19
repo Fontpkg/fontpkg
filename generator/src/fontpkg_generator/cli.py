@@ -104,6 +104,13 @@ def _sync(args: argparse.Namespace) -> int:
         print(f"built {slug} {version}")
     for slug, err in report.failed:
         print(f"FAIL {slug}: {err}", file=sys.stderr)
+    if report.aborted_early:
+        print(
+            f"ABORTED after {len(report.failed)} consecutive network failures — "
+            "stopping early rather than burning through the rest of the list; "
+            "remaining families were left untouched for a later run.",
+            file=sys.stderr,
+        )
     return 1 if report.failed else 0
 
 

@@ -114,6 +114,54 @@ def test_rate_limit_style_error_is_recorded_and_sync_continues(
     assert set(state) == {"testface", "thirdface"}
 
 
+def test_sync_aborts_early_after_consecutive_network_failures(
+    fake_upstream, tmp_path: Path, monkeypatch
+) -> None:
+    import urllib.error
+
+    from fontpkg_generator.sync import CONSECUTIVE_FAILURE_LIMIT
+
+    def always_fails(name: str, dest: Path):
+        raise urllib.error.URLError("rate limited")
+
+    monkeypatch.setattr(gh, "fetch_family", always_fails)
+    state_path = tmp_path / "state.json"
+    families = [f"family{i}" for i in range(CONSECUTIVE_FAILURE_LIMIT + 10)]
+
+    report = sync_families(families, state_path, tmp_path / "out")
+
+    assert report.aborted_early is True
+    assert len(report.failed) == CONSECUTIVE_FAILURE_LIMIT
+
+
+def test_a_success_resets_the_consecutive_failure_counter(
+    fake_upstream, tmp_path: Path, monkeypatch
+) -> None:
+    import urllib.error
+
+    from fontpkg_generator.sync import CONSECUTIVE_FAILURE_LIMIT
+
+    real_fetch = gh.fetch_family
+    calls = {"n": 0}
+
+    def mostly_fails(name: str, dest: Path):
+        calls["n"] += 1
+        # Fail just under the limit, succeed once, then fail again — the
+        # intervening success must reset the streak so we don't abort early.
+        if calls["n"] % CONSECUTIVE_FAILURE_LIMIT == 0:
+            return real_fetch(name, dest)
+        raise urllib.error.URLError("rate limited")
+
+    monkeypatch.setattr(gh, "fetch_family", mostly_fails)
+    state_path = tmp_path / "state.json"
+    families = [f"family{i}" for i in range(CONSECUTIVE_FAILURE_LIMIT * 2)]
+
+    report = sync_families(families, state_path, tmp_path / "out")
+
+    assert report.aborted_early is False
+    assert len(report.built) == 2
+
+
 def test_state_saved_even_on_a_genuinely_unexpected_exception(
     fake_upstream, tmp_path: Path, monkeypatch
 ) -> None:

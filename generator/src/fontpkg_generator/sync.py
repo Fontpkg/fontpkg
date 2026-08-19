@@ -9,11 +9,15 @@ from fontpkg_generator import gh
 from fontpkg_generator.build import SourceInfo, UnsupportedLicense, build_package
 
 
+CONSECUTIVE_FAILURE_LIMIT = 15
+
+
 @dataclass
 class SyncReport:
     built: list[tuple[str, str]] = field(default_factory=list)
     unchanged: list[str] = field(default_factory=list)
     failed: list[tuple[str, str]] = field(default_factory=list)
+    aborted_early: bool = False
 
 
 def load_state(path: Path) -> dict:
@@ -36,19 +40,25 @@ def sync_families(
     state = load_state(state_path)
     catalog = load_state(catalog_path) if catalog_path else {}
     report = SyncReport()
+    consecutive_network_failures = 0
     try:
         for name in families:
             key = gh.google_dirname(name)
             try:
                 _sync_one(name, key, state, catalog, out_dir, wheel_builder, report)
-            except (
-                gh.FamilyNotFound,
-                UnsupportedLicense,
-                FileNotFoundError,
-                ValueError,
-                urllib.error.URLError,
-            ) as err:
+                consecutive_network_failures = 0
+            except (gh.FamilyNotFound, UnsupportedLicense, FileNotFoundError, ValueError) as err:
                 report.failed.append((key, str(err)))
+                consecutive_network_failures = 0
+            except urllib.error.URLError as err:
+                report.failed.append((key, str(err)))
+                consecutive_network_failures += 1
+                if consecutive_network_failures >= CONSECUTIVE_FAILURE_LIMIT:
+                    # A long streak of network errors (rate limiting / abuse
+                    # detection) won't clear up by ploughing through the rest of
+                    # the list — stop early and let a later run pick up here.
+                    report.aborted_early = True
+                    break
     finally:
         # Save whatever succeeded even if an unexpected error (e.g. a GitHub API
         # rate limit) aborts the loop early — a large families.txt can outrun the
