@@ -2,6 +2,8 @@
 
 Fonts as ordinary Python project dependencies. Inspired by [Fontsource](https://fontsource.org).
 
+**[Browse the fonts at fontpkg.org →](https://fontpkg.org/)**
+
 ```bash
 uv add fontpkg fontpkg-inter
 ```

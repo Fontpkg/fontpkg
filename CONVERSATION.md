@@ -304,3 +304,9 @@ Future-removal risk answer: yes, the vector was wholesale list regeneration agai
 **User:** Putting the project to bed until PyPI responds about the org.
 
 **Claude:** Parked. Resume checklist when PyPI answers: (1) if org granted — transfer existing fontpkg-* projects to the org, mint org-scoped token, update the 1Password item, Claude rotates the Actions secret; (2) dispatch "Sync font packages" then "Publish pending packages" to drain the ~186 remaining top-200 (or just let the daily drip continue if limits stay); (3) site follows automatically. Meanwhile everything runs unattended: weekly sync (Mon 06:17 UTC), daily popularity-ordered publish (09:41 UTC), site redeploy after each, CI guards. Other parked threads: Fontsource collaboration deep-dive (google-font-metadata adoption, ID audit — new session), large-font/CJK + noto-color-emoji decision, R2/CDN at phase 3, reserving fontsource-py/pyfontsource pointer packages with Ayu's blessing.
+
+---
+
+**User:** Noticed pypi.org/project/fontpkg has no fontpkg.org links; asked if a package update is needed to refresh the README.
+
+**Claude:** Yes — PyPI renders the README baked into each upload. Two gaps fixed: core/README.md never had the site link (only the repo root README did), and core/pyproject.toml lacked [project.urls] (no sidebar links). Added both; also added [project.urls] + fontpkg.org link to the generated family-package template so the ~186 pending packages publish with proper links. Bumped core to 0.2.2, tagged; release.yml publishes via trusted publishing. 55 tests passing.

@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "fontpkg"
-version = "0.2.1"
+version = "0.2.2"
 description = "Fonts as Python project dependencies — a Fontsource analog for PyPI"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -16,6 +16,11 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "Topic :: Text Processing :: Fonts",
 ]
+
+[project.urls]
+Homepage = "https://fontpkg.org"
+Repository = "https://github.com/Fontpkg/fontpkg"
+Issues = "https://github.com/Fontpkg/fontpkg/issues"
 
 [project.scripts]
 fontpkg = "fontpkg.__main__:main"

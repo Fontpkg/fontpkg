@@ -173,6 +173,10 @@ classifiers = [
     "Topic :: Text Processing :: Fonts",
 ]
 
+[project.urls]
+Homepage = "https://fontpkg.org"
+Repository = "https://github.com/Fontpkg/fontpkg"
+
 [project.entry-points."fontpkg.family"]
 {slug.replace("-", "_")} = "{module_name}"
 
@@ -193,7 +197,8 @@ def _readme(
     return f"""\
 # fontpkg-{slug}
 
-The **{name}** font family, packaged for Python by [fontpkg](https://pypi.org/project/fontpkg/).
+The **{name}** font family, packaged for Python by [fontpkg](https://pypi.org/project/fontpkg/)
+— browse every family at [fontpkg.org](https://fontpkg.org/).
 Font binaries are redistributed unmodified under the `{spdx}` license (see `LICENSE`).
 
 > {copyright_line}
