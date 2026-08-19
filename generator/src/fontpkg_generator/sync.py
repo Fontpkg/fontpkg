@@ -1,4 +1,5 @@
 import json
+import subprocess
 import tempfile
 import urllib.error
 from dataclasses import dataclass, field
@@ -50,7 +51,7 @@ def sync_families(
             except (gh.FamilyNotFound, UnsupportedLicense, FileNotFoundError, ValueError) as err:
                 report.failed.append((key, str(err)))
                 consecutive_network_failures = 0
-            except urllib.error.URLError as err:
+            except (urllib.error.URLError, subprocess.CalledProcessError) as err:
                 report.failed.append((key, str(err)))
                 consecutive_network_failures += 1
                 if consecutive_network_failures >= CONSECUTIVE_FAILURE_LIMIT:

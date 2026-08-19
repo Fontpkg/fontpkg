@@ -192,7 +192,7 @@ def _readme(
     if source is not None:
         provenance = (
             f"\nUpstream: [{source.repo}]({source.repo}) at `{source.path}` "
-            f"(commit `{source.commit[:12]}`).\n"
+            f"(content hash `{source.commit[:12]}`).\n"
         )
     return f"""\
 # fontpkg-{slug}

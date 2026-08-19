@@ -4,9 +4,11 @@
 # subsetting to woff2, which we deliberately don't do), Ubuntu (UFL), google-sans/
 # -flex (not in google/fonts), tinos (no upstream license file). Do NOT filter on
 # isBrandFont: Google marks Roboto and all Noto families as brand fonts.
-# sixcaps/judson/megrim excluded: invalid head.fontRevision in upstream binary.
-# edunswactcursive excluded: directory not found in google/fonts.
-# kumaroneoutline excluded: upstream ships no OFL.txt.
+# six-caps excluded: invalid head.fontRevision (0.0) in upstream binary.
+# kumar-one-outline/playwrite-nz-basic-guides excluded: no upstream OFL.txt.
+# edu-nsw-act-cursive/edu-sa-hand/edu-vic-wa-nt-hand/edu-qld-hand/
+# edu-nsw-act-hand-pre/edu-vic-wa-nt-hand-pre excluded: directory not found
+# in google/fonts under their normalized name.
 # noto-color-emoji excluded pending the large-font (CJK/emoji) size decision.
 roboto
 open-sans
@@ -381,7 +383,6 @@ ultra
 economica
 libre-bodoni
 sriracha
-six-caps
 spline-sans
 eczar
 marck-script
@@ -1188,7 +1189,6 @@ text-me-one
 kite-one
 tac-one
 noto-serif-tibetan
-edu-nsw-act-cursive
 ysabeau-infant
 simonetta
 lavishly-yours
@@ -1321,7 +1321,6 @@ noto-serif-malayalam
 uchen
 new-amsterdam
 geist-pixel
-kumar-one-outline
 joan
 lancelot
 chathura
@@ -1556,7 +1555,6 @@ jaini-purva
 playwrite-fr-moderne
 hind-mysuru
 playwrite-be-vlg
-edu-vic-wa-nt-hand
 noto-sans-old-north-arabian
 noto-sans-medefaidrin
 montenegrin-gothic-one
@@ -1599,7 +1597,6 @@ noto-sans-cuneiform
 playwrite-ie
 noto-znamenny-musical-notation
 maname
-edu-nsw-act-hand-pre
 noto-sans-khojki
 noto-sans-cham
 bitcount-grid-double-ink
@@ -1612,7 +1609,6 @@ arsenal-sc
 playwrite-cz
 kay-pho-du
 playwrite-ng-modern
-edu-vic-wa-nt-hand-pre
 bacasime-antique
 noto-sans-nko-unjoined
 playwrite-tz
@@ -1653,7 +1649,6 @@ noto-sans-hanifi-rohingya
 noto-sans-tirhuta
 jersey-15-charted
 noto-sans-nag-mundari
-edu-qld-hand
 noto-sans-psalter-pahlavi
 noto-sans-sogdian
 playwrite-br
@@ -1682,7 +1677,6 @@ noto-sans-gunjala-gondi
 playwrite-es-deco
 noto-sans-linear-b
 noto-sans-cypriot
-playwrite-nz-basic-guides
 noto-sans-phoenician
 noto-sans-old-sogdian
 noto-sans-chorasmian
@@ -1762,7 +1756,6 @@ noto-sans-tifinagh
 noto-sans-nandinagari
 playwrite-mx-guides
 coral-pixels
-edu-sa-hand
 playwrite-nl
 ingrid-darling
 noto-serif-yezidi
