@@ -360,3 +360,11 @@ Found two real issues surfaced by the migration, both handled:
 2. **A real bug in the earlier tinos-style exclusion list:** the original 5-family exclusion (from the previous session) matched against no-hyphen `google_dirname()`-style spellings ("sixcaps"), but families.txt actually stores hyphenated slugs ("six-caps") — so those exclusions silently never took effect. With per-family fetching now instant/local, re-investigated all failures directly: confirmed 9 genuinely-broken families (six-caps: invalid head.fontRevision; kumar-one-outline/playwrite-nz-basic-guides: no OFL.txt; 6 "edu-*" families: directory-name mismatch vs actual google/fonts layout) and excluded them correctly this time by exact string match, replacing the stale/incorrect comment lines. families.txt: 1787 tracked families (down from 1796 after excluding the 9 confirmed-broken ones), all verified by the repo-consistency guard test.
 
 59 tests passing. state.json/catalog.json now hold real, complete metadata for all 1787 families — the backfill is DONE, no more waiting on API throttling or session-surviving background jobs for this step ever again. Committing everything now.
+
+---
+
+**User:** Asked to confirm the fontpkg-vs-fontsource count gap breakdown (CJK / UFL / non-Google sources) and whether other barriers exist; back to sleep after.
+
+**Claude:** Confirmed the three-way split with exact numbers (135 CJK, 5 UFL, ~130 non-Google `other/`+icons) and named a 4th barrier: Fontsource likely sources from Google's live Fonts API (google-font-metadata) rather than the git mirror, which explains Google Sans's absence and some of the upstream naming-mismatch failures found during the backfill. All deliberate scope choices already captured in DESIGN.md / the Fontsource-collaboration discussion, not blockers.
+
+Parked again. State: 1,787 families fully tracked with real metadata (git-clone-based sync, ~1min for a full backfill going forward); ~18 already-published + steadily growing set draining via the 23:17 UTC daily publish-pending job (self-heals its published flags via --check-url); weekly Monday 06:17 UTC sync now fast and network-light (local clone, no more rate-limit risk). Waiting on: PyPI org response (bulk publishing), Fontsource collaboration next steps (deep-dive session), large-font/CJK inclusion decision, eventual R2 move for site assets at full scale.
