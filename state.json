@@ -122,7 +122,7 @@
     "commit": "903d46673260c1f4c7f7ef67f5190fb03eab5042",
     "package": "fontpkg-arimo",
     "path": "ofl/arimo",
-    "published": false,
+    "published": true,
     "version": "1.341"
   },
   "arvo": {
@@ -780,7 +780,7 @@
     "commit": "8b0a1d0f5983c89bc2b93f1b5fb55f9e252744b5",
     "package": "fontpkg-montserrat",
     "path": "ofl/montserrat",
-    "published": false,
+    "published": true,
     "version": "9.000"
   },
   "montserratalternates": {
@@ -983,7 +983,7 @@
     "commit": "8b0a1d0f5983c89bc2b93f1b5fb55f9e252744b5",
     "package": "fontpkg-poppins",
     "path": "ofl/poppins",
-    "published": false,
+    "published": true,
     "version": "4.004"
   },
   "prata": {
@@ -1102,7 +1102,7 @@
     "commit": "1c627bfa375fc51cf86fabeca4f6e08a95f0aa5c",
     "package": "fontpkg-roboto",
     "path": "ofl/roboto",
-    "published": false,
+    "published": true,
     "version": "3.015"
   },
   "robotocondensed": {
