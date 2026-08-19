@@ -1,5 +1,6 @@
 import json
 import tempfile
+import urllib.error
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Callable
@@ -35,15 +36,26 @@ def sync_families(
     state = load_state(state_path)
     catalog = load_state(catalog_path) if catalog_path else {}
     report = SyncReport()
-    for name in families:
-        key = gh.google_dirname(name)
-        try:
-            _sync_one(name, key, state, catalog, out_dir, wheel_builder, report)
-        except (gh.FamilyNotFound, UnsupportedLicense, FileNotFoundError, ValueError) as err:
-            report.failed.append((key, str(err)))
-    save_state(state_path, state)
-    if catalog_path:
-        save_state(catalog_path, catalog)
+    try:
+        for name in families:
+            key = gh.google_dirname(name)
+            try:
+                _sync_one(name, key, state, catalog, out_dir, wheel_builder, report)
+            except (
+                gh.FamilyNotFound,
+                UnsupportedLicense,
+                FileNotFoundError,
+                ValueError,
+                urllib.error.URLError,
+            ) as err:
+                report.failed.append((key, str(err)))
+    finally:
+        # Save whatever succeeded even if an unexpected error (e.g. a GitHub API
+        # rate limit) aborts the loop early — a large families.txt can outrun the
+        # hourly API quota, and partial progress must not be discarded.
+        save_state(state_path, state)
+        if catalog_path:
+            save_state(catalog_path, catalog)
     return report
 
 

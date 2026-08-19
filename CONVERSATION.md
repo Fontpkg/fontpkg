@@ -328,3 +328,13 @@ Future-removal risk answer: yes, the vector was wholesale list regeneration agai
 **User:** Back to sleep until PyPI writes back.
 
 **Claude:** Parked again. Unattended state: weekly sync (Mon 06:17 UTC), daily popularity-ordered publish now at 23:17 UTC (quota-friendly), site auto-redeploys after each publish, 18+ packages live and climbing ~3/day. Resume checklist in the earlier "Park project" entry.
+
+---
+
+**User:** Asked whether tranches are needed for full population vs top-200, and why fontpkg's eligible count is less than Fontsource's ~2,200 families. Chose (via question dialog) to populate families.txt fully now and defer the GitHub Pages hosting fix until the site actually approaches the limit.
+
+**Claude:** Answered both questions with real data:
+- No tranches needed technically — sync/publish-pending already scale to any list size; PyPI's daily quota was always the real pacer, not code. The only real constraint is GitHub Pages' 1GB site limit (~1.5GB projected at full scale from measured 0.82MB/family average) — deferred per user's choice.
+- Count gap explained: Google Fonts metadata has 1,942 total families; fontpkg's OFL/Apache/non-CJK/non-UFL/in-repo/licensed rules leave 1,799(-1798, live-data drift) eligible. Fontsource's ~2,200 comes from covering ALL Google Fonts (CJK included — sidestepped via woff2 subsetting, which we deliberately don't do) PLUS ~120 non-Google families from their own `other/` source directory PLUS icon fonts — verified directly from fontsource/font-files' repo structure.
+Expanded families.txt to the full 1,798 eligible families (popularity-ordered, noto-color-emoji still deferred). Found and fixed a real robustness bug while sizing up: sync_families only saved state.json once at the very end of the loop — at 1,798 families a single GitHub API rate-limit error partway through would have silently discarded all progress from that run. Wrapped the loop in try/finally so state always persists what succeeded; also added urllib.error.URLError to the per-family caught-and-recorded exceptions so transient failures don't abort the whole run. Two new tests cover both the graceful-continue and the uncaught-exception-still-saves cases. 57 tests passing.
+Noted but not yet acted on: first-time full population is API-call-heavy (~5-6 calls/new family vs ~1/already-tracked family), likely exceeding the 5000/hr authenticated GitHub API limit in one run — expected to require 1-2 more manual dispatches of "Sync font packages" (or converge over a few weekly cron cycles) to fully seed state.json; no data loss either way thanks to the fix.

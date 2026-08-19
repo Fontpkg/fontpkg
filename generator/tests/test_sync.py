@@ -92,6 +92,49 @@ def test_failure_is_reported_and_state_preserved(fake_upstream, tmp_path: Path, 
     assert "testface" in state and "missingface" not in state
 
 
+def test_rate_limit_style_error_is_recorded_and_sync_continues(
+    fake_upstream, tmp_path: Path, monkeypatch
+) -> None:
+    import urllib.error
+
+    real_fetch = gh.fetch_family
+
+    def flaky_fetch(name: str, dest: Path):
+        if name == "otherface":
+            raise urllib.error.URLError("rate limited")
+        return real_fetch(name, dest)
+
+    monkeypatch.setattr(gh, "fetch_family", flaky_fetch)
+    state_path = tmp_path / "state.json"
+
+    report = sync_families(["testface", "otherface", "thirdface"], state_path, tmp_path / "out")
+
+    assert report.failed == [("otherface", "<urlopen error rate limited>")]
+    state = load_state(state_path)
+    assert set(state) == {"testface", "thirdface"}
+
+
+def test_state_saved_even_on_a_genuinely_unexpected_exception(
+    fake_upstream, tmp_path: Path, monkeypatch
+) -> None:
+    real_fetch = gh.fetch_family
+
+    def flaky_fetch(name: str, dest: Path):
+        if name == "otherface":
+            raise RuntimeError("unexpected bug")
+        return real_fetch(name, dest)
+
+    monkeypatch.setattr(gh, "fetch_family", flaky_fetch)
+    state_path = tmp_path / "state.json"
+
+    with pytest.raises(RuntimeError):
+        sync_families(["testface", "otherface", "thirdface"], state_path, tmp_path / "out")
+
+    # testface was built before the crash — must not be lost, even though the
+    # function never reached its normal (pre-fix) single save-at-the-end call.
+    assert set(load_state(state_path)) == {"testface"}
+
+
 def test_wheel_builder_hook_called(fake_upstream, tmp_path: Path) -> None:
     built: list[Path] = []
     sync_families(
