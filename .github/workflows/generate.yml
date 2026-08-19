@@ -28,6 +28,11 @@ jobs:
           python-version: "3.13"
       - run: uv sync --all-packages
       - name: Sync changed families
+        # At full catalog scale, some families always fail transiently (GitHub
+        # abuse-detection 403s under sustained load) or permanently (bad upstream
+        # data). continue-on-error lets the job still commit whatever succeeded
+        # instead of discarding an entire run's progress over a handful of misses.
+        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |

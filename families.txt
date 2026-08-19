@@ -4,6 +4,9 @@
 # subsetting to woff2, which we deliberately don't do), Ubuntu (UFL), google-sans/
 # -flex (not in google/fonts), tinos (no upstream license file). Do NOT filter on
 # isBrandFont: Google marks Roboto and all Noto families as brand fonts.
+# sixcaps/judson/megrim excluded: invalid head.fontRevision in upstream binary.
+# edunswactcursive excluded: directory not found in google/fonts.
+# kumaroneoutline excluded: upstream ships no OFL.txt.
 # noto-color-emoji excluded pending the large-font (CJK/emoji) size decision.
 roboto
 open-sans
@@ -482,7 +485,6 @@ im-fell-english
 karma
 funnel-sans
 pixelify-sans
-judson
 big-shoulders
 castoro
 shadows-into-light-two
@@ -685,7 +687,6 @@ special-gothic-condensed-one
 kurale
 anek-devanagari
 vesper-libre
-megrim
 azeret-mono
 baloo-bhai-2
 encode-sans-semi-condensed
