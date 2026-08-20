@@ -10153,7 +10153,7 @@
     "commit": "896d74b2dcc5227a1d10a90d94148a6e1394ccae",
     "package": "fontpkg-roboto-condensed",
     "path": "ofl/robotocondensed",
-    "published": false,
+    "published": true,
     "version": "3.008"
   },
   "robotoflex": {
@@ -10167,7 +10167,7 @@
     "commit": "69fbe6988a864994ffd0ace83cba0f4cdb6f7b2d",
     "package": "fontpkg-roboto-mono",
     "path": "ofl/robotomono",
-    "published": false,
+    "published": true,
     "version": "3.001"
   },
   "robotoserif": {
