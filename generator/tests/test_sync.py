@@ -224,6 +224,31 @@ def test_publish_pending_marks_success_and_skips(fake_upstream, tmp_path: Path) 
     assert attempts == [out / "fontpkg-testface"]
 
 
+def test_publish_pending_skips_rebuild_when_already_published(
+    fake_upstream, tmp_path: Path
+) -> None:
+    state_path = tmp_path / "state.json"
+    out = tmp_path / "out"
+    sync_families(["testface"], state_path, out)
+
+    def boom(pkg_root: Path) -> bool:
+        raise AssertionError("publisher should not be called when is_published says yes")
+
+    checked: list[tuple[str, str]] = []
+
+    def is_published(package: str, version: str) -> bool:
+        checked.append((package, version))
+        return True
+
+    report = publish_pending(
+        state_path, out, publisher=boom, rebuild=False, is_published=is_published
+    )
+    assert report.published == ["testface"]
+    assert checked == [("fontpkg-testface", "2.137")]
+    assert load_state(state_path)["testface"]["published"] is True
+    assert not (out / "fontpkg-testface" / "dist").exists()
+
+
 def test_publish_pending_respects_priority_order(tmp_path: Path) -> None:
     state_path = tmp_path / "state.json"
     state_path.write_text(

@@ -145,6 +145,7 @@ def publish_pending(
     publisher: Callable[[Path], bool],
     rebuild: bool = True,
     priority: list[str] | None = None,
+    is_published: Callable[[str, str], bool] | None = None,
 ) -> PublishReport:
     state = load_state(state_path)
     report = PublishReport()
@@ -155,6 +156,13 @@ def publish_pending(
     for key in order:
         entry = state[key]
         if entry.get("published"):
+            continue
+        # state.json already has the package name + version — check whether it's
+        # already live before spending a rebuild on it. Cheap now; matters more
+        # every day, since the already-published set only grows.
+        if is_published is not None and is_published(entry["package"], entry["version"]):
+            entry["published"] = True
+            report.published.append(key)
             continue
         pkg_root = out_dir / entry["package"]
         if not any((pkg_root / "dist").glob("*.whl")) and rebuild:

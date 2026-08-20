@@ -69,7 +69,9 @@ def _publish_pending(args: argparse.Namespace) -> int:
     if args.priority_file is not None:
         lines = args.priority_file.read_text(encoding="utf-8").splitlines()
         priority = [google_dirname(ln) for ln in lines if ln.strip() and not ln.startswith("#")]
-    report = publish_pending(args.state, args.out, publisher=_uv_publish, priority=priority)
+    report = publish_pending(
+        args.state, args.out, publisher=_uv_publish, priority=priority, is_published=_pypi_has_version
+    )
     for key in report.published:
         print(f"PUBLISHED {key}")
     for key in report.skipped:
