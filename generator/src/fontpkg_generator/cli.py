@@ -76,6 +76,11 @@ def _publish_pending(args: argparse.Namespace) -> int:
         print(f"PUBLISHED {key}")
     for key in report.skipped:
         print(f"pending {key} (throttled or failed; will retry)")
+    if report.aborted_early:
+        print(
+            "stopped early after sustained publish failures (PyPI quota likely "
+            "exhausted); remaining families stay pending for the next run"
+        )
     return 0
 
 

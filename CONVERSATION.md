@@ -368,3 +368,18 @@ Found two real issues surfaced by the migration, both handled:
 **Claude:** Confirmed the three-way split with exact numbers (135 CJK, 5 UFL, ~130 non-Google `other/`+icons) and named a 4th barrier: Fontsource likely sources from Google's live Fonts API (google-font-metadata) rather than the git mirror, which explains Google Sans's absence and some of the upstream naming-mismatch failures found during the backfill. All deliberate scope choices already captured in DESIGN.md / the Fontsource-collaboration discussion, not blockers.
 
 Parked again. State: 1,787 families fully tracked with real metadata (git-clone-based sync, ~1min for a full backfill going forward); ~18 already-published + steadily growing set draining via the 23:17 UTC daily publish-pending job (self-heals its published flags via --check-url); weekly Monday 06:17 UTC sync now fast and network-light (local clone, no more rate-limit risk). Waiting on: PyPI org response (bulk publishing), Fontsource collaboration next steps (deep-dive session), large-font/CJK inclusion decision, eventual R2 move for site assets at full scale.
+
+---
+
+**User:** Reported fontpkg.org showing ZERO published packages; asked if this was known and whether the next publish would fix it. After Claude's per-family PyPI-checking recovery ran 6+ minutes, pointedly noted that our records HAD known which fonts were published, an error deleted them, and checking ~1,800 families one-by-one is a poor recovery.
+
+**Claude:** User was right on all counts. Full accounting of the failure chain:
+1. The git-clone migration reset every family's stored hash → all 18 published families got rebuilt → their published flags reset to False (known at the time).
+2. Claude's claim that this would "self-heal via --check-url" was WRONG: `uv publish --check-url` does not skip files already on the index — it attempts the upload and PyPI hard-rejects with "400 File already exists", reported as failure. So published flags could never recover; every nightly run failed for every family (last night: 0 published of 1787 attempted, 27 minutes of futile rebuild+upload). Site showed 0 because pages filters to published=true.
+3. The first recovery attempt (per-family PyPI version checks + rebuilds for all 1,787) was brute force; the correct source was git history — commit fe07b7d ("Mark newly published packages") held the last good state.
+
+Fixes, all committed:
+- _uv_publish now checks PyPI directly (pypi.org/pypi/<name>/<version>/json) BEFORE attempting upload; already-live versions are success without an upload attempt. Failure output no longer swallowed (stderr tail printed).
+- publish_pending: skips the wheel rebuild entirely for already-published versions (is_published hook); try/finally around the loop so interruption preserves progress (same bug class fixed earlier in sync_families — the killed recovery job lost its progress precisely because this was missing); aborts after 8 consecutive publish failures instead of grinding through ~1,760 guaranteed-failure rebuild+upload cycles nightly (converts the nightly run from ~30 min to ~1 min once quota is hit).
+- state.json: published flags for the 18 recovered from git history (fe07b7d); bounded 40-family priority-prefix PyPI check confirmed the killed job had published nothing new (today's quota apparently already exhausted — 429s in its log).
+- 69 tests passing (4 new: sustained-failure abort, interrupt-preserves-state, already-published rebuild skip, publish CLI unit tests).

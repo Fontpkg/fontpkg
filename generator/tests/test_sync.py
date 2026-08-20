@@ -249,6 +249,47 @@ def test_publish_pending_skips_rebuild_when_already_published(
     assert not (out / "fontpkg-testface" / "dist").exists()
 
 
+def test_publish_pending_aborts_after_sustained_failures(tmp_path: Path) -> None:
+    from fontpkg_generator.sync import PUBLISH_FAILURE_LIMIT
+
+    entries = {
+        f"fam{i:03d}": {"package": f"fontpkg-fam{i:03d}", "version": "1.0", "published": False}
+        for i in range(PUBLISH_FAILURE_LIMIT + 20)
+    }
+    state_path = tmp_path / "state.json"
+    state_path.write_text(json.dumps(entries), encoding="utf-8")
+    attempts: list[str] = []
+
+    def failing_publisher(pkg_root: Path) -> bool:
+        attempts.append(pkg_root.name)
+        return False
+
+    report = publish_pending(state_path, tmp_path, publisher=failing_publisher, rebuild=False)
+    assert report.aborted_early is True
+    assert len(attempts) == PUBLISH_FAILURE_LIMIT
+    assert len(report.skipped) == PUBLISH_FAILURE_LIMIT
+
+
+def test_publish_pending_saves_state_when_interrupted(tmp_path: Path) -> None:
+    entries = {
+        "aaa": {"package": "fontpkg-aaa", "version": "1.0", "published": False},
+        "bbb": {"package": "fontpkg-bbb", "version": "1.0", "published": False},
+    }
+    state_path = tmp_path / "state.json"
+    state_path.write_text(json.dumps(entries), encoding="utf-8")
+
+    def publisher(pkg_root: Path) -> bool:
+        if pkg_root.name == "fontpkg-bbb":
+            raise KeyboardInterrupt
+        return True
+
+    with pytest.raises(KeyboardInterrupt):
+        publish_pending(state_path, tmp_path, publisher=publisher, rebuild=False)
+
+    # aaa succeeded before the interrupt — that progress must have been saved.
+    assert load_state(state_path)["aaa"]["published"] is True
+
+
 def test_publish_pending_respects_priority_order(tmp_path: Path) -> None:
     state_path = tmp_path / "state.json"
     state_path.write_text(

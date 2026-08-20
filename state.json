@@ -3,14 +3,14 @@
     "commit": "bc7d892da0d62ea28528c342e6ae265d80b82659",
     "package": "fontpkg-abeezee",
     "path": "ofl/abeezee",
-    "published": false,
+    "published": true,
     "version": "1.003"
   },
   "abel": {
     "commit": "df351f2db45f272cc71f3c1f718e6073d4c930a9",
     "package": "fontpkg-abel",
     "path": "ofl/abel",
-    "published": false,
+    "published": true,
     "version": "1.003"
   },
   "abhayalibre": {
@@ -31,7 +31,7 @@
     "commit": "3c162ec968cf75a59254eef43917cad9ec0039cd",
     "package": "fontpkg-abril-fatface",
     "path": "ofl/abrilfatface",
-    "published": false,
+    "published": true,
     "version": "1.001"
   },
   "abyssinicasil": {
@@ -199,7 +199,7 @@
     "commit": "7feaa176901f594064029f6aa1e5fcdf6a2b56d4",
     "package": "fontpkg-albert-sans",
     "path": "ofl/albertsans",
-    "published": false,
+    "published": true,
     "version": "1.025"
   },
   "aldrich": {
@@ -227,7 +227,7 @@
     "commit": "237008ca07e31714c9fe3a7af1cd783798eddb4c",
     "package": "fontpkg-alegreya-sans",
     "path": "ofl/alegreyasans",
-    "published": false,
+    "published": true,
     "version": "2.004"
   },
   "alegreyasanssc": {
@@ -269,7 +269,7 @@
     "commit": "c33b21ff3b4282a9686b2b7cf19e6b80ea839f19",
     "package": "fontpkg-alfa-slab-one",
     "path": "ofl/alfaslabone",
-    "published": false,
+    "published": true,
     "version": "2.000"
   },
   "alice": {
@@ -360,7 +360,7 @@
     "commit": "cd85af88a1aa7da4d5ab7d0671a4774e4be1f47c",
     "package": "fontpkg-almarai",
     "path": "ofl/almarai",
-    "published": false,
+    "published": true,
     "version": "1.100"
   },
   "almendra": {
@@ -766,7 +766,7 @@
     "commit": "f09568b77e862df5b6f7f9769bd2b47f7cb2ae9b",
     "package": "fontpkg-arimo",
     "path": "ofl/arimo",
-    "published": false,
+    "published": true,
     "version": "1.341"
   },
   "arizonia": {
@@ -3342,7 +3342,7 @@
     "commit": "ba73f2ce5ad1a758fbd51881d0151c3552223044",
     "package": "fontpkg-fira-code",
     "path": "ofl/firacode",
-    "published": false,
+    "published": true,
     "version": "5.002"
   },
   "firamono": {
@@ -4553,7 +4553,7 @@
     "commit": "30c9ed7957bf20385a962691ef99867f5c16461c",
     "package": "fontpkg-inter",
     "path": "ofl/inter",
-    "published": false,
+    "published": true,
     "version": "4.001"
   },
   "intertight": {
@@ -4763,7 +4763,7 @@
     "commit": "483c9b91053f9c60f5b9b3bc0d31a666334cc204",
     "package": "fontpkg-jetbrains-mono",
     "path": "ofl/jetbrainsmono",
-    "published": false,
+    "published": true,
     "version": "2.211"
   },
   "jimnightshade": {
@@ -5288,7 +5288,7 @@
     "commit": "3948fd8309b91565612faf7c55738fecc8de5a19",
     "package": "fontpkg-lato",
     "path": "ofl/lato",
-    "published": false,
+    "published": true,
     "version": "2.015"
   },
   "lavishlyyours": {
@@ -6072,7 +6072,7 @@
     "commit": "3da760de0eafd29d45c9ad93343c6ece50b69fa2",
     "package": "fontpkg-merriweather",
     "path": "ofl/merriweather",
-    "published": false,
+    "published": true,
     "version": "2.100"
   },
   "merriweathersans": {
@@ -6359,7 +6359,7 @@
     "commit": "d0f19c5c34b6787f7010e63870953ff62cd46743",
     "package": "fontpkg-montserrat",
     "path": "ofl/montserrat",
-    "published": false,
+    "published": true,
     "version": "9.000"
   },
   "montserratalternates": {
@@ -6758,7 +6758,7 @@
     "commit": "37b5b4531bd0e68e3c1e13b70d096b61a5a6d353",
     "package": "fontpkg-noto-sans",
     "path": "ofl/notosans",
-    "published": false,
+    "published": true,
     "version": "2.015"
   },
   "notosansadlam": {
@@ -8305,7 +8305,7 @@
     "commit": "370e3e9cf8bc66d120ba15723944ccc83a772b53",
     "package": "fontpkg-open-sans",
     "path": "ofl/opensans",
-    "published": false,
+    "published": true,
     "version": "3.003"
   },
   "oranienbaum": {
@@ -9572,7 +9572,7 @@
     "commit": "cd630bf6dc0df4781825d005bafa9e262f403454",
     "package": "fontpkg-poppins",
     "path": "ofl/poppins",
-    "published": false,
+    "published": true,
     "version": "4.004"
   },
   "portlligatsans": {
@@ -10146,7 +10146,7 @@
     "commit": "2a83cc1ef2c4a11d8d70f4bc188a7b0f001514c1",
     "package": "fontpkg-roboto",
     "path": "ofl/roboto",
-    "published": false,
+    "published": true,
     "version": "3.015"
   },
   "robotocondensed": {

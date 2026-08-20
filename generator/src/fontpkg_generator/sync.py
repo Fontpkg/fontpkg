@@ -11,6 +11,7 @@ from fontpkg_generator.build import SourceInfo, UnsupportedLicense, build_packag
 
 
 CONSECUTIVE_FAILURE_LIMIT = 15
+PUBLISH_FAILURE_LIMIT = 8
 
 
 @dataclass
@@ -137,6 +138,7 @@ def _built_metadata(pkg_root: Path) -> dict:
 class PublishReport:
     published: list[str] = field(default_factory=list)
     skipped: list[str] = field(default_factory=list)
+    aborted_early: bool = False
 
 
 def publish_pending(
@@ -153,26 +155,38 @@ def publish_pending(
     if priority:
         rank = {key: i for i, key in enumerate(priority)}
         order.sort(key=lambda k: (rank.get(k, len(rank)), k))
-    for key in order:
-        entry = state[key]
-        if entry.get("published"):
-            continue
-        # state.json already has the package name + version — check whether it's
-        # already live before spending a rebuild on it. Cheap now; matters more
-        # every day, since the already-published set only grows.
-        if is_published is not None and is_published(entry["package"], entry["version"]):
-            entry["published"] = True
-            report.published.append(key)
-            continue
-        pkg_root = out_dir / entry["package"]
-        if not any((pkg_root / "dist").glob("*.whl")) and rebuild:
-            _rebuild(key, out_dir)
-        if publisher(pkg_root):
-            entry["published"] = True
-            report.published.append(key)
-        else:
-            report.skipped.append(key)
-    save_state(state_path, state)
+    consecutive_failures = 0
+    try:
+        for key in order:
+            entry = state[key]
+            if entry.get("published"):
+                continue
+            # state.json already has the package name + version — check whether
+            # it's already live before spending a rebuild on it. Cheap now;
+            # matters more every day, since the already-published set only grows.
+            if is_published is not None and is_published(entry["package"], entry["version"]):
+                entry["published"] = True
+                report.published.append(key)
+                continue
+            pkg_root = out_dir / entry["package"]
+            if not any((pkg_root / "dist").glob("*.whl")) and rebuild:
+                _rebuild(key, out_dir)
+            if publisher(pkg_root):
+                entry["published"] = True
+                report.published.append(key)
+                consecutive_failures = 0
+            else:
+                report.skipped.append(key)
+                consecutive_failures += 1
+                if consecutive_failures >= PUBLISH_FAILURE_LIMIT:
+                    # PyPI's daily new-project quota is exhausted (or the index
+                    # is otherwise refusing us) — every further attempt costs a
+                    # wheel rebuild and an upload round-trip for a guaranteed
+                    # failure. Stop; the rest stay pending for the next run.
+                    report.aborted_early = True
+                    break
+    finally:
+        save_state(state_path, state)
     return report
 
 
