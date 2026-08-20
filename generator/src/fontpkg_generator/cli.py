@@ -1,7 +1,10 @@
 import argparse
+import json
 import subprocess
 import sys
 import tempfile
+import urllib.error
+import urllib.request
 from pathlib import Path
 
 from fontpkg_generator.build import SourceInfo, UnsupportedLicense, build_package, build_wheel
@@ -76,13 +79,48 @@ def _publish_pending(args: argparse.Namespace) -> int:
 
 def _uv_publish(pkg_root: Path) -> bool:
     name = pkg_root.name
+    version = _read_version(pkg_root)
+    # `uv publish --check-url` does NOT silently skip a file that already exists
+    # on the index — it attempts the upload and gets PyPI's hard "400 File
+    # already exists" rejection, which looks identical to a real failure. Check
+    # PyPI directly first so an already-published version is treated as success
+    # without ever attempting (and failing) a redundant upload.
+    if version and _pypi_has_version(name, version):
+        return True
     result = subprocess.run(
         ["uv", "publish", "--check-url", f"https://pypi.org/simple/{name}/"]
         + [str(f) for f in sorted((pkg_root / "dist").glob("*"))],
         capture_output=True,
         text=True,
     )
+    if result.returncode != 0:
+        tail = (result.stderr or result.stdout or "").strip().splitlines()[-3:]
+        print(f"  uv publish failed for {name}: {' | '.join(tail)}", file=sys.stderr)
     return result.returncode == 0
+
+
+def _read_version(pkg_root: Path) -> str | None:
+    src = pkg_root / "src"
+    module_dir = next(src.iterdir(), None) if src.is_dir() else None
+    if module_dir is None:
+        return None
+    meta_path = module_dir / "metadata.json"
+    if not meta_path.is_file():
+        return None
+    return json.loads(meta_path.read_text(encoding="utf-8")).get("version")
+
+
+def _pypi_has_version(name: str, version: str) -> bool:
+    url = f"https://pypi.org/pypi/{name}/{version}/json"
+    try:
+        with urllib.request.urlopen(url, timeout=15) as resp:
+            return resp.status == 200
+    except urllib.error.HTTPError as err:
+        if err.code == 404:
+            return False
+        raise
+    except urllib.error.URLError:
+        return False
 
 
 def _sync(args: argparse.Namespace) -> int:
