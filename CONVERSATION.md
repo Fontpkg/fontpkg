@@ -383,3 +383,5 @@ Fixes, all committed:
 - publish_pending: skips the wheel rebuild entirely for already-published versions (is_published hook); try/finally around the loop so interruption preserves progress (same bug class fixed earlier in sync_families — the killed recovery job lost its progress precisely because this was missing); aborts after 8 consecutive publish failures instead of grinding through ~1,760 guaranteed-failure rebuild+upload cycles nightly (converts the nightly run from ~30 min to ~1 min once quota is hit).
 - state.json: published flags for the 18 recovered from git history (fe07b7d); bounded 40-family priority-prefix PyPI check confirmed the killed job had published nothing new (today's quota apparently already exhausted — 429s in its log).
 - 69 tests passing (4 new: sustained-failure abort, interrupt-preserves-state, already-published rebuild skip, publish CLI unit tests).
+
+**Resolution verified:** site deploy green; fontpkg.org shows all 18 published families again, matching PyPI. Tonight's 23:17 UTC run resumes the daily drip with the fixed publisher (pre-checks PyPI, aborts on sustained quota failures, interrupt-safe state saves).
