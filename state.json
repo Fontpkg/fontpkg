@@ -8354,7 +8354,7 @@
     "commit": "dd2dd0dde39430452c69719d47c90ce28ba0aafb",
     "package": "fontpkg-oswald",
     "path": "ofl/oswald",
-    "published": false,
+    "published": true,
     "version": "4.103"
   },
   "outfit": {
@@ -9880,7 +9880,7 @@
     "commit": "98aa09fb178f2bfccf80601a91ae9075203ce746",
     "package": "fontpkg-raleway",
     "path": "ofl/raleway",
-    "published": false,
+    "published": true,
     "version": "4.026"
   },
   "ralewaydots": {
