@@ -2782,7 +2782,7 @@
     "commit": "0b6e73b4bf1c524e4875cee008fc03feb50f6b44",
     "package": "fontpkg-dm-sans",
     "path": "ofl/dmsans",
-    "published": false,
+    "published": true,
     "version": "4.004"
   },
   "dmserifdisplay": {
@@ -8200,7 +8200,7 @@
     "commit": "796935c7593a17a14f6bd7ec02e581bdaa776e69",
     "package": "fontpkg-nunito",
     "path": "ofl/nunito",
-    "published": false,
+    "published": true,
     "version": "3.602"
   },
   "nunitosans": {
