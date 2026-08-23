@@ -724,7 +724,7 @@
     "commit": "43642c751746dd16710367649a1d14a4eef43c62",
     "package": "fontpkg-archivo-black",
     "path": "ofl/archivoblack",
-    "published": false,
+    "published": true,
     "version": "1.006"
   },
   "archivonarrow": {
@@ -8207,7 +8207,7 @@
     "commit": "28904903a129a67bbf85ab2af6dda67762d42aee",
     "package": "fontpkg-nunito-sans",
     "path": "ofl/nunitosans",
-    "published": false,
+    "published": true,
     "version": "3.101"
   },
   "nuosusil": {
@@ -8711,7 +8711,7 @@
     "commit": "51ee5609e3f116b30b42a3d1426ae7393175fa62",
     "package": "fontpkg-playfair-display",
     "path": "ofl/playfairdisplay",
-    "published": false,
+    "published": true,
     "version": "1.203"
   },
   "playfairdisplaysc": {
@@ -10258,7 +10258,7 @@
     "commit": "e11f8750e867c83816f83e10a86362b5410edb1b",
     "package": "fontpkg-rubik",
     "path": "ofl/rubik",
-    "published": false,
+    "published": true,
     "version": "2.300"
   },
   "rubik80sfade": {
