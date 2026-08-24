@@ -12425,14 +12425,14 @@
     "version": "2.002"
   },
   "yuyu": {
-    "commit": "3ffa6071770df82098467cae7ddb79326a9181bd",
+    "commit": "8e28b8d6ff2d26442eeff2df0895bcbd00f6db66",
     "package": "fontpkg-yuyu",
     "path": "ofl/yuyu",
     "published": false,
     "version": "1.004"
   },
   "yuyushort": {
-    "commit": "390c2331e144ec09063826dba4a34bd65c4a9cb6",
+    "commit": "55043ba122ed1a219d9cc8ce1a868bcf6ad5f0e9",
     "package": "fontpkg-yuyu-short",
     "path": "ofl/yuyushort",
     "published": false,
