@@ -4938,7 +4938,7 @@
     "commit": "75e4a3f30d7b6992d8fe4f77f37e33f69d3ff17f",
     "package": "fontpkg-kanit",
     "path": "ofl/kanit",
-    "published": false,
+    "published": true,
     "version": "2.000"
   },
   "kantumruypro": {
@@ -5855,7 +5855,7 @@
     "commit": "f36cffdcd9b4240744f592f1dc002246d0338a4b",
     "package": "fontpkg-manrope",
     "path": "ofl/manrope",
-    "published": false,
+    "published": true,
     "version": "4.504"
   },
   "mansalva": {
@@ -8361,7 +8361,7 @@
     "commit": "08237135d5043131c7e20fcdf5a74ab1ca9b4594",
     "package": "fontpkg-outfit",
     "path": "ofl/outfit",
-    "published": false,
+    "published": true,
     "version": "1.100"
   },
   "overlock": {
@@ -10181,7 +10181,7 @@
     "commit": "a0a109740c25551f2dfa5fb8a35779333a16d46d",
     "package": "fontpkg-roboto-slab",
     "path": "apache/robotoslab",
-    "published": false,
+    "published": true,
     "version": "2.002"
   },
   "rochester": {
