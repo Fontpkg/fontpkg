@@ -1270,7 +1270,7 @@
     "commit": "1687e2fca7c57723d8cfc2df65841bd87ef329b3",
     "package": "fontpkg-bebas-neue",
     "path": "ofl/bebasneue",
-    "published": false,
+    "published": true,
     "version": "2.000"
   },
   "beiruti": {
@@ -5666,7 +5666,7 @@
     "commit": "901dbf1c26602f6c8d5883014e475d326a010c06",
     "package": "fontpkg-lora",
     "path": "ofl/lora",
-    "published": false,
+    "published": true,
     "version": "3.008"
   },
   "lovedbytheking": {
@@ -9705,7 +9705,7 @@
     "commit": "b4c722aaf783063908ad8fab533a1b6ff28bcfec",
     "package": "fontpkg-pt-sans",
     "path": "ofl/ptsans",
-    "published": false,
+    "published": true,
     "version": "2.003"
   },
   "ptsanscaption": {
@@ -12295,7 +12295,7 @@
     "commit": "aa67bfe382a5815a42abf1eca807d51bd2054c22",
     "package": "fontpkg-work-sans",
     "path": "ofl/worksans",
-    "published": false,
+    "published": true,
     "version": "2.012"
   },
   "xanhmono": {
