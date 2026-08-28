@@ -3314,7 +3314,7 @@
     "commit": "a4a0debf562aab7cc73ea2c1ed11432655b07404",
     "package": "fontpkg-figtree",
     "path": "ofl/figtree",
-    "published": false,
+    "published": true,
     "version": "2.002"
   },
   "fingerpaint": {
@@ -6520,7 +6520,7 @@
     "commit": "cc71bda9375dcfdd276dbb2d38d208ee2c264f2f",
     "package": "fontpkg-mulish",
     "path": "ofl/mulish",
-    "published": false,
+    "published": true,
     "version": "3.603"
   },
   "museomoderno": {
@@ -9488,7 +9488,7 @@
     "commit": "b5ad5666825637ec1d02d235f4f77e650915a37f",
     "package": "fontpkg-plus-jakarta-sans",
     "path": "ofl/plusjakartasans",
-    "published": false,
+    "published": true,
     "version": "2.071"
   },
   "pochaevsk": {
@@ -9810,7 +9810,7 @@
     "commit": "82a07ddc69a7e1e28d60eb513c23b5cd4380a73b",
     "package": "fontpkg-quicksand",
     "path": "ofl/quicksand",
-    "published": false,
+    "published": true,
     "version": "3.006"
   },
   "quintessential": {
