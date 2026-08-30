@@ -1165,7 +1165,7 @@
     "commit": "d3330f729b88f57dff3203431fe0e14552dbc9ff",
     "package": "fontpkg-barlow",
     "path": "ofl/barlow",
-    "published": false,
+    "published": true,
     "version": "1.408"
   },
   "barlowcondensed": {
@@ -1599,7 +1599,7 @@
     "commit": "7bd64cebf1c18d38560961c202a5268737e95f37",
     "package": "fontpkg-black-ops-one",
     "path": "ofl/blackopsone",
-    "published": false,
+    "published": true,
     "version": "1.004"
   },
   "blaka": {
@@ -9649,7 +9649,7 @@
     "commit": "03819b2e0db89bcf4af86255bc7f727fec9d3a2d",
     "package": "fontpkg-prompt",
     "path": "ofl/prompt",
-    "published": false,
+    "published": true,
     "version": "1.001"
   },
   "prostoone": {
@@ -10545,7 +10545,7 @@
     "commit": "4ec2a0788cb66744bfb2096397e4ddfec38c2d75",
     "package": "fontpkg-saira",
     "path": "ofl/saira",
-    "published": false,
+    "published": true,
     "version": "1.101"
   },
   "sairacondensed": {
