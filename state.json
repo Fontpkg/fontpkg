@@ -1739,7 +1739,7 @@
     "commit": "787f2d3dc2402c0b3459935b466fe7975087c6bd",
     "package": "fontpkg-bricolage-grotesque",
     "path": "ofl/bricolagegrotesque",
-    "published": false,
+    "published": true,
     "version": "1.001"
   },
   "brunoace": {
@@ -4294,7 +4294,7 @@
     "commit": "b4a6585e5f10951d3d84d83e15627ff06cc0cbc2",
     "package": "fontpkg-ibm-plex-sans",
     "path": "ofl/ibmplexsans",
-    "published": false,
+    "published": true,
     "version": "3.201"
   },
   "ibmplexsansarabic": {
@@ -4469,7 +4469,7 @@
     "commit": "e702e9d61f9d4ce6629fd38ffc4fc688e59577ff",
     "package": "fontpkg-inconsolata",
     "path": "ofl/inconsolata",
-    "published": false,
+    "published": true,
     "version": "3.001"
   },
   "inder": {
@@ -4826,7 +4826,7 @@
     "commit": "5f9f765c17d89d6aa17b3524f564a865be1265ee",
     "package": "fontpkg-jost",
     "path": "ofl/jost",
-    "published": false,
+    "published": true,
     "version": "3.710"
   },
   "jotione": {
