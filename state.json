@@ -8092,11 +8092,11 @@
     "version": "1.000"
   },
   "notoseriftoto": {
-    "commit": "f1743b5a6457b07cd4b25815672fa26e9569aa27",
+    "commit": "767c0bed737d2f6539390c9034e227f6c79e02ac",
     "package": "fontpkg-noto-serif-toto",
     "path": "ofl/notoseriftoto",
     "published": false,
-    "version": "2.002"
+    "version": "2.003"
   },
   "notoserifvithkuqi": {
     "commit": "ef830ebc80a2d0727fe5102f88c5859930570256",
