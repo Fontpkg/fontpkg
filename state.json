@@ -717,7 +717,7 @@
     "commit": "007ca370022199eef52f06d243e28baecbb18ff6",
     "package": "fontpkg-archivo",
     "path": "ofl/archivo",
-    "published": false,
+    "published": true,
     "version": "2.001"
   },
   "archivoblack": {
@@ -10846,7 +10846,7 @@
     "commit": "2ab91239dc34d71978e0c786f44da9e6ed4dcd7a",
     "package": "fontpkg-share-tech",
     "path": "ofl/sharetech",
-    "published": false,
+    "published": true,
     "version": "1.100"
   },
   "sharetechmono": {
@@ -11007,7 +11007,7 @@
     "commit": "e250116529f30e132f7c2994a46031b5f0309b82",
     "package": "fontpkg-smooch-sans",
     "path": "ofl/smoochsans",
-    "published": false,
+    "published": true,
     "version": "1.010"
   },
   "smythe": {
@@ -11147,7 +11147,7 @@
     "commit": "34812961223b34bd7f466539caa7be5518979cdd",
     "package": "fontpkg-source-sans-3",
     "path": "ofl/sourcesans3",
-    "published": false,
+    "published": true,
     "version": "3.052"
   },
   "sourceserif4": {
