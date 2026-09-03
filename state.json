@@ -3356,7 +3356,7 @@
     "commit": "e21800f0b1cbc605fc6790f7c241a12dc96eb945",
     "package": "fontpkg-fira-sans",
     "path": "ofl/firasans",
-    "published": false,
+    "published": true,
     "version": "4.203"
   },
   "firasanscondensed": {
@@ -4147,7 +4147,7 @@
     "commit": "6eee8dac1d2085e39ba91d089dea31a7d7faa643",
     "package": "fontpkg-heebo",
     "path": "ofl/heebo",
-    "published": false,
+    "published": true,
     "version": "3.100"
   },
   "hennypenny": {
@@ -4959,7 +4959,7 @@
     "commit": "681e0026f99f7ea1e3db3ac21417464172ca408f",
     "package": "fontpkg-karla",
     "path": "ofl/karla",
-    "published": false,
+    "published": true,
     "version": "2.004"
   },
   "karlatamilinclined": {
@@ -7850,7 +7850,7 @@
     "commit": "c671e322162dd9392012e96cb2447ddc00660761",
     "package": "fontpkg-noto-serif",
     "path": "ofl/notoserif",
-    "published": false,
+    "published": true,
     "version": "2.015"
   },
   "notoserifahom": {
