@@ -2467,7 +2467,7 @@
     "commit": "d83795e0a9864042ea8d11a5869542a616c52627",
     "package": "fontpkg-cormorant-garamond",
     "path": "ofl/cormorantgaramond",
-    "published": false,
+    "published": true,
     "version": "4.001"
   },
   "cormorantinfant": {
@@ -2635,7 +2635,7 @@
     "commit": "cd8edf7c67be25ad7b9c3faa9604fed92299cd0e",
     "package": "fontpkg-dancing-script",
     "path": "ofl/dancingscript",
-    "published": false,
+    "published": true,
     "version": "2.001"
   },
   "danfo": {
@@ -5505,7 +5505,7 @@
     "commit": "a16220e285d4c9771da1e80bfad3df2e5f1fca6f",
     "package": "fontpkg-libre-baskerville",
     "path": "ofl/librebaskerville",
-    "published": false,
+    "published": true,
     "version": "2.005"
   },
   "librebodoni": {
@@ -9726,7 +9726,7 @@
     "commit": "82a9b1eb5d9d5b81513dd7060a831aa92136c24c",
     "package": "fontpkg-pt-serif",
     "path": "ofl/ptserif",
-    "published": false,
+    "published": true,
     "version": "1.000"
   },
   "ptserifcaption": {
