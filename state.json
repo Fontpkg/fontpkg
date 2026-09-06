@@ -1172,7 +1172,7 @@
     "commit": "1bd7d95c1de7c89c249584874b1963926e091493",
     "package": "fontpkg-barlow-condensed",
     "path": "ofl/barlowcondensed",
-    "published": false,
+    "published": true,
     "version": "1.408"
   },
   "barlowsemicondensed": {
@@ -5631,7 +5631,7 @@
     "commit": "7a8b4d736ebfe005ee4eaa58d46efadc050dec58",
     "package": "fontpkg-lobster-two",
     "path": "ofl/lobstertwo",
-    "published": false,
+    "published": true,
     "version": "1.006"
   },
   "londrinaoutline": {
@@ -11140,7 +11140,7 @@
     "commit": "41f03d524fce6f525a41b9aeefa5f1b89cb035dd",
     "package": "fontpkg-source-code-pro",
     "path": "ofl/sourcecodepro",
-    "published": false,
+    "published": true,
     "version": "1.026"
   },
   "sourcesans3": {
@@ -11819,7 +11819,7 @@
     "commit": "b34021a363e6327fdb9e07e1c20e4f6439ab49a4",
     "package": "fontpkg-titillium-web",
     "path": "ofl/titilliumweb",
-    "published": false,
+    "published": true,
     "version": "1.002"
   },
   "tomorrow": {
