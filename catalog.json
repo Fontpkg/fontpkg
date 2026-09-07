@@ -475,7 +475,7 @@
       "normal"
     ],
     "variable": true,
-    "version": "1.100",
+    "version": "2.000",
     "weight_range": [
       300,
       700
@@ -12493,7 +12493,7 @@
       "normal"
     ],
     "variable": false,
-    "version": "1.000",
+    "version": "1.001",
     "weight_range": [
       400,
       400
@@ -12514,7 +12514,7 @@
       "normal"
     ],
     "variable": true,
-    "version": "1.000",
+    "version": "1.001",
     "weight_range": null,
     "weights": []
   },

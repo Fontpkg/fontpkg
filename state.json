@@ -7,10 +7,10 @@
     "version": "1.003"
   },
   "abel": {
-    "commit": "df351f2db45f272cc71f3c1f718e6073d4c930a9",
+    "commit": "740400a8bb779dce210742c6f7526f94f20c3213",
     "package": "fontpkg-abel",
     "path": "ofl/abel",
-    "published": true,
+    "published": false,
     "version": "1.003"
   },
   "abhayalibre": {
@@ -49,7 +49,7 @@
     "version": "1.001"
   },
   "acme": {
-    "commit": "412a76f3369ba529722d2f87c21c48a24e80826c",
+    "commit": "011d50a2ab121d974fc2ea46de43cf40b62ddbca",
     "package": "fontpkg-acme",
     "path": "ofl/acme",
     "published": false,
@@ -112,7 +112,7 @@
     "version": "2.002"
   },
   "aguafinascript": {
-    "commit": "defb2ca8df90a1c304cd5a988aad4f3ca9a8d761",
+    "commit": "7901711499fac1b05aef90ba24d8d3b00f1a6182",
     "package": "fontpkg-aguafina-script",
     "path": "ofl/aguafinascript",
     "published": false,
@@ -154,11 +154,11 @@
     "version": "1.002"
   },
   "akshar": {
-    "commit": "621053a7136edeaaa73c4ac06fc2a31cb3ae4f41",
+    "commit": "a22716f6a6eefa6b527e63db6b1edf147f5d25a6",
     "package": "fontpkg-akshar",
     "path": "ofl/akshar",
     "published": false,
-    "version": "1.100"
+    "version": "2.000"
   },
   "akt": {
     "commit": "eb108b4fd4a48041fab4ce0085528210eebcc5e3",
@@ -168,7 +168,7 @@
     "version": "1.100"
   },
   "aladin": {
-    "commit": "8bf4b122c6ec8f28d7e99bab4d01ceb5b039a4e4",
+    "commit": "134e3c9f6bc5203ebb0b371c29d174d27b3acc1d",
     "package": "fontpkg-aladin",
     "path": "ofl/aladin",
     "published": false,
@@ -322,7 +322,7 @@
     "version": "1.002"
   },
   "allerta": {
-    "commit": "09f0b2d503eeacf582944dd02c07f330badb7594",
+    "commit": "34e13d27b4548f9f6dc02ecf3c03a52f2db7fbe7",
     "package": "fontpkg-allerta",
     "path": "ofl/allerta",
     "published": false,
@@ -364,21 +364,21 @@
     "version": "1.100"
   },
   "almendra": {
-    "commit": "0d9a7aa9deba1b1c6bf3d8c02bded858443fea1f",
+    "commit": "b479b610cd2403468328b9f470961efa79255b70",
     "package": "fontpkg-almendra",
     "path": "ofl/almendra",
     "published": false,
     "version": "1.004"
   },
   "almendradisplay": {
-    "commit": "9333f73b7e9813946daa27005921e0377c710752",
+    "commit": "0316cf05963defe2931c8497e5f870e6a915386f",
     "package": "fontpkg-almendra-display",
     "path": "ofl/almendradisplay",
     "published": false,
     "version": "1.004"
   },
   "almendrasc": {
-    "commit": "81ccce3f0e082340cd0769bc2e7b3efa6e95b77f",
+    "commit": "738d854ea44dd757601d9d81a97dd80a252145a9",
     "package": "fontpkg-almendra-sc",
     "path": "ofl/almendrasc",
     "published": false,
@@ -427,7 +427,7 @@
     "version": "1.213"
   },
   "amarante": {
-    "commit": "a32898cbffcec9847abac29732381d10f124fc83",
+    "commit": "9853c014854c07482f25289716af0a1d31ae8af0",
     "package": "fontpkg-amarante",
     "path": "ofl/amarante",
     "published": false,
@@ -637,14 +637,14 @@
     "version": "1.001"
   },
   "anticdidone": {
-    "commit": "db6d748ad99594da6f3b17c93e8d358ea1917e90",
+    "commit": "30f06a501e7da4749ddb596ef6f2a4237d2068f4",
     "package": "fontpkg-antic-didone",
     "path": "ofl/anticdidone",
     "published": false,
     "version": "2.001"
   },
   "anticslab": {
-    "commit": "26e5cb5be0f62706c73cd2a5276d056003cb971f",
+    "commit": "68a7f3f70928da58c1e15e9007dd547b5dea98c3",
     "package": "fontpkg-antic-slab",
     "path": "ofl/anticslab",
     "published": false,
@@ -693,21 +693,21 @@
     "version": "1.002"
   },
   "arbutus": {
-    "commit": "cfef8f2689b401d064e978bd478d245fd580941e",
+    "commit": "65dac119684cf18227797260845f5a59a22afb04",
     "package": "fontpkg-arbutus",
     "path": "ofl/arbutus",
     "published": false,
     "version": "1.003"
   },
   "arbutusslab": {
-    "commit": "957de8af993a951155235b85f2737ffafeb45842",
+    "commit": "2c07dd7d3d7d0705bc0b88c4094910440816cac1",
     "package": "fontpkg-arbutus-slab",
     "path": "ofl/arbutusslab",
     "published": false,
     "version": "1.002"
   },
   "architectsdaughter": {
-    "commit": "5c9d421ca127167c6cbc8215961c3ce1b65a6b4a",
+    "commit": "30953eead42ff8c6e3e56cdd5c3f9ea83cfc9dce",
     "package": "fontpkg-architects-daughter",
     "path": "ofl/architectsdaughter",
     "published": false,
@@ -777,7 +777,7 @@
     "version": "1.010"
   },
   "armata": {
-    "commit": "ce94003b8b5c01e605249acfef9bbaa6429d114f",
+    "commit": "743f15cc7fc43727dbe1a92dc1690f0405a25e30",
     "package": "fontpkg-armata",
     "path": "ofl/armata",
     "published": false,
@@ -868,14 +868,14 @@
     "version": "3.000"
   },
   "astloch": {
-    "commit": "0e25e8151a2d78d411dc8c989602f6baf596cfe7",
+    "commit": "0e37b0c4c0b911323395cca97b7d12aa6c028084",
     "package": "fontpkg-astloch",
     "path": "ofl/astloch",
     "published": false,
     "version": "1.002"
   },
   "asul": {
-    "commit": "d801bf998a9b91575a1806381663d64976704e79",
+    "commit": "e48fe2cd4c2bef39b91f536fede0c8216cae67c0",
     "package": "fontpkg-asul",
     "path": "ofl/asul",
     "published": false,
@@ -938,7 +938,7 @@
     "version": "1.003"
   },
   "autourone": {
-    "commit": "1fcf5bed369256e39c87c47d083a607bff8f022f",
+    "commit": "002c81702f9ad631583d175a73d20ebef7e76c80",
     "package": "fontpkg-autour-one",
     "path": "ofl/autourone",
     "published": false,
@@ -952,7 +952,7 @@
     "version": "1.003"
   },
   "averagesans": {
-    "commit": "59a9887dbd646371cf7f48d704e99bfce3af2045",
+    "commit": "970ce18836587e5d40e97a74d2e33da27a88f4a6",
     "package": "fontpkg-average-sans",
     "path": "ofl/averagesans",
     "published": false,
@@ -1148,7 +1148,7 @@
     "version": "1.020"
   },
   "balthazar": {
-    "commit": "2e1e3b555405f6b33b7f78a0529a3cfb1c3fd550",
+    "commit": "736bed99c5f7c1a306c15d9c24c5d3524b29cb16",
     "package": "fontpkg-balthazar",
     "path": "ofl/balthazar",
     "published": false,
@@ -1288,7 +1288,7 @@
     "version": "2.000"
   },
   "belgrano": {
-    "commit": "cf5d1c87c127bfaa4ad0f89f8d96a33b91a4443d",
+    "commit": "d4ce65437f04401ab13b50d42dfddadb2df6129f",
     "package": "fontpkg-belgrano",
     "path": "ofl/belgrano",
     "published": false,
@@ -1323,7 +1323,7 @@
     "version": "4.001"
   },
   "benchnine": {
-    "commit": "a1fa7564b1943b4db354619d1a63d51006e39e20",
+    "commit": "fabccd0615ac0079c7a80c0a8f8056ab512c5f91",
     "package": "fontpkg-benchnine",
     "path": "ofl/benchnine",
     "published": false,
@@ -1421,7 +1421,7 @@
     "version": "1.001"
   },
   "bigshotone": {
-    "commit": "2486c5aa9ffdebe143ce4d66c56329572b32d4a7",
+    "commit": "03e033c210e3116f137267fd949897d7075e9fc0",
     "package": "fontpkg-bigshot-one",
     "path": "ofl/bigshotone",
     "published": false,
@@ -1456,7 +1456,7 @@
     "version": "1.100"
   },
   "bilboswashcaps": {
-    "commit": "c1021bb5b010fd445bff8500a37141cd928d40f6",
+    "commit": "a3d4553544e7ca60cb1bf89b3a9f82b1bcd259dc",
     "package": "fontpkg-bilbo-swash-caps",
     "path": "ofl/bilboswashcaps",
     "published": false,
@@ -1687,7 +1687,7 @@
     "version": "1.010"
   },
   "boogaloo": {
-    "commit": "9339fa406ccfb98839258f28d6d2489f0d32181c",
+    "commit": "17c51ff96a909ff17f5ebac7908828a7dbd2725a",
     "package": "fontpkg-boogaloo",
     "path": "ofl/boogaloo",
     "published": false,
@@ -1701,14 +1701,14 @@
     "version": "1.008"
   },
   "bowlbyone": {
-    "commit": "519e5f6db978030930bdef846db5db70b6f98dcb",
+    "commit": "7b81802b3b50b9a9484bb5c38dea8573dc60d1dc",
     "package": "fontpkg-bowlby-one",
     "path": "ofl/bowlbyone",
     "published": false,
     "version": "1.001"
   },
   "bowlbyonesc": {
-    "commit": "d59205aa62bda0657d44c3329bc2eeb3a2a8f4cb",
+    "commit": "beafb332787e9c00dbccf96558f9a6e8b57be263",
     "package": "fontpkg-bowlby-one-sc",
     "path": "ofl/bowlbyonesc",
     "published": false,
@@ -1729,7 +1729,7 @@
     "version": "1.101"
   },
   "breeserif": {
-    "commit": "1b1f1f2e3f9bb5b5ac8f3b6e6b4e42ef13cab76b",
+    "commit": "68ff38ec49b6ba21ae30577744b5aae508ec0a6b",
     "package": "fontpkg-bree-serif",
     "path": "ofl/breeserif",
     "published": false,
@@ -1764,14 +1764,14 @@
     "version": "3.006"
   },
   "bubblegumsans": {
-    "commit": "537738f64acb24f2bc102a5406c82a3731c8f1ea",
+    "commit": "b4f8a490c301daf74a641fee8763a55ccea80f61",
     "package": "fontpkg-bubblegum-sans",
     "path": "ofl/bubblegumsans",
     "published": false,
     "version": "1.001"
   },
   "bubblerone": {
-    "commit": "86d7cbc8ee0eb80949aa95f475c67744b86f7636",
+    "commit": "79bfd8b8079e943e7ece4f5e15f8bf6fc11a440d",
     "package": "fontpkg-bubbler-one",
     "path": "ofl/bubblerone",
     "published": false,
@@ -1841,7 +1841,7 @@
     "version": "2.001"
   },
   "butcherman": {
-    "commit": "3b483df4e247e50041db4fca563b0ae06c664d89",
+    "commit": "32782266238b3f909d6db1c5b9bba4078a897601",
     "package": "fontpkg-butcherman",
     "path": "ofl/butcherman",
     "published": false,
@@ -1890,7 +1890,7 @@
     "version": "1.000"
   },
   "cagliostro": {
-    "commit": "b8f1a41ceea002fe2f7ba91d0d8c28854c34cc63",
+    "commit": "be6b63e58d38e9319ebaac230d45ef4e8b700ad3",
     "package": "fontpkg-cagliostro",
     "path": "ofl/cagliostro",
     "published": false,
@@ -1946,14 +1946,14 @@
     "version": "1.181"
   },
   "cambo": {
-    "commit": "d2a7821e2c1192654e58f3e0ea8ebaacbfa6ac50",
+    "commit": "458cf019c3e39428266b46af04a60c2af5e7333b",
     "package": "fontpkg-cambo",
     "path": "ofl/cambo",
     "published": false,
     "version": "2.001"
   },
   "candal": {
-    "commit": "11e22c6e2cd7eb423dd04a47f1c9388cb2156420",
+    "commit": "a8133f920e5dd08d6a09a7d4e8cefc9a75c57e58",
     "package": "fontpkg-candal",
     "path": "ofl/candal",
     "published": false,
@@ -1967,7 +1967,7 @@
     "version": "1.004"
   },
   "cantataone": {
-    "commit": "15f81c421ed0503877edcd225c5d7faecc60afef",
+    "commit": "24d6bbad69f65c1832fc856bce0af4d004296500",
     "package": "fontpkg-cantata-one",
     "path": "ofl/cantataone",
     "published": false,
@@ -2044,7 +2044,7 @@
     "version": "1.002"
   },
   "carterone": {
-    "commit": "502c12bb8c89ff7854747f5e4e5d4b56c5231abc",
+    "commit": "2d135479e5c2f40c5e6f6dd8a8af8d744701a84e",
     "package": "fontpkg-carter-one",
     "path": "ofl/carterone",
     "published": false,
@@ -2121,7 +2121,7 @@
     "version": "1.001"
   },
   "cevicheone": {
-    "commit": "1a69b0eccaa56d8df92c169230e03129fbea83b1",
+    "commit": "b33423d65b576bf195fd734f6f8c2644f36a76d1",
     "package": "fontpkg-ceviche-one",
     "path": "ofl/cevicheone",
     "published": false,
@@ -2149,7 +2149,7 @@
     "version": "1.003"
   },
   "chango": {
-    "commit": "6fbc54359c217403ba7d39058bf0d70497ddead6",
+    "commit": "e5861db274024b24e35c58aec896adae0bcb849d",
     "package": "fontpkg-chango",
     "path": "ofl/chango",
     "published": false,
@@ -2184,14 +2184,14 @@
     "version": "1.002"
   },
   "chauphilomeneone": {
-    "commit": "d00eb877ae7c5472ce03e3dcfc41ad7fd8dea8a5",
+    "commit": "b6af7c0765b025a0de93fd8359887c338f630c44",
     "package": "fontpkg-chau-philomene-one",
     "path": "ofl/chauphilomeneone",
     "published": false,
     "version": "1.002"
   },
   "chelaone": {
-    "commit": "ce69b8de2814bca57d7cb7e75521cc3d1bca197a",
+    "commit": "7b3caefc1ac8161420755917430980520858ce8c",
     "package": "fontpkg-chela-one",
     "path": "ofl/chelaone",
     "published": false,
@@ -2226,7 +2226,7 @@
     "version": "1.001"
   },
   "cherryswash": {
-    "commit": "5093005856bda1cb0c397e86684f710500d931f8",
+    "commit": "fc537e010d4c511a80acda542939c13af680d23a",
     "package": "fontpkg-cherry-swash",
     "path": "ofl/cherryswash",
     "published": false,
@@ -2240,7 +2240,7 @@
     "version": "1.001"
   },
   "chicle": {
-    "commit": "8b1f71293b91cfe66baf28143fb71fdd17bd1577",
+    "commit": "faae383b6f8909d397629028509a73610c1f1c03",
     "package": "fontpkg-chicle",
     "path": "ofl/chicle",
     "published": false,
@@ -2387,14 +2387,14 @@
     "version": "1.001"
   },
   "concertone": {
-    "commit": "469b16b4f92a4361c249dfcd45f6c25987fdf3ee",
+    "commit": "d59eea9b3bad0f33c7407c530f8acc9ce754fac5",
     "package": "fontpkg-concert-one",
     "path": "ofl/concertone",
     "published": false,
     "version": "1.004"
   },
   "condiment": {
-    "commit": "2d7ba4d089bd3d3bb039efc43a9c2c56b17fe1d7",
+    "commit": "11d2698c202572c9c83b2ab56d5be55634682454",
     "package": "fontpkg-condiment",
     "path": "ofl/condiment",
     "published": false,
@@ -2408,28 +2408,28 @@
     "version": "6.000"
   },
   "contrailone": {
-    "commit": "7105a7507930538f26ffea6cbf1b09389ba6c5ac",
+    "commit": "6a721dceb202bb8b5a8e782c136c2325f150213b",
     "package": "fontpkg-contrail-one",
     "path": "ofl/contrailone",
     "published": false,
     "version": "1.003"
   },
   "convergence": {
-    "commit": "661ff3427e2dbc692e2b7fe41d8ae0e5464e5027",
+    "commit": "cb44c0839fe607a3cd97abef29f887c0909fc5e6",
     "package": "fontpkg-convergence",
     "path": "ofl/convergence",
     "published": false,
     "version": "1.001"
   },
   "cookie": {
-    "commit": "e50983399c31d5714c929db1c4d95ba3cbbf674d",
+    "commit": "116673eabf4cc59fa9207a6037672a4250d135ad",
     "package": "fontpkg-cookie",
     "path": "ofl/cookie",
     "published": false,
     "version": "1.004"
   },
   "copse": {
-    "commit": "47247a4913292293e8621c5707b7ffb821a4685c",
+    "commit": "aa56f24bd834fd1a802162a01ae198c5c7f18241",
     "package": "fontpkg-copse",
     "path": "ofl/copse",
     "published": false,
@@ -2513,7 +2513,7 @@
     "version": "1.002"
   },
   "courgette": {
-    "commit": "c4163cb2037585eb9e26c8617b5eb682adcab95e",
+    "commit": "b7dce9d2d1832fed2de7de38989f05b7f3410036",
     "package": "fontpkg-courgette",
     "path": "ofl/courgette",
     "published": false,
@@ -2541,7 +2541,7 @@
     "version": "1.100"
   },
   "coveredbyyourgrace": {
-    "commit": "102c4fa6d56bc4e47a34ead9e42459897663f1bc",
+    "commit": "bc2a59dc1dc6f3d5a9f566b398087890706920b6",
     "package": "fontpkg-covered-by-your-grace",
     "path": "ofl/coveredbyyourgrace",
     "published": false,
@@ -2562,7 +2562,7 @@
     "version": "1.000"
   },
   "creteround": {
-    "commit": "a39dd8c825d30a4d5d7eb437d083ad1615c01de5",
+    "commit": "e3cc5b464ea58af1d5972cafe1fe817a448db2de",
     "package": "fontpkg-crete-round",
     "path": "ofl/creteround",
     "published": false,
@@ -2583,7 +2583,7 @@
     "version": "1.100"
   },
   "croissantone": {
-    "commit": "4a46dfc99b83e328e7d3eb553d5f1b02682e2470",
+    "commit": "31c1f818418ce85494751adfe40525c6a0899183",
     "package": "fontpkg-croissant-one",
     "path": "ofl/croissantone",
     "published": false,
@@ -2674,14 +2674,14 @@
     "version": "1.100"
   },
   "dawningofanewday": {
-    "commit": "89b7a43c12d05b29c0b22d57e177600d5495a63a",
+    "commit": "db6ed54f0664bea816ad1ee2561dabd39e8ab3d1",
     "package": "fontpkg-dawning-of-a-new-day",
     "path": "ofl/dawningofanewday",
     "published": false,
     "version": "1.002"
   },
   "daysone": {
-    "commit": "ec24319722e0091ae09ba680948669e602f5cbb2",
+    "commit": "9c26736fc969b0e0140e794e89a71b88a40c6a36",
     "package": "fontpkg-days-one",
     "path": "ofl/daysone",
     "published": false,
@@ -2702,21 +2702,21 @@
     "version": "1.002"
   },
   "delius": {
-    "commit": "7def686904d20ba78b898ca8420ed303bc529a22",
+    "commit": "b2f52635fff28f04bd2f8cddc8c847ce3f08743a",
     "package": "fontpkg-delius",
     "path": "ofl/delius",
     "published": false,
     "version": "1.001"
   },
   "deliusswashcaps": {
-    "commit": "ebef537fca51a4681fa11fd99f50be99321177ca",
+    "commit": "5f0e2d8f2cf2a539e177a286ca115df134dc8f62",
     "package": "fontpkg-delius-swash-caps",
     "path": "ofl/deliusswashcaps",
     "published": false,
     "version": "1.002"
   },
   "deliusunicase": {
-    "commit": "1bf6a144b26c2805a59ddc87281a95d6694ec676",
+    "commit": "e2c958b9a486391e9a86a4bb354c1f7bef32e940",
     "package": "fontpkg-delius-unicase",
     "path": "ofl/deliusunicase",
     "published": false,
@@ -2737,7 +2737,7 @@
     "version": "1.004"
   },
   "devonshire": {
-    "commit": "ec064e03804130722f40dfcc317b57fd528496ac",
+    "commit": "3361062bc49fed46d54aabee4a1b24d7544ae391",
     "package": "fontpkg-devonshire",
     "path": "ofl/devonshire",
     "published": false,
@@ -2807,14 +2807,14 @@
     "version": "2.000"
   },
   "donegalone": {
-    "commit": "faf0a69b9eeebdabea0102c8cd7844c7d0eb3fb8",
+    "commit": "bdcc1ccb02aca7283039bcdfc4c9d8da42af7f7b",
     "package": "fontpkg-donegal-one",
     "path": "ofl/donegalone",
     "published": false,
     "version": "1.004"
   },
   "doppioone": {
-    "commit": "928dc4f45749ec9e0a736bb81e9f2a99e925ff23",
+    "commit": "c783c5f2ae1f13b9ffcfe5956db08aa16f69692e",
     "package": "fontpkg-doppio-one",
     "path": "ofl/doppioone",
     "published": false,
@@ -2842,14 +2842,14 @@
     "version": "1.000"
   },
   "drsugiyama": {
-    "commit": "793939c3e837e3d01af3f01796a0900c2f8ab9c4",
+    "commit": "84eb8d01f56d97266a2a85c858efea411302b2d3",
     "package": "fontpkg-dr-sugiyama",
     "path": "ofl/drsugiyama",
     "published": false,
     "version": "1.000"
   },
   "durusans": {
-    "commit": "2b4dc8bcf74ba74a9c8cb8fe3b2bd0ff24a54de8",
+    "commit": "86f3c04d8ab394d799ab929a1d18cd62de2cd8ba",
     "package": "fontpkg-duru-sans",
     "path": "ofl/durusans",
     "published": false,
@@ -2891,7 +2891,7 @@
     "version": "1.003"
   },
   "economica": {
-    "commit": "efa6791dafb6291836019c9b19a8f7a7a4bb9b0b",
+    "commit": "0274c6ce5b6d7ff10713ca66bd5cb227702b3c65",
     "package": "fontpkg-economica",
     "path": "ofl/economica",
     "published": false,
@@ -2996,21 +2996,21 @@
     "version": "1.061"
   },
   "elsie": {
-    "commit": "765576368d3d7df5ba6d407cf0d4cb919608b38a",
+    "commit": "91e79a67f986a741ef186c5ede12e5d4af6195fb",
     "package": "fontpkg-elsie",
     "path": "ofl/elsie",
     "published": false,
     "version": "1.003"
   },
   "elsieswashcaps": {
-    "commit": "511050dbd1e44b5cb8d83e68b9bc3f4e1d7d7539",
+    "commit": "a7e5a6d9fbf5a98e3a749d0273ad5cd6b11c6ce0",
     "package": "fontpkg-elsie-swash-caps",
     "path": "ofl/elsieswashcaps",
     "published": false,
     "version": "1.003"
   },
   "emblemaone": {
-    "commit": "083d36a057edfb0ce98dd3253925ad5ee50445ab",
+    "commit": "55413344c83943f47ee9daf7d730fb5705227ff0",
     "package": "fontpkg-emblema-one",
     "path": "ofl/emblemaone",
     "published": false,
@@ -3115,14 +3115,14 @@
     "version": "1.103"
   },
   "ericaone": {
-    "commit": "95078c14116413942f44804f6df420e51844434b",
+    "commit": "dd2a29ef13be9cc5586bf1068e31c67778017fa4",
     "package": "fontpkg-erica-one",
     "path": "ofl/ericaone",
     "published": false,
     "version": "1.003"
   },
   "esteban": {
-    "commit": "dda66952a21d8e6cb5bca63b6a4a6902a3a80e15",
+    "commit": "c453ca1a2f2101fef67abe76bc3f64aa445544e3",
     "package": "fontpkg-esteban",
     "path": "ofl/esteban",
     "published": false,
@@ -3143,14 +3143,14 @@
     "version": "1.014"
   },
   "euphoriascript": {
-    "commit": "923ee89b070dc1a21659ad3ba96e0e9abfae21a3",
+    "commit": "03aacbd7554d6e82d3a68de6675d184d8c658758",
     "package": "fontpkg-euphoria-script",
     "path": "ofl/euphoriascript",
     "published": false,
     "version": "1.002"
   },
   "ewert": {
-    "commit": "ee252c65f8a0fdf8e546f38b455cc82b7ac04a30",
+    "commit": "70784785572554d8265522a8d90d99a1fb83d1cb",
     "package": "fontpkg-ewert",
     "path": "ofl/ewert",
     "published": false,
@@ -3290,14 +3290,14 @@
     "version": "1.000"
   },
   "felipa": {
-    "commit": "48a469566c57bf9c66178b9c00a39cd40ab463e2",
+    "commit": "06e770ab61dea8e8f73cb70313f45bf64984bba9",
     "package": "fontpkg-felipa",
     "path": "ofl/felipa",
     "published": false,
     "version": "1.001"
   },
   "fenix": {
-    "commit": "e2f9699b4a1d593f08ba4f0b8881af3f1c7651b6",
+    "commit": "219278afb30c8fbf8ff94a399424e6587ef44347",
     "package": "fontpkg-fenix",
     "path": "ofl/fenix",
     "published": false,
@@ -3381,14 +3381,14 @@
     "version": "1.002"
   },
   "fjordone": {
-    "commit": "47f588833d25dcdd10d18d992412163cc17b5592",
+    "commit": "a1c236e1bc93188c0058460eef57f46ee51b4523",
     "package": "fontpkg-fjord-one",
     "path": "ofl/fjordone",
     "published": false,
     "version": "1.002"
   },
   "flamenco": {
-    "commit": "f6875ad46f4ed0c7f8bf0d4576e578d675dfe297",
+    "commit": "804641bed970f6e354be140ac11657cc1fb377cc",
     "package": "fontpkg-flamenco",
     "path": "ofl/flamenco",
     "published": false,
@@ -3521,7 +3521,7 @@
     "version": "1.000"
   },
   "fresca": {
-    "commit": "50b819b6a47178e176c737ba082269549fc64c8d",
+    "commit": "732de812f44deafd621b016c408303ede8705b6f",
     "package": "fontpkg-fresca",
     "path": "ofl/fresca",
     "published": false,
@@ -3542,7 +3542,7 @@
     "version": "1.008"
   },
   "fugazone": {
-    "commit": "3950c2239b6f06c9c0d81d0325a16908d1d53a93",
+    "commit": "89d4d111d3d8eac96719110803e3669d1ca4b010",
     "package": "fontpkg-fugaz-one",
     "path": "ofl/fugazone",
     "published": false,
@@ -3598,7 +3598,7 @@
     "version": "2.001"
   },
   "gafata": {
-    "commit": "5f824194d6b98791a7e4d8086a28a5fc030cedb5",
+    "commit": "aa8728d5b2f8712ebeb9ff99f80cfcacb0833446",
     "package": "fontpkg-gafata",
     "path": "ofl/gafata",
     "published": false,
@@ -3619,7 +3619,7 @@
     "version": "1.261"
   },
   "galdeano": {
-    "commit": "b4a03107f84c99b52bcfd937046ae3113845b5fb",
+    "commit": "443e7197a2e4d9d15910939729da2e6efa583eb0",
     "package": "fontpkg-galdeano",
     "path": "ofl/galdeano",
     "published": false,
@@ -3745,21 +3745,21 @@
     "version": "1.001"
   },
   "geostar": {
-    "commit": "734e728680b03a570501fe26f486e2ebd029b3cc",
+    "commit": "bee7800e69f389a61451abcef518bc4c7bba65e9",
     "package": "fontpkg-geostar",
     "path": "ofl/geostar",
     "published": false,
     "version": "1.002"
   },
   "geostarfill": {
-    "commit": "c1928d6cae59f35a6d8d347856429bbbb1ffdd0a",
+    "commit": "220f78cfc13001cf52981bbfa584b9ba02d63a9e",
     "package": "fontpkg-geostar-fill",
     "path": "ofl/geostarfill",
     "published": false,
     "version": "1.002"
   },
   "germaniaone": {
-    "commit": "5a3c57ea09377904fc92136b4f19ae6fc7a49831",
+    "commit": "cea4f0a25cb8138472c46d1c316493b03cfc6e30",
     "package": "fontpkg-germania-one",
     "path": "ofl/germaniaone",
     "published": false,
@@ -3815,14 +3815,14 @@
     "version": "1.004"
   },
   "giveyouglory": {
-    "commit": "f72ddf1add44d42f02187a752bfcf7395cc7c9a6",
+    "commit": "fdb50ba6535fada2584a0729ea54dd90a167d55d",
     "package": "fontpkg-give-you-glory",
     "path": "ofl/giveyouglory",
     "published": false,
     "version": "1.002"
   },
   "glassantiqua": {
-    "commit": "3f6cb423db9220fd5e4672668fa654aa16acdf0c",
+    "commit": "95d9c4a6139968121cb15af719f6d666a5957349",
     "package": "fontpkg-glass-antiqua",
     "path": "ofl/glassantiqua",
     "published": false,
@@ -3864,14 +3864,14 @@
     "version": "1.300"
   },
   "goblinone": {
-    "commit": "eee5f1caddc7784626543551872bf5df6c0f0d8f",
+    "commit": "be20ca8895c61c71634a7f01c93980ec0c25cdfe",
     "package": "fontpkg-goblin-one",
     "path": "ofl/goblinone",
     "published": false,
     "version": "1.001"
   },
   "gochihand": {
-    "commit": "b093b6a66310245b290a688efbf1072322752681",
+    "commit": "19dd31863ba0b92f9614d16aaf1367d6138db7c2",
     "package": "fontpkg-gochi-hand",
     "path": "ofl/gochihand",
     "published": false,
@@ -3948,7 +3948,7 @@
     "version": "1.010"
   },
   "gravitasone": {
-    "commit": "600c4e5972222be3a90fb18d6e21d1fe01eaa103",
+    "commit": "c26f813362326f77e051485adda8a70fe3306d88",
     "package": "fontpkg-gravitas-one",
     "path": "ofl/gravitasone",
     "published": false,
@@ -4004,7 +4004,7 @@
     "version": "1.001"
   },
   "gudea": {
-    "commit": "56e1247e527bddaf119276115c0a784d58692bcc",
+    "commit": "86347d5a93045891b94f1d31de3b872dc7222ec0",
     "package": "fontpkg-gudea",
     "path": "ofl/gudea",
     "published": false,
@@ -4046,7 +4046,7 @@
     "version": "1.010"
   },
   "habibi": {
-    "commit": "88804707085c24cbd803aa111c635b77e292e154",
+    "commit": "a9590de0770978d5d1ff0ff6aeb695e085aeb2d5",
     "package": "fontpkg-habibi",
     "path": "ofl/habibi",
     "published": false,
@@ -4060,7 +4060,7 @@
     "version": "1.101"
   },
   "hammersmithone": {
-    "commit": "2409d6d7846819ade441d0ef3959e343198375d4",
+    "commit": "bb1483b838af48e247e0c8af97a6a5b69a62b389",
     "package": "fontpkg-hammersmith-one",
     "path": "ofl/hammersmithone",
     "published": false,
@@ -4130,18 +4130,18 @@
     "version": "1.002"
   },
   "hedvigletterssans": {
-    "commit": "b93a053f59ed3525d9d5e6ac0f59e95621c6e80e",
+    "commit": "ece60e24dc727c423e2020c301fed0aa1ed70feb",
     "package": "fontpkg-hedvig-letters-sans",
     "path": "ofl/hedvigletterssans",
     "published": false,
-    "version": "1.000"
+    "version": "1.001"
   },
   "hedviglettersserif": {
-    "commit": "ce611b32dc03f64c71f3e464cb69a095f97caaf4",
+    "commit": "502be7fbd1c65b52ffd7eadb5960b5fb1801c388",
     "package": "fontpkg-hedvig-letters-serif",
     "path": "ofl/hedviglettersserif",
     "published": false,
-    "version": "1.000"
+    "version": "1.001"
   },
   "heebo": {
     "commit": "6eee8dac1d2085e39ba91d089dea31a7d7faa643",
@@ -4473,7 +4473,7 @@
     "version": "3.001"
   },
   "inder": {
-    "commit": "776745502387066f2caa8d8d09e6440701d28f48",
+    "commit": "693e0fa531577256cb9f608812df4d67555d1cba",
     "package": "fontpkg-inder",
     "path": "ofl/inder",
     "published": false,
@@ -4494,7 +4494,7 @@
     "version": "1.010"
   },
   "inika": {
-    "commit": "58111a6b9a26637c24ad66594afc748bad25cdeb",
+    "commit": "b9994459fa71d0a147b746bdbc04ec7eaef414e2",
     "package": "fontpkg-inika",
     "path": "ofl/inika",
     "published": false,
@@ -4781,7 +4781,7 @@
     "version": "1.001"
   },
   "jockeyone": {
-    "commit": "d45ca3550273947af1091f673fe244bac31a452b",
+    "commit": "8823a3a4bfa0503f6fc8b183fed46c61b9651f2c",
     "package": "fontpkg-jockey-one",
     "path": "ofl/jockeyone",
     "published": false,
@@ -4844,7 +4844,7 @@
     "version": "1.002"
   },
   "juliussansone": {
-    "commit": "96d232a1d06218b66dd2faf7be739e91f38066a5",
+    "commit": "4d8df9c7be86abdd9f02de819cf1d771fb14d13b",
     "package": "fontpkg-julius-sans-one",
     "path": "ofl/juliussansone",
     "published": false,
@@ -4872,7 +4872,7 @@
     "version": "1.001"
   },
   "justmeagaindownhere": {
-    "commit": "ba57ff6a0dd634c6ed49b923fd4a2ea365c00ecf",
+    "commit": "c41da32b81e6a987c31dc503a253b28d83215ddd",
     "package": "fontpkg-just-me-again-down-here",
     "path": "ofl/justmeagaindownhere",
     "published": false,
@@ -5726,7 +5726,7 @@
     "version": "2.009"
   },
   "lusitana": {
-    "commit": "5cdac8b9a01575cd3453adff2376510897c94ef6",
+    "commit": "0f370b3c04826ac8bcd2242445f147c128f40ee5",
     "package": "fontpkg-lusitana",
     "path": "ofl/lusitana",
     "published": false,
@@ -5761,7 +5761,7 @@
     "version": "2.001"
   },
   "macondoswashcaps": {
-    "commit": "72aadf0c5b8fd47ddea1205da587c8d8e0c0a706",
+    "commit": "5b099d1923ab66f6357deb3e40cd39c185587811",
     "package": "fontpkg-macondo-swash-caps",
     "path": "ofl/macondoswashcaps",
     "published": false,
@@ -5894,7 +5894,7 @@
     "version": "1.000"
   },
   "marckscript": {
-    "commit": "9933b954f8e9c1c05be4c33c1e35a1c6acc75208",
+    "commit": "0bf5d8d91c0d0769423daa5f2d3eaed6e2ac4a54",
     "package": "fontpkg-marck-script",
     "path": "ofl/marckscript",
     "published": false,
@@ -6321,7 +6321,7 @@
     "version": "1.000"
   },
   "montaga": {
-    "commit": "29e2d950586c925364657eb2d72944ac604ff55d",
+    "commit": "c97a2deac94fbdfd18c2d3d0fe4a6151b758b517",
     "package": "fontpkg-montaga",
     "path": "ofl/montaga",
     "published": false,
@@ -9772,7 +9772,7 @@
     "version": "4.000"
   },
   "quando": {
-    "commit": "8f74e7a8dfe7b699b849619e292ffb394e76de77",
+    "commit": "f507da17341bbeb2a8e458ae6770347d41fe9f5f",
     "package": "fontpkg-quando",
     "path": "ofl/quando",
     "published": false,
