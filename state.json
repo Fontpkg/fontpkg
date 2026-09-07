@@ -2145,7 +2145,7 @@
     "commit": "7a40bf4750348e1ea16a56bdfd9075af7bde5b11",
     "package": "fontpkg-changa-one",
     "path": "ofl/changaone",
-    "published": false,
+    "published": true,
     "version": "1.003"
   },
   "chango": {
@@ -4812,7 +4812,7 @@
     "commit": "d4666b02e3c58f97b305ce8d3f1e0f19d6f991f8",
     "package": "fontpkg-josefin-sans",
     "path": "ofl/josefinsans",
-    "published": false,
+    "published": true,
     "version": "2.001"
   },
   "josefinslab": {
@@ -9740,7 +9740,7 @@
     "commit": "00e8c81d22bab6b427db4b744b446e29896c7d76",
     "package": "fontpkg-public-sans",
     "path": "ofl/publicsans",
-    "published": false,
+    "published": true,
     "version": "2.001"
   },
   "puppiesplay": {
@@ -11168,7 +11168,7 @@
     "commit": "a2bdfeefc33b4b42d1d91785c780726a34e934f7",
     "package": "fontpkg-space-grotesk",
     "path": "ofl/spacegrotesk",
-    "published": false,
+    "published": true,
     "version": "2.000"
   },
   "spacemono": {
