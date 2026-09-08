@@ -654,7 +654,7 @@
     "commit": "6e5cdbea854a6b73ba98b167da538c70f962024f",
     "package": "fontpkg-anton",
     "path": "ofl/anton",
-    "published": false,
+    "published": true,
     "version": "2.116"
   },
   "antonio": {
@@ -2887,7 +2887,7 @@
     "commit": "0b171ced2a67273d5a73c7552ef003fef8ec6c49",
     "package": "fontpkg-eb-garamond",
     "path": "ofl/ebgaramond",
-    "published": false,
+    "published": true,
     "version": "1.003"
   },
   "economica": {
@@ -3377,7 +3377,7 @@
     "commit": "4c976609f266a6a6084469ee962df6ebf34b5068",
     "package": "fontpkg-fjalla-one",
     "path": "ofl/fjallaone",
-    "published": false,
+    "published": true,
     "version": "1.002"
   },
   "fjordone": {
@@ -4539,7 +4539,7 @@
     "commit": "0e8c1d84cf9439fda9814bcf2f4febeece483744",
     "package": "fontpkg-instrument-serif",
     "path": "ofl/instrumentserif",
-    "published": false,
+    "published": true,
     "version": "1.000"
   },
   "intelonemono": {
