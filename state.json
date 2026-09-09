@@ -864,7 +864,7 @@
     "commit": "b495299ecf78bba91faea29a7750cf3e6a826317",
     "package": "fontpkg-assistant",
     "path": "ofl/assistant",
-    "published": false,
+    "published": true,
     "version": "3.000"
   },
   "astloch": {
@@ -5533,7 +5533,7 @@
     "commit": "d03c1a73945902764864a3408a8a68d350723274",
     "package": "fontpkg-libre-franklin",
     "path": "ofl/librefranklin",
-    "published": false,
+    "published": true,
     "version": "3.000"
   },
   "licorice": {
@@ -10692,7 +10692,7 @@
     "commit": "da7b191623f77719f9d4c880bad82c35ba10f3a5",
     "package": "fontpkg-schibsted-grotesk",
     "path": "ofl/schibstedgrotesk",
-    "published": false,
+    "published": true,
     "version": "1.100"
   },
   "schoolbell": {
@@ -11126,7 +11126,7 @@
     "commit": "1df02389f2d45b226f97863ef71e553a80279030",
     "package": "fontpkg-sora",
     "path": "ofl/sora",
-    "published": false,
+    "published": true,
     "version": "2.000"
   },
   "sortsmillgoudy": {
