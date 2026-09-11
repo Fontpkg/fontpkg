@@ -1865,7 +1865,7 @@
     "commit": "9557643a19164cd89d8ea8615c0a020ba744a7b5",
     "package": "fontpkg-cabin",
     "path": "ofl/cabin",
-    "published": false,
+    "published": true,
     "version": "3.001"
   },
   "cabincondensed": {
@@ -1900,7 +1900,7 @@
     "commit": "be172544c9de04c13c0368c2c93900bdb0dcfd5c",
     "package": "fontpkg-cairo",
     "path": "ofl/cairo",
-    "published": false,
+    "published": true,
     "version": "3.130"
   },
   "cairoplay": {
@@ -5358,7 +5358,7 @@
     "commit": "89a563b852ff0774080f66cc1b6986ae526a2f58",
     "package": "fontpkg-lexend",
     "path": "ofl/lexend",
-    "published": false,
+    "published": true,
     "version": "1.007"
   },
   "lexenddeca": {
@@ -6492,7 +6492,7 @@
     "commit": "0cefb108d133510a2360d93fe3d51ad5eb1d0950",
     "package": "fontpkg-mukta",
     "path": "ofl/mukta",
-    "published": false,
+    "published": true,
     "version": "2.538"
   },
   "muktamahee": {
