@@ -1585,7 +1585,7 @@
     "commit": "00066129a20c0f2768e6831ab91ddb2d8ac794d6",
     "package": "fontpkg-bitter",
     "path": "ofl/bitter",
-    "published": false,
+    "published": true,
     "version": "3.021"
   },
   "bjcree": {
@@ -3482,7 +3482,7 @@
     "commit": "72a66d6db15ca8a474968a22e64503e22a5cbbbf",
     "package": "fontpkg-fraunces",
     "path": "ofl/fraunces",
-    "published": false,
+    "published": true,
     "version": "1.000"
   },
   "freckleface": {
@@ -4287,7 +4287,7 @@
     "commit": "a85579415f9049094842bab57ed82babe193a33d",
     "package": "fontpkg-ibm-plex-mono",
     "path": "ofl/ibmplexmono",
-    "published": false,
+    "published": true,
     "version": "2.003"
   },
   "ibmplexsans": {
@@ -10160,7 +10160,7 @@
     "commit": "e15ea920f8f4f815dedc385c88fa318d7408d7ed",
     "package": "fontpkg-roboto-flex",
     "path": "ofl/robotoflex",
-    "published": false,
+    "published": true,
     "version": "3.200"
   },
   "robotomono": {
