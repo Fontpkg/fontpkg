@@ -2789,7 +2789,7 @@
     "commit": "113723714011dd5ee5e47c8a35be5578ca3146e6",
     "package": "fontpkg-dm-serif-display",
     "path": "ofl/dmserifdisplay",
-    "published": false,
+    "published": true,
     "version": "5.200"
   },
   "dmseriftext": {
@@ -2831,7 +2831,7 @@
     "commit": "67f527e3e4d118e3da6570a0768b7fbac32ab28c",
     "package": "fontpkg-dosis",
     "path": "ofl/dosis",
-    "published": false,
+    "published": true,
     "version": "3.002"
   },
   "doto": {
@@ -4210,7 +4210,7 @@
     "commit": "814874f21db49a6bad73976565798e7f3fb6402d",
     "package": "fontpkg-hind-siliguri",
     "path": "ofl/hindsiliguri",
-    "published": false,
+    "published": true,
     "version": "1.001"
   },
   "hindvadodara": {
@@ -10020,7 +10020,7 @@
     "commit": "d3cffb404ee0e0477a0124d017043edf6683f2db",
     "package": "fontpkg-red-hat-display",
     "path": "ofl/redhatdisplay",
-    "published": false,
+    "published": true,
     "version": "1.030"
   },
   "redhatmono": {
