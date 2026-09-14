@@ -2065,18 +2065,18 @@
     "version": "2407.024"
   },
   "castoro": {
-    "commit": "80d0d0c5b285850e7e683a2d9508d84733b3c6a8",
+    "commit": "e4fd785eadd9ea17552c4fde8a30511d21226924",
     "package": "fontpkg-castoro",
     "path": "ofl/castoro",
     "published": false,
-    "version": "2.040"
+    "version": "3.000"
   },
   "castorotitling": {
-    "commit": "a3bde26a4c7da7ffebd0d73c777badb8c6794048",
+    "commit": "cabb0071160fe79a2cdd9bf1be02df0221cad4a9",
     "package": "fontpkg-castoro-titling",
     "path": "ofl/castorotitling",
     "published": false,
-    "version": "2.040"
+    "version": "3.000"
   },
   "catamaran": {
     "commit": "b20edc78481589e61e1f1d8533bbcaf25f2e7bb8",
@@ -4172,7 +4172,7 @@
     "version": "1.000"
   },
   "hiburmono": {
-    "commit": "53de0db5323f0c380a79fc831b8ea5f038e9ec50",
+    "commit": "fbd6596837c4505592ab8cc140e4f80a774ba295",
     "package": "fontpkg-hibur-mono",
     "path": "ofl/hiburmono",
     "published": false,
@@ -6951,11 +6951,11 @@
     "version": "2.001"
   },
   "notosansdevanagari": {
-    "commit": "be4cde5ecaeb603884b64a211ba846bd801dcd46",
+    "commit": "0df458ae733a35c1bfb9488f3bbbb156ecee7335",
     "package": "fontpkg-noto-sans-devanagari",
     "path": "ofl/notosansdevanagari",
     "published": false,
-    "version": "2.006"
+    "version": "2.007"
   },
   "notosansdisplay": {
     "commit": "de641ac865455e6506aa4c5ab2327457c1f8e20a",

@@ -6260,15 +6260,13 @@
       "italic",
       "normal"
     ],
-    "variable": false,
-    "version": "2.040",
+    "variable": true,
+    "version": "3.000",
     "weight_range": [
       400,
-      400
+      700
     ],
-    "weights": [
-      400
-    ]
+    "weights": []
   },
   "castoro-titling": {
     "category": [
@@ -6283,7 +6281,7 @@
       "normal"
     ],
     "variable": false,
-    "version": "2.040",
+    "version": "3.000",
     "weight_range": [
       400,
       400
@@ -21113,7 +21111,7 @@
       "normal"
     ],
     "variable": true,
-    "version": "2.006",
+    "version": "2.007",
     "weight_range": [
       100,
       900
