@@ -2103,7 +2103,7 @@
     "commit": "502a6ea98967e147f0ef60d7c268b2a47d87e852",
     "package": "fontpkg-caveat",
     "path": "ofl/caveat",
-    "published": false,
+    "published": true,
     "version": "2.000"
   },
   "caveatbrush": {
@@ -4532,7 +4532,7 @@
     "commit": "3488e9fa5e1ad1cb54166eb6239a36e9625dbe5f",
     "package": "fontpkg-instrument-sans",
     "path": "ofl/instrumentsans",
-    "published": false,
+    "published": true,
     "version": "1.000"
   },
   "instrumentserif": {
@@ -7150,7 +7150,7 @@
     "commit": "c2f8264c52cf5ea3049bcef9f6c1788a8ee1fdf9",
     "package": "fontpkg-noto-sans-khmer",
     "path": "ofl/notosanskhmer",
-    "published": false,
+    "published": true,
     "version": "2.004"
   },
   "notosanskhojki": {
@@ -9866,7 +9866,7 @@
     "commit": "1bc8c0b318cc8e749cd0fc42a7209e702eddd276",
     "package": "fontpkg-rajdhani",
     "path": "ofl/rajdhani",
-    "published": false,
+    "published": true,
     "version": "1.201"
   },
   "rakkas": {
