@@ -3174,7 +3174,7 @@
     "commit": "2a50f133fe30952cbc5c21ce1aef978e838dfd29",
     "package": "fontpkg-exo-2",
     "path": "ofl/exo2",
-    "published": false,
+    "published": true,
     "version": "2.010"
   },
   "expletussans": {
@@ -4182,7 +4182,7 @@
     "commit": "77e79f1174d36905f4a2398faebf02780c0b165d",
     "package": "fontpkg-hind",
     "path": "ofl/hind",
-    "published": false,
+    "published": true,
     "version": "2.001"
   },
   "hindguntur": {
@@ -4560,7 +4560,7 @@
     "commit": "84982bd9ae47599a60dda8a656b39e1b0bd71bfc",
     "package": "fontpkg-inter-tight",
     "path": "ofl/intertight",
-    "published": false,
+    "published": true,
     "version": "3.004"
   },
   "iosevkacharon": {
@@ -8319,7 +8319,7 @@
     "commit": "9ac25691e7787859f9f9aa70c7842f8b00776aef",
     "package": "fontpkg-orbitron",
     "path": "ofl/orbitron",
-    "published": false,
+    "published": true,
     "version": "2.001"
   },
   "oregano": {
