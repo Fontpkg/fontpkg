@@ -3657,7 +3657,7 @@
     "commit": "3ff4fa85719e472517ac62ea276eb3cade49d3bc",
     "package": "fontpkg-geist",
     "path": "ofl/geist",
-    "published": false,
+    "published": true,
     "version": "1.800"
   },
   "geistmono": {
@@ -7759,7 +7759,7 @@
     "commit": "9f76bd184251efa597fa29d94296041c54eff7f0",
     "package": "fontpkg-noto-sans-telugu",
     "path": "ofl/notosanstelugu",
-    "published": false,
+    "published": true,
     "version": "2.005"
   },
   "notosansthaana": {
@@ -9894,7 +9894,7 @@
     "commit": "f816e052c6a7426f000a3eaf5cebbd008d69bda9",
     "package": "fontpkg-ramabhadra",
     "path": "ofl/ramabhadra",
-    "published": false,
+    "published": true,
     "version": "1.000"
   },
   "ramaraja": {
@@ -12008,7 +12008,7 @@
     "commit": "f3b976b5e0d784289208077f96efe0e1acf74d7e",
     "package": "fontpkg-urbanist",
     "path": "ofl/urbanist",
-    "published": false,
+    "published": true,
     "version": "1.303"
   },
   "vampiroone": {
