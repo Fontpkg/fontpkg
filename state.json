@@ -5495,7 +5495,7 @@
     "version": "1.005"
   },
   "librebarcodeean13text": {
-    "commit": "6aa58b5e5c1dc212595c7786088a882afae9c78e",
+    "commit": "063834f266eaa51998804d9e748daf3f5e3e6a8d",
     "package": "fontpkg-libre-barcode-ean13-text",
     "path": "ofl/librebarcodeean13text",
     "published": false,
@@ -5852,11 +5852,11 @@
     "version": "2.000"
   },
   "manrope": {
-    "commit": "f36cffdcd9b4240744f592f1dc002246d0338a4b",
+    "commit": "76b8ae63c89ed8196551dcaf7bf80cda5e795767",
     "package": "fontpkg-manrope",
     "path": "ofl/manrope",
     "published": true,
-    "version": "4.504"
+    "version": "4.505"
   },
   "mansalva": {
     "commit": "b3d0c034a80d8c3cfa8adaac2125581ca4f28adc",
