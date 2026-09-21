@@ -591,7 +591,7 @@
     "commit": "172f42c985fa6c41e4a759c41fec5840c26c7f87",
     "package": "fontpkg-anek-telugu",
     "path": "ofl/anektelugu",
-    "published": false,
+    "published": true,
     "version": "1.003"
   },
   "angkor": {
@@ -2579,7 +2579,7 @@
     "commit": "f86b9a196c8fa68ddff572fff3c907b5bc36a0d1",
     "package": "fontpkg-crimson-text",
     "path": "ofl/crimsontext",
-    "published": false,
+    "published": true,
     "version": "1.100"
   },
   "croissantone": {
@@ -3503,7 +3503,7 @@
     "commit": "d6e11e71256dca74327a8f2b7c46dff586f24753",
     "package": "fontpkg-fredoka",
     "path": "ofl/fredoka",
-    "published": false,
+    "published": true,
     "version": "2.001"
   },
   "freehand": {
@@ -8382,7 +8382,7 @@
     "commit": "d35dd9ca32b3f9cf266d642d60b5c060c2203b92",
     "package": "fontpkg-overpass",
     "path": "ofl/overpass",
-    "published": false,
+    "published": true,
     "version": "4.000"
   },
   "overpassmono": {
