@@ -2278,7 +2278,7 @@
     "commit": "853b4ce2db3ec718c9673e88b128bcf5dd10ea53",
     "package": "fontpkg-cinzel",
     "path": "ofl/cinzel",
-    "published": false,
+    "published": true,
     "version": "2.000"
   },
   "cinzeldecorative": {
@@ -8431,7 +8431,7 @@
     "commit": "2d84d2aa1124f148f34a0ef85bb3459d611c2524",
     "package": "fontpkg-pacifico",
     "path": "ofl/pacifico",
-    "published": false,
+    "published": true,
     "version": "3.001"
   },
   "padauk": {
@@ -10979,7 +10979,7 @@
     "commit": "90ed1cc5dfd51312424dd0244a9c97bbe317809b",
     "package": "fontpkg-slabo-27px",
     "path": "ofl/slabo27px",
-    "published": false,
+    "published": true,
     "version": "1.020"
   },
   "slackey": {
@@ -11560,7 +11560,7 @@
     "commit": "f08b046fb31fd4b77cda1afcea44d473a49af66c",
     "package": "fontpkg-tajawal",
     "path": "ofl/tajawal",
-    "published": false,
+    "published": true,
     "version": "1.700"
   },
   "tangerine": {
