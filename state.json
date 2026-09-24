@@ -10,7 +10,7 @@
     "commit": "740400a8bb779dce210742c6f7526f94f20c3213",
     "package": "fontpkg-abel",
     "path": "ofl/abel",
-    "published": false,
+    "published": true,
     "version": "1.003"
   },
   "abhayalibre": {
@@ -1179,7 +1179,7 @@
     "commit": "c0f3613b9a0ffb858733c8ebd83024d0e8b32cfb",
     "package": "fontpkg-barlow-semi-condensed",
     "path": "ofl/barlowsemicondensed",
-    "published": false,
+    "published": true,
     "version": "1.408"
   },
   "barriecito": {
@@ -5561,7 +5561,7 @@
     "commit": "9ed17368352ac689c057108797d5cfb634adec33",
     "package": "fontpkg-lilita-one",
     "path": "ofl/lilitaone",
-    "published": false,
+    "published": true,
     "version": "1.002"
   },
   "lilyscriptone": {
@@ -5624,7 +5624,7 @@
     "commit": "a3b151d0626906c64e515b3d958dc56822ed7da1",
     "package": "fontpkg-lobster",
     "path": "ofl/lobster",
-    "published": false,
+    "published": true,
     "version": "2.100"
   },
   "lobstertwo": {
@@ -6079,7 +6079,7 @@
     "commit": "1b1e805c8b7d6235868061e43830cfd087601f9c",
     "package": "fontpkg-merriweather-sans",
     "path": "ofl/merriweathersans",
-    "published": false,
+    "published": true,
     "version": "2.001"
   },
   "metal": {
