@@ -815,7 +815,7 @@
     "commit": "74efaba8554cbfd34817b0918a82d82941e14f68",
     "package": "fontpkg-arvo",
     "path": "ofl/arvo",
-    "published": false,
+    "published": true,
     "version": "1.006"
   },
   "arya": {
@@ -2334,7 +2334,7 @@
     "commit": "6056e41401cc18252b162475c8b7757c5aa4c06e",
     "package": "fontpkg-comfortaa",
     "path": "ofl/comfortaa",
-    "published": false,
+    "published": true,
     "version": "3.105"
   },
   "comforter": {
@@ -2803,7 +2803,7 @@
     "commit": "c5512d68054cfe830d21c3319011546d10aa0fca",
     "package": "fontpkg-domine",
     "path": "ofl/domine",
-    "published": false,
+    "published": true,
     "version": "2.000"
   },
   "donegalone": {
@@ -3951,7 +3951,7 @@
     "commit": "c26f813362326f77e051485adda8a70fe3306d88",
     "package": "fontpkg-gravitas-one",
     "path": "ofl/gravitasone",
-    "published": false,
+    "published": true,
     "version": "1.001"
   },
   "greatvibes": {
