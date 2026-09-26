@@ -4098,7 +4098,7 @@
     "commit": "858df04c368118f1f4ef3a2945565c63188e81bc",
     "package": "fontpkg-hanken-grotesk",
     "path": "ofl/hankengrotesk",
-    "published": false,
+    "published": true,
     "version": "3.013"
   },
   "hanuman": {
@@ -7773,7 +7773,7 @@
     "commit": "9c60b07672be3c865d26b2f27da89e39682c583b",
     "package": "fontpkg-noto-sans-thai",
     "path": "ofl/notosansthai",
-    "published": false,
+    "published": true,
     "version": "2.002"
   },
   "notosansthailooped": {
@@ -8417,7 +8417,7 @@
     "commit": "8f75fafed1ab9ca18c63b370b420ac81bb37a687",
     "package": "fontpkg-oxygen",
     "path": "ofl/oxygen",
-    "published": false,
+    "published": true,
     "version": "0.201"
   },
   "oxygenmono": {
@@ -11623,7 +11623,7 @@
     "commit": "17d634f0f4db02f6e2b0ee3fd826a22e017bd487",
     "package": "fontpkg-teko",
     "path": "ofl/teko",
-    "published": false,
+    "published": true,
     "version": "2.000"
   },
   "tektur": {
