@@ -829,7 +829,7 @@
     "commit": "d8d0d40de3aa25fbde7e245250d106e5e39408b3",
     "package": "fontpkg-asap",
     "path": "ofl/asap",
-    "published": false,
+    "published": true,
     "version": "3.002"
   },
   "asapcondensed": {
@@ -1634,7 +1634,7 @@
     "commit": "c9bb8c2a4cb6ea17d24bc88131752031daaae579",
     "package": "fontpkg-bodoni-moda",
     "path": "ofl/bodonimoda",
-    "published": false,
+    "published": true,
     "version": "2.005"
   },
   "bodonimodasc": {
@@ -2131,7 +2131,7 @@
     "commit": "ee7aa56e8f9ab11571cf608cd4e7b7671ff9839b",
     "package": "fontpkg-chakra-petch",
     "path": "ofl/chakrapetch",
-    "published": false,
+    "published": true,
     "version": "1.000"
   },
   "changa": {
@@ -11154,7 +11154,7 @@
     "commit": "9f988eeb59672a4103960a36407e760c7a12f587",
     "package": "fontpkg-source-serif-4",
     "path": "ofl/sourceserif4",
-    "published": false,
+    "published": true,
     "version": "4.004"
   },
   "sourgummy": {
