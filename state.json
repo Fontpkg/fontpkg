@@ -1795,7 +1795,7 @@
     "commit": "f3cbf177ef5c7ab175562d3fd10b78e777ff2980",
     "package": "fontpkg-bungee",
     "path": "ofl/bungee",
-    "published": false,
+    "published": true,
     "version": "2.000"
   },
   "bungeehairline": {
@@ -5995,7 +5995,7 @@
     "commit": "85aa6d157daa319a7df3f406053d185c1753cf41",
     "package": "fontpkg-maven-pro",
     "path": "ofl/mavenpro",
-    "published": false,
+    "published": true,
     "version": "2.103"
   },
   "mclaren": {
@@ -9803,7 +9803,7 @@
     "commit": "f280ac105be64d2ccb06fc3afa787e10e2233737",
     "package": "fontpkg-questrial",
     "path": "ofl/questrial",
-    "published": false,
+    "published": true,
     "version": "2.000"
   },
   "quicksand": {
@@ -12491,7 +12491,7 @@
     "commit": "839079d9871819d0f2da032931a3a3a33a35a911",
     "package": "fontpkg-zeyada",
     "path": "ofl/zeyada",
-    "published": false,
+    "published": true,
     "version": "1.002"
   },
   "zillaslab": {
