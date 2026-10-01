@@ -2775,7 +2775,7 @@
     "commit": "f5ac32bbb3c142a870fe5356abe218a9ed5d00a5",
     "package": "fontpkg-dm-mono",
     "path": "ofl/dmmono",
-    "published": false,
+    "published": true,
     "version": "1.000"
   },
   "dmsans": {
@@ -8690,7 +8690,7 @@
     "commit": "5cde03ad9cf6264e0a4dd6583440d51e511d657a",
     "package": "fontpkg-play",
     "path": "ofl/play",
-    "published": false,
+    "published": true,
     "version": "2.101"
   },
   "playball": {
@@ -9719,7 +9719,7 @@
     "commit": "1fa1bff95a0e50cd7952e5e23c087858b864b8b2",
     "package": "fontpkg-pt-sans-narrow",
     "path": "ofl/ptsansnarrow",
-    "published": false,
+    "published": true,
     "version": "2.003"
   },
   "ptserif": {
@@ -12498,7 +12498,7 @@
     "commit": "376799de36451ba8684af0e9f961a893e2232ee3",
     "package": "fontpkg-zilla-slab",
     "path": "ofl/zillaslab",
-    "published": false,
+    "published": true,
     "version": "1.002"
   },
   "zillaslabhighlight": {
