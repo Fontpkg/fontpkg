@@ -731,7 +731,7 @@
     "commit": "64f20799cc16cb0bf0fd984e7ccfafc94d485e25",
     "package": "fontpkg-archivo-narrow",
     "path": "ofl/archivonarrow",
-    "published": false,
+    "published": true,
     "version": "3.002"
   },
   "arefruqaa": {
@@ -3167,7 +3167,7 @@
     "commit": "ef33f5205929b57d46fe1eaf6b64882dff093c9f",
     "package": "fontpkg-exo",
     "path": "ofl/exo",
-    "published": false,
+    "published": true,
     "version": "2.001"
   },
   "exo2": {
@@ -4343,7 +4343,7 @@
     "commit": "8b53176b685b9a7e86acb653484bd2e43a617366",
     "package": "fontpkg-ibm-plex-serif",
     "path": "ofl/ibmplexserif",
-    "published": false,
+    "published": true,
     "version": "2.006"
   },
   "iceberg": {
@@ -6786,7 +6786,7 @@
     "commit": "e7c3575c7ce2fe1f03767121374d31146c8bea3a",
     "package": "fontpkg-noto-sans-arabic",
     "path": "ofl/notosansarabic",
-    "published": false,
+    "published": true,
     "version": "2.012"
   },
   "notosansarmenian": {
