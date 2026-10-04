@@ -1403,7 +1403,7 @@
     "commit": "51c82317788dd7ef4dc390bc71133fa8d34ddab9",
     "package": "fontpkg-be-vietnam-pro",
     "path": "ofl/bevietnampro",
-    "published": false,
+    "published": true,
     "version": "1.002"
   },
   "bhutukaexpandedone": {
@@ -3958,7 +3958,7 @@
     "commit": "901321d033c5d61499b45acfa7811a92e16d0209",
     "package": "fontpkg-great-vibes",
     "path": "ofl/greatvibes",
-    "published": false,
+    "published": true,
     "version": "1.103"
   },
   "grechenfuemen": {
@@ -5316,7 +5316,7 @@
     "commit": "95917fcfe755d279abc6132e068234fa27695709",
     "package": "fontpkg-league-spartan",
     "path": "ofl/leaguespartan",
-    "published": false,
+    "published": true,
     "version": "2.002"
   },
   "leckerlione": {
@@ -5883,7 +5883,7 @@
     "commit": "96e44b7177f160c8f4e49a8277c9b8aba9f63abf",
     "package": "fontpkg-marcellus",
     "path": "ofl/marcellus",
-    "published": false,
+    "published": true,
     "version": "1.000"
   },
   "marcellussc": {
