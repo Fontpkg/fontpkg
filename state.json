@@ -2460,7 +2460,7 @@
     "commit": "c3a7e7bb9a65e1f7c451f1048285e06135f03f70",
     "package": "fontpkg-cormorant",
     "path": "ofl/cormorant",
-    "published": false,
+    "published": true,
     "version": "4.000"
   },
   "cormorantgaramond": {
@@ -3720,7 +3720,7 @@
     "commit": "be4c36de352de59c3c31c42c3b43773860b9438d",
     "package": "fontpkg-geologica",
     "path": "ofl/geologica",
-    "published": false,
+    "published": true,
     "version": "1.010"
   },
   "geom": {
@@ -4301,7 +4301,7 @@
     "commit": "815e9921326ff9487870651e3868e72fa16fef0c",
     "package": "fontpkg-ibm-plex-sans-arabic",
     "path": "ofl/ibmplexsansarabic",
-    "published": false,
+    "published": true,
     "version": "1.101"
   },
   "ibmplexsanscondensed": {
@@ -6639,7 +6639,7 @@
     "commit": "0b0bf209c7c249ad227875f3b2febbef7258a75e",
     "package": "fontpkg-newsreader",
     "path": "ofl/newsreader",
-    "published": false,
+    "published": true,
     "version": "1.003"
   },
   "niconne": {
