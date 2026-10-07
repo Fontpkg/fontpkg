@@ -2572,7 +2572,7 @@
     "commit": "7f40b4137197ca42734a8ce3be01082f4b434429",
     "package": "fontpkg-crimson-pro",
     "path": "ofl/crimsonpro",
-    "published": false,
+    "published": true,
     "version": "1.003"
   },
   "crimsontext": {
@@ -4483,7 +4483,7 @@
     "commit": "8a31f269d7412c9c5e88378c3c76799d91b02148",
     "package": "fontpkg-indie-flower",
     "path": "ofl/indieflower",
-    "published": false,
+    "published": true,
     "version": "2.000"
   },
   "ingriddarling": {
@@ -10797,7 +10797,7 @@
     "commit": "676d41dea0b474763c101ebbd531cf0496beb730",
     "package": "fontpkg-shadows-into-light",
     "path": "ofl/shadowsintolight",
-    "published": false,
+    "published": true,
     "version": "1.000"
   },
   "shadowsintolighttwo": {
@@ -11210,7 +11210,7 @@
     "commit": "71c0a0783569ded399edc85b63c35e870d904efc",
     "package": "fontpkg-spectral",
     "path": "ofl/spectral",
-    "published": false,
+    "published": true,
     "version": "2.005"
   },
   "spectralsc": {
