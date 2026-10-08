@@ -3097,7 +3097,7 @@
     "commit": "53fba2ab9d0d51c9367943720f38ab80d740e936",
     "package": "fontpkg-epilogue",
     "path": "ofl/epilogue",
-    "published": false,
+    "published": true,
     "version": "2.112"
   },
   "epundasans": {
@@ -4903,7 +4903,7 @@
     "commit": "fe068c5f5ef9fac2cb93b0697db6b39567bd9bdc",
     "package": "fontpkg-kalam",
     "path": "ofl/kalam",
-    "published": false,
+    "published": true,
     "version": "2.001"
   },
   "kalnia": {
@@ -8592,7 +8592,7 @@
     "commit": "76467165450f6a49f021b27477bebce11eabd614",
     "package": "fontpkg-permanent-marker",
     "path": "apache/permanentmarker",
-    "published": false,
+    "published": true,
     "version": "1.001"
   },
   "petemoss": {
@@ -11938,7 +11938,7 @@
     "commit": "fc3a68b75c50d0d8ed1881e5dfc1a3c8ea994eaa",
     "package": "fontpkg-unbounded",
     "path": "ofl/unbounded",
-    "published": false,
+    "published": true,
     "version": "1.701"
   },
   "uncialantiqua": {
