@@ -5365,7 +5365,7 @@
     "commit": "922eb5c5bbf39c9daa88a62c034a5be7591b7503",
     "package": "fontpkg-lexend-deca",
     "path": "ofl/lexenddeca",
-    "published": false,
+    "published": true,
     "version": "1.007"
   },
   "lexendexa": {
@@ -8277,7 +8277,7 @@
     "commit": "2968c7cf6ebcb536b4631734ae900c9151baf954",
     "package": "fontpkg-oleo-script",
     "path": "ofl/oleoscript",
-    "published": false,
+    "published": true,
     "version": "1.002"
   },
   "oleoscriptswashcaps": {
@@ -8291,7 +8291,7 @@
     "commit": "a95c73c665177d009ac69d65f19c37acbf9870d7",
     "package": "fontpkg-onest",
     "path": "ofl/onest",
-    "published": false,
+    "published": true,
     "version": "2.001"
   },
   "ooohbaby": {
@@ -10587,7 +10587,7 @@
     "commit": "7393129b81bbf7ccb58fec9288ea7df6d6974181",
     "package": "fontpkg-sanchez",
     "path": "ofl/sanchez",
-    "published": false,
+    "published": true,
     "version": "1.001"
   },
   "sancreek": {
