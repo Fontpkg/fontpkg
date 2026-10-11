@@ -3027,7 +3027,7 @@
     "commit": "4c7773ecd892fdb253e4faf6c2b76f142f09b0e9",
     "package": "fontpkg-encode-sans",
     "path": "ofl/encodesans",
-    "published": false,
+    "published": true,
     "version": "3.002"
   },
   "encodesanscondensed": {
@@ -3664,7 +3664,7 @@
     "commit": "97bb238b31986b28c3c922e5de497b10d115c5c1",
     "package": "fontpkg-geist-mono",
     "path": "ofl/geistmono",
-    "published": false,
+    "published": true,
     "version": "1.701"
   },
   "geistpixel": {
@@ -10552,7 +10552,7 @@
     "commit": "5a3be3c93208251634707f826f01334e66fed114",
     "package": "fontpkg-saira-condensed",
     "path": "ofl/sairacondensed",
-    "published": false,
+    "published": true,
     "version": "0.072"
   },
   "sairaextracondensed": {
@@ -11175,7 +11175,7 @@
     "commit": "9f82d1ba2c7f95153669abfad987428a609f533f",
     "package": "fontpkg-space-mono",
     "path": "ofl/spacemono",
-    "published": false,
+    "published": true,
     "version": "1.003"
   },
   "specialelite": {
