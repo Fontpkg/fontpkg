@@ -388,7 +388,7 @@
     "commit": "b0beef7ef12e221f14df5d83941049e0f362e5dc",
     "package": "fontpkg-alumni-sans",
     "path": "ofl/alumnisans",
-    "published": false,
+    "published": true,
     "version": "1.018"
   },
   "alumnisanscollegiateone": {
@@ -10629,7 +10629,7 @@
     "commit": "42dc5a1bdc9a40b943dde9d97fe8414f2ab69681",
     "package": "fontpkg-sarabun",
     "path": "ofl/sarabun",
-    "published": false,
+    "published": true,
     "version": "1.000"
   },
   "sarala": {
@@ -10664,7 +10664,7 @@
     "commit": "f60f651188e7703d65958e62d305b60302e337cd",
     "package": "fontpkg-satisfy",
     "path": "apache/satisfy",
-    "published": false,
+    "published": true,
     "version": "1.001"
   },
   "savate": {
@@ -12134,7 +12134,7 @@
     "commit": "c492a6103df69f17514d5c72a762ea88ac5951ac",
     "package": "fontpkg-vollkorn",
     "path": "ofl/vollkorn",
-    "published": false,
+    "published": true,
     "version": "5.001"
   },
   "vollkornsc": {
