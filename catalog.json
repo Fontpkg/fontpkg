@@ -15527,7 +15527,7 @@
       "normal"
     ],
     "variable": true,
-    "version": "1.206",
+    "version": "2.002",
     "weight_range": [
       400,
       700
@@ -16988,7 +16988,7 @@
       "normal"
     ],
     "variable": true,
-    "version": "3.002",
+    "version": "3.004",
     "weight_range": [
       4,
       1000
@@ -19950,7 +19950,7 @@
       "normal"
     ],
     "variable": false,
-    "version": "3.001",
+    "version": "3.200",
     "weight_range": [
       400,
       800
@@ -35284,24 +35284,23 @@
   },
   "tiny5": {
     "category": [
-      "SANS_SERIF"
+      "DISPLAY"
     ],
     "family": "Tiny5",
     "license": "OFL-1.1",
     "package": "fontpkg-tiny5",
     "slug": "tiny5",
     "styles": [
+      "italic",
       "normal"
     ],
-    "variable": false,
-    "version": "1.002",
+    "variable": true,
+    "version": "2.007",
     "weight_range": [
-      400,
-      400
+      100,
+      900
     ],
-    "weights": [
-      400
-    ]
+    "weights": []
   },
   "tiro-bangla": {
     "category": [
@@ -36744,7 +36743,7 @@
       "normal"
     ],
     "variable": true,
-    "version": "3.005",
+    "version": "3.008",
     "weight_range": [
       4,
       1000

@@ -4165,7 +4165,7 @@
     "version": "1.102"
   },
   "herrvonmuellerhoff": {
-    "commit": "b6064202e1e99bf46d540373039cc2e8b4ad47bf",
+    "commit": "10755afda50a03df3d750767a604a81b7e2c1068",
     "package": "fontpkg-herr-von-muellerhoff",
     "path": "ofl/herrvonmuellerhoff",
     "published": false,
@@ -4284,7 +4284,7 @@
     "version": "2.000"
   },
   "ibmplexmono": {
-    "commit": "a85579415f9049094842bab57ed82babe193a33d",
+    "commit": "efe80e6ece442b64ff9f4d98273aeb62362b107c",
     "package": "fontpkg-ibm-plex-mono",
     "path": "ofl/ibmplexmono",
     "published": true,
@@ -5026,7 +5026,7 @@
     "version": "1.003"
   },
   "keaniaone": {
-    "commit": "a021d91ac8524d97b7c4aacf44ae0d6991035dd0",
+    "commit": "338dfe62d8e3806259321e019caaaa424082b703",
     "package": "fontpkg-keania-one",
     "path": "ofl/keaniaone",
     "published": false,
@@ -5040,7 +5040,7 @@
     "version": "3.001"
   },
   "kellyslab": {
-    "commit": "202c4f587fe6c60911a287ebee925052b84b0c69",
+    "commit": "650a9612e4bec976be481d8f64ae01435dc65c76",
     "package": "fontpkg-kelly-slab",
     "path": "ofl/kellyslab",
     "published": false,
@@ -5103,11 +5103,11 @@
     "version": "1.000"
   },
   "kodemono": {
-    "commit": "4ff3e5ce4f355e16fbb34c3eb5581392cb6fa244",
+    "commit": "807ec12e289741cdeeb5ba32cb8f1cb7e3a5c835",
     "package": "fontpkg-kode-mono",
     "path": "ofl/kodemono",
     "published": false,
-    "version": "1.206"
+    "version": "2.002"
   },
   "koho": {
     "commit": "b80e24b49fde93bd48ab88f198c5736435fa05fe",
@@ -5586,11 +5586,11 @@
     "version": "1.202"
   },
   "linefont": {
-    "commit": "ad272495de7715637288966d5bf8640e2b3c3530",
+    "commit": "94dcdc3bce8278c34b0c4201920bd2936bae34da",
     "package": "fontpkg-linefont",
     "path": "ofl/linefont",
     "published": false,
-    "version": "3.002"
+    "version": "3.004"
   },
   "lisubosa": {
     "commit": "4d4358a7aab19c419b7c8b239627f9c8a2f54ce0",
@@ -5670,7 +5670,7 @@
     "version": "3.008"
   },
   "lovedbytheking": {
-    "commit": "2624b824338cf6e947566e7158834294690adbf1",
+    "commit": "bbc71343f7256e9bfcf5a145ce677ff74bd5d448",
     "package": "fontpkg-loved-by-the-king",
     "path": "ofl/lovedbytheking",
     "published": false,
@@ -5691,7 +5691,7 @@
     "version": "1.010"
   },
   "loveyalikeasister": {
-    "commit": "a62d96365601b979fa1bb6447dadbc263f48d135",
+    "commit": "9f4ab78afb83a2961af20e90439a12c490a9ba41",
     "package": "fontpkg-love-ya-like-a-sister",
     "path": "ofl/loveyalikeasister",
     "published": false,
@@ -5957,7 +5957,7 @@
     "version": "1.000"
   },
   "marvel": {
-    "commit": "6d2eb431dcc60afd168e6404d2e305c363883871",
+    "commit": "d7ae2f00a330b3b7efc809301a7cb60bb47182b9",
     "package": "fontpkg-marvel",
     "path": "ofl/marvel",
     "published": false,
@@ -6027,7 +6027,7 @@
     "version": "1.000"
   },
   "medulaone": {
-    "commit": "57b4f92a24e57dc1dd7bebbd267a181da6d30dd7",
+    "commit": "fe78d65388925df99eaf4647f4aa70d152343953",
     "package": "fontpkg-medula-one",
     "path": "ofl/medulaone",
     "published": false,
@@ -6041,7 +6041,7 @@
     "version": "2.001"
   },
   "meiescript": {
-    "commit": "2a9c4d33a0993500c500d49509bd06c24ab46f32",
+    "commit": "250747e4e8decff4fb70e070d1b80d9c15c18ef0",
     "package": "fontpkg-meie-script",
     "path": "ofl/meiescript",
     "published": false,
@@ -6195,7 +6195,7 @@
     "version": "1.001"
   },
   "missfajardose": {
-    "commit": "313fd27290a67b42523a28a4ca32d4e2a3d19834",
+    "commit": "813f3f17a9794bbe461a5bf7ba7d5f32ec65b493",
     "package": "fontpkg-miss-fajardose",
     "path": "ofl/missfajardose",
     "published": false,
@@ -6314,7 +6314,7 @@
     "version": "1.000"
   },
   "monsieurladoulaise": {
-    "commit": "8c94c8e4dc028920cc99647fa9edf4fe5421b4e8",
+    "commit": "dfe7353ca1153eb8ada4cf81585a4fb21ddb87a3",
     "package": "fontpkg-monsieur-la-doulaise",
     "path": "ofl/monsieurladoulaise",
     "published": false,
@@ -6454,28 +6454,28 @@
     "version": "1.000"
   },
   "mrdafoe": {
-    "commit": "968aacec0138a622d471827115d1e86a5742e218",
+    "commit": "3a17d9084fda3a9ec2393dc523e6a76d6a68e23a",
     "package": "fontpkg-mr-dafoe",
     "path": "ofl/mrdafoe",
     "published": false,
     "version": "1.000"
   },
   "mrdehaviland": {
-    "commit": "266fbff750d4f448d4c102b01369cfcb514f1550",
+    "commit": "281205163c696ff2287da0cb96c35ba16e75b03d",
     "package": "fontpkg-mr-de-haviland",
     "path": "ofl/mrdehaviland",
     "published": false,
     "version": "1.000"
   },
   "mrssaintdelafield": {
-    "commit": "c15df88a7a2607d83fccde138f2ceebab3dbca6f",
+    "commit": "79569b949d598addeef0a4b4d70d8c2dadaabe77",
     "package": "fontpkg-mrs-saint-delafield",
     "path": "ofl/mrssaintdelafield",
     "published": false,
     "version": "1.000"
   },
   "mrssheppards": {
-    "commit": "f90f7f58ba8d628d54a5132f63269f833bedf3e8",
+    "commit": "5da29a676a7ff30b9f3de3ff9b548070f8a13896",
     "package": "fontpkg-mrs-sheppards",
     "path": "ofl/mrssheppards",
     "published": false,
@@ -6559,11 +6559,11 @@
     "version": "1.003"
   },
   "namdhinggo": {
-    "commit": "b0fbd09bc61384ba4c37b1791822888a3e9a3514",
+    "commit": "d09ce87e187f8b9cbbfb0ac1027da0e28b955a5e",
     "package": "fontpkg-namdhinggo",
     "path": "ofl/namdhinggo",
     "published": false,
-    "version": "3.001"
+    "version": "3.200"
   },
   "narnoor": {
     "commit": "40addbdf54dafd8253248e2e1b43441168a79cd1",
@@ -8127,14 +8127,14 @@
     "version": "1.003"
   },
   "novacut": {
-    "commit": "545faea6368eaacf48ae15949a6e68ca9b6974bf",
+    "commit": "0eba8ebc86708790b82d179715370175e6aaf1f3",
     "package": "fontpkg-nova-cut",
     "path": "ofl/novacut",
     "published": false,
     "version": "2.000"
   },
   "novaflat": {
-    "commit": "34463d094f5184b77db633017d387c03567676da",
+    "commit": "2180eb0e1a8a0328c47449e495b969a2417a0708",
     "package": "fontpkg-nova-flat",
     "path": "ofl/novaflat",
     "published": false,
@@ -8148,14 +8148,14 @@
     "version": "1.200"
   },
   "novaoval": {
-    "commit": "eed62c26289d84f72442f55ca7361b57a1bdd6ac",
+    "commit": "2975fb026a2464aee02305690843b1b1e4648fb4",
     "package": "fontpkg-nova-oval",
     "path": "ofl/novaoval",
     "published": false,
     "version": "2.000"
   },
   "novaround": {
-    "commit": "e5398935e30fbbfdc188b907cbd3eec47885779d",
+    "commit": "346afc0047ac6067d4b8a36fa84cb5cf45317e10",
     "package": "fontpkg-nova-round",
     "path": "ofl/novaround",
     "published": false,
@@ -8169,14 +8169,14 @@
     "version": "2.001"
   },
   "novaslim": {
-    "commit": "b3bc1e8fbe7c712a4c01589d0f85e83f2bb3e3e8",
+    "commit": "08de0ccd465b58d9a52dc8e7110642c726e94d3f",
     "package": "fontpkg-nova-slim",
     "path": "ofl/novaslim",
     "published": false,
     "version": "2.000"
   },
   "novasquare": {
-    "commit": "7cbcc963d1e1be1ba37c2daa52af6c0b5f639f53",
+    "commit": "f0869a58b6f120514f889078d60387ec41c4de1c",
     "package": "fontpkg-nova-square",
     "path": "ofl/novasquare",
     "published": false,
@@ -8190,7 +8190,7 @@
     "version": "0.300"
   },
   "numans": {
-    "commit": "1f5b983b2d676f1ed0d21fba095a20bffce8e9ea",
+    "commit": "b538b5d9174b3ee1d71c762ca7923aa847de28ce",
     "package": "fontpkg-numans",
     "path": "ofl/numans",
     "published": false,
@@ -8372,7 +8372,7 @@
     "version": "1.002"
   },
   "overlocksc": {
-    "commit": "1bc6191f9a0c588d214489713048c36c2b7c7cc3",
+    "commit": "b8f66a95544f028a73a9ab74dfd740e585b21f34",
     "package": "fontpkg-overlock-sc",
     "path": "ofl/overlocksc",
     "published": false,
@@ -8393,7 +8393,7 @@
     "version": "4.000"
   },
   "overtherainbow": {
-    "commit": "f8483cc1212cd560751c93aa1108b3ef351be0a9",
+    "commit": "cddd3089e44c422f5eab1ef958f9c81a29f8d5f3",
     "package": "fontpkg-over-the-rainbow",
     "path": "ofl/overtherainbow",
     "published": false,
@@ -8554,7 +8554,7 @@
     "version": "2.001"
   },
   "patuaone": {
-    "commit": "c5a90bdf511e9c9c2a8c9f6f8c915761e5cc7dc5",
+    "commit": "0d2c577d4b1c4280471a2fd59b77fe29773d7538",
     "package": "fontpkg-patua-one",
     "path": "ofl/patuaone",
     "published": false,
@@ -8645,7 +8645,7 @@
     "version": "2.005"
   },
   "piedra": {
-    "commit": "e4565ba2ac30d891b200ad702214855a38d5e197",
+    "commit": "754a6cbdd15b1995cbdb4fd277ff5b115727deb5",
     "package": "fontpkg-piedra",
     "path": "ofl/piedra",
     "published": false,
@@ -8659,7 +8659,7 @@
     "version": "1.008"
   },
   "pirataone": {
-    "commit": "a6e928415934a4bbe38afaca54b140371b27c916",
+    "commit": "7933a35bb4cf1f979713ff2b5735c4ee4c970da6",
     "package": "fontpkg-pirata-one",
     "path": "ofl/pirataone",
     "published": false,
@@ -9576,14 +9576,14 @@
     "version": "4.004"
   },
   "portlligatsans": {
-    "commit": "fd4d658e70cdf13f24515f80e95891f4eb280664",
+    "commit": "d9724b89fc15ac38641af01250e9d137c78e9040",
     "package": "fontpkg-port-lligat-sans",
     "path": "ofl/portlligatsans",
     "published": false,
     "version": "1.002"
   },
   "portlligatslab": {
-    "commit": "b8d0d68a3da7b77ffce4738116d4182bf334a265",
+    "commit": "f30b82b0d6ac48d6acdfa93c126406151d89aadc",
     "package": "fontpkg-port-lligat-slab",
     "path": "ofl/portlligatslab",
     "published": false,
@@ -9751,7 +9751,7 @@
     "version": "1.010"
   },
   "puritan": {
-    "commit": "1377a08982a45cdc4ceac0094157daa28275affa",
+    "commit": "269a28758a69b14da41e5a9875681c210031ad3d",
     "package": "fontpkg-puritan",
     "path": "ofl/puritan",
     "published": false,
@@ -9779,7 +9779,7 @@
     "version": "1.002"
   },
   "quantico": {
-    "commit": "1963a6dcd3dc45157bcf881a164e068b9805a742",
+    "commit": "1b903d294af361ead81fff4ee7ae27793190a379",
     "package": "fontpkg-quantico",
     "path": "ofl/quantico",
     "published": false,
@@ -10185,7 +10185,7 @@
     "version": "2.002"
   },
   "rochester": {
-    "commit": "5156e4494a158fe7e7872c65a5bae1dfeb3d7d53",
+    "commit": "b95b68bb7bc833af9281974c9e3bcdb6e1a985e9",
     "package": "fontpkg-rochester",
     "path": "apache/rochester",
     "published": false,
@@ -10458,7 +10458,7 @@
     "version": "2.001"
   },
   "rufina": {
-    "commit": "f5682db69835f9e22da2522d874b92308974ac0b",
+    "commit": "542a53c5f395ded9c6b0c1db6822ecefca73cecd",
     "package": "fontpkg-rufina",
     "path": "ofl/rufina",
     "published": false,
@@ -10493,7 +10493,7 @@
     "version": "1.001"
   },
   "russoone": {
-    "commit": "fa5f4db8708dd6d6318d863f82c0dd40d2151f26",
+    "commit": "0d6baf4a021308ea4cab1ec78cdf1955f7b9c1ee",
     "package": "fontpkg-russo-one",
     "path": "ofl/russoone",
     "published": false,
@@ -11235,7 +11235,7 @@
     "version": "1.001"
   },
   "spirax": {
-    "commit": "93b996691b4109516711001aad6e26958233ed9f",
+    "commit": "0367739b24e9d4b79460c925a5ce6b3a061fa704",
     "package": "fontpkg-spirax",
     "path": "ofl/spirax",
     "published": false,
@@ -11263,7 +11263,7 @@
     "version": "1.004"
   },
   "squadaone": {
-    "commit": "9978a8432cd3bc4528499f087870b208aaafb3ea",
+    "commit": "124b484c98db8f1fa43891de5844a44932f6f901",
     "package": "fontpkg-squada-one",
     "path": "ofl/squadaone",
     "published": false,
@@ -11501,7 +11501,7 @@
     "version": "8.002"
   },
   "swankyandmoomoo": {
-    "commit": "956f207cb1dbc0c7ef168fcf1d0ebbd5a304d292",
+    "commit": "26f575231e95668a85052f20107394057c3da2be",
     "package": "fontpkg-swanky-and-moo-moo",
     "path": "ofl/swankyandmoomoo",
     "published": false,
@@ -11676,7 +11676,7 @@
     "version": "1.000"
   },
   "thegirlnextdoor": {
-    "commit": "e65832d5c656eea928b3befbbb1f621dcdc44ceb",
+    "commit": "24bf626c7fa81438ac030ccc8da068927c2c54e3",
     "package": "fontpkg-the-girl-next-door",
     "path": "ofl/thegirlnextdoor",
     "published": false,
@@ -11739,11 +11739,11 @@
     "version": "1.000"
   },
   "tiny5": {
-    "commit": "f73b4a14e4d9a58a81b857a8e4eda1d0df2324e5",
+    "commit": "edfc2acb11bb1271ea34564bca031569e8d91dd2",
     "package": "fontpkg-tiny5",
     "path": "ofl/tiny5",
     "published": false,
-    "version": "1.002"
+    "version": "2.007"
   },
   "tirobangla": {
     "commit": "b3f0b5aa53bd15caf50f13168a49752a0de24cb8",
@@ -11872,7 +11872,7 @@
     "version": "1.101"
   },
   "trochut": {
-    "commit": "e7580e7c09de14afc8ecef5ab24c6997ba67fad2",
+    "commit": "291dbffe77e35d1058b0c2e07748afad6c66ac61",
     "package": "fontpkg-trochut",
     "path": "ofl/trochut",
     "published": false,
@@ -11900,7 +11900,7 @@
     "version": "1.272"
   },
   "tulpenone": {
-    "commit": "ba53533f8f2708e729ac835c3ca4756a8e79e188",
+    "commit": "8a92e631dc0369e719fd9ebcb92962da628ca0ef",
     "package": "fontpkg-tulpen-one",
     "path": "ofl/tulpenone",
     "published": false,
@@ -12208,11 +12208,11 @@
     "version": "1.010"
   },
   "wavefont": {
-    "commit": "97a01168fcec95453998f7c31880b54f07159781",
+    "commit": "d643c6c89fdb1f3296502484c56baaf97be694a6",
     "package": "fontpkg-wavefont",
     "path": "ofl/wavefont",
     "published": false,
-    "version": "3.005"
+    "version": "3.008"
   },
   "wellfleet": {
     "commit": "dbae00b9756ce8e730a2c40dab9be9391c09b100",
@@ -12222,7 +12222,7 @@
     "version": "1.002"
   },
   "wendyone": {
-    "commit": "b9c71dc498d7883c33f957dcef1c9b26ad7a2291",
+    "commit": "78e79717ad8f8f52834ddab39f6ef79e0b7beb0a",
     "package": "fontpkg-wendy-one",
     "path": "ofl/wendyone",
     "published": false,
