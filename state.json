@@ -2082,7 +2082,7 @@
     "commit": "b20edc78481589e61e1f1d8533bbcaf25f2e7bb8",
     "package": "fontpkg-catamaran",
     "path": "ofl/catamaran",
-    "published": false,
+    "published": true,
     "version": "2.000"
   },
   "caudex": {
@@ -6723,7 +6723,7 @@
     "commit": "474ed5baba15e4924a035f088ffe6c701cd5898a",
     "package": "fontpkg-noto-kufi-arabic",
     "path": "ofl/notokufiarabic",
-    "published": false,
+    "published": true,
     "version": "2.109"
   },
   "notomusic": {
@@ -9621,7 +9621,7 @@
     "commit": "5047fba3aa85fb41605d9f5b9297f246d0d0bd3a",
     "package": "fontpkg-press-start-2p",
     "path": "ofl/pressstart2p",
-    "published": false,
+    "published": true,
     "version": "3.000"
   },
   "pridi": {
@@ -10902,7 +10902,7 @@
     "commit": "04b54e4c08c958b71f37ce010ebb19a36b1c6dec",
     "package": "fontpkg-signika",
     "path": "ofl/signika",
-    "published": false,
+    "published": true,
     "version": "2.003"
   },
   "signikanegative": {
