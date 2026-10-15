@@ -472,7 +472,7 @@
     "commit": "2262020c5d8e60bcaddd82f05e96231f7c92a530",
     "package": "fontpkg-amiri",
     "path": "ofl/amiri",
-    "published": false,
+    "published": true,
     "version": "1.002"
   },
   "amiriquran": {
@@ -647,7 +647,7 @@
     "commit": "68a7f3f70928da58c1e15e9007dd547b5dea98c3",
     "package": "fontpkg-antic-slab",
     "path": "ofl/anticslab",
-    "published": false,
+    "published": true,
     "version": "1.002"
   },
   "anton": {
@@ -5610,7 +5610,7 @@
     "commit": "22c0ca3b756cf9e8f1c1a083ad66d8faf65646fd",
     "package": "fontpkg-literata",
     "path": "ofl/literata",
-    "published": false,
+    "published": true,
     "version": "3.103"
   },
   "livvic": {
@@ -10090,7 +10090,7 @@
     "commit": "c47e7ed8a52327acc1a8727bca83cccb2dbada37",
     "package": "fontpkg-rethink-sans",
     "path": "ofl/rethinksans",
-    "published": false,
+    "published": true,
     "version": "1.001"
   },
   "revalia": {
