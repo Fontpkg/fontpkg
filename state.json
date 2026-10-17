@@ -892,7 +892,7 @@
     "commit": "25b343826c1e2a824e253e4263de89f22c07d1ed",
     "package": "fontpkg-atkinson-hyperlegible",
     "path": "ofl/atkinsonhyperlegible",
-    "published": false,
+    "published": true,
     "version": "1.006"
   },
   "atkinsonhyperlegiblemono": {
@@ -3363,7 +3363,7 @@
     "commit": "1e3820db505fd2c369fd1717d12ad23c787c8a09",
     "package": "fontpkg-fira-sans-condensed",
     "path": "ofl/firasanscondensed",
-    "published": false,
+    "published": true,
     "version": "4.203"
   },
   "firasansextracondensed": {
@@ -12029,7 +12029,7 @@
     "commit": "239411f5888a7d984e2d82a5101ab2f94c80ba8a",
     "package": "fontpkg-varela-round",
     "path": "ofl/varelaround",
-    "published": false,
+    "published": true,
     "version": "3.010"
   },
   "varta": {
@@ -12365,7 +12365,7 @@
     "commit": "984721cbb478aa6cda61e3a217b93e2853f42db9",
     "package": "fontpkg-yellowtail",
     "path": "apache/yellowtail",
-    "published": false,
+    "published": true,
     "version": "1.002"
   },
   "yesevaone": {
