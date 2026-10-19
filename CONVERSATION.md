@@ -385,3 +385,11 @@ Fixes, all committed:
 - 69 tests passing (4 new: sustained-failure abort, interrupt-preserves-state, already-published rebuild skip, publish CLI unit tests).
 
 **Resolution verified:** site deploy green; fontpkg.org shows all 18 published families again, matching PyPI. Tonight's 23:17 UTC run resumes the daily drip with the fixed publisher (pre-checks PyPI, aborts on sustained quota failures, interrupt-safe state saves).
+
+---
+
+## 2026-10-19
+
+**User:** Two months on: 180 published (~3/day), no PyPI org response. Asked (1) whether trusted contributors with their own PyPI accounts could speed publishing and how to configure it; (2) opinion on a runtime `fontpkg.install_font()` first-use download instead of per-font packages.
+
+**Claude:** Assessment only (no implementation yet). (1) Yes — the new-project quota is per-account, so N contributors ≈ N×3/day (~4.5 months with 4 vs ~18 solo). Recommended config A: contributors run publish-pending locally with their own tokens, state.json via git as coordination (is_published pre-check already makes races safe); needs only a --limit flag + CONTRIBUTING doc. Config B (pending trusted publishers registered against our CI) avoids local setup but is web-UI-tedious and its quota attribution is unverified. Caveat: creator owns each project, no role-management API, manual consolidation into the org later — suggest recording publisher in state.json. Cheapest lever first: nudge the org request and file a rate-limit increase at pypi/support (typeshed precedent). (2) install_font(): bad as replacement (kills lockfile pinning/offline/reproducibility — the core value prop), good as complement with precedent (playwright install, nltk.download, HF Hub): per-family archives on GitHub Releases (already built nightly), hash-verified via catalog.json, platformdirs cache, same resolver so path() is source-agnostic. Opens strategic option: top-N on PyPI + install() for the long tail. Recommended order: support tickets now, contributor setup if people are real, build install() regardless (~a day).
