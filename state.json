@@ -2012,7 +2012,7 @@
     "commit": "1951ae27c73e5395bf8438603636cfaf786dfd60",
     "package": "fontpkg-cardo",
     "path": "ofl/cardo",
-    "published": false,
+    "published": true,
     "version": "1.045"
   },
   "carlito": {
@@ -5701,7 +5701,7 @@
     "commit": "99bc58d023e87fb10b99ad1063e88337a04ea1e4",
     "package": "fontpkg-luckiest-guy",
     "path": "apache/luckiestguy",
-    "published": false,
+    "published": true,
     "version": "1.001"
   },
   "lugrasimo": {
@@ -6632,7 +6632,7 @@
     "commit": "b9c4cb22622313269333877639c2d3fb8731f1f6",
     "package": "fontpkg-news-cycle",
     "path": "ofl/newscycle",
-    "published": false,
+    "published": true,
     "version": "0.510"
   },
   "newsreader": {
@@ -12106,7 +12106,7 @@
     "commit": "cf400c876478921799e089eab4f2f45ba33990a3",
     "package": "fontpkg-viga",
     "path": "ofl/viga",
-    "published": false,
+    "published": true,
     "version": "1.001"
   },
   "vinasans": {
