@@ -1074,7 +1074,7 @@
     "commit": "5c2e189d59baa1264f5603296717f5bd95d2f07a",
     "package": "fontpkg-baloo-2",
     "path": "ofl/baloo2",
-    "published": false,
+    "published": true,
     "version": "1.700"
   },
   "baloobhai2": {
@@ -2705,7 +2705,7 @@
     "commit": "b2f52635fff28f04bd2f8cddc8c847ce3f08743a",
     "package": "fontpkg-delius",
     "path": "ofl/delius",
-    "published": false,
+    "published": true,
     "version": "1.001"
   },
   "deliusswashcaps": {
@@ -4308,7 +4308,7 @@
     "commit": "24f405a89d56970a1167daff2aaa404b3cedd64c",
     "package": "fontpkg-ibm-plex-sans-condensed",
     "path": "ofl/ibmplexsanscondensed",
-    "published": false,
+    "published": true,
     "version": "1.003"
   },
   "ibmplexsansdevanagari": {
@@ -10034,7 +10034,7 @@
     "commit": "38f517c2ecd31468bab77d882fe7408a4b643605",
     "package": "fontpkg-red-hat-text",
     "path": "ofl/redhattext",
-    "published": false,
+    "published": true,
     "version": "1.030"
   },
   "redressed": {
