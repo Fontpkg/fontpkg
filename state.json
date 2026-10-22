@@ -514,7 +514,7 @@
     "commit": "e624082b1c70bb467ef2c56c6f80fcd0b8e17000",
     "package": "fontpkg-andada-pro",
     "path": "ofl/andadapro",
-    "published": false,
+    "published": true,
     "version": "3.003"
   },
   "andika": {
@@ -11518,7 +11518,7 @@
     "commit": "6d5db34af7af11ce590b2973c0ee2fad6882e6bd",
     "package": "fontpkg-syne",
     "path": "ofl/syne",
-    "published": false,
+    "published": true,
     "version": "2.200"
   },
   "synemono": {
@@ -11812,7 +11812,7 @@
     "commit": "edbdb7bafcc40f39d0f308564f39ed778c1a9340",
     "package": "fontpkg-titan-one",
     "path": "ofl/titanone",
-    "published": false,
+    "published": true,
     "version": "1.001"
   },
   "titilliumweb": {
@@ -12316,7 +12316,7 @@
     "commit": "88d5e003410c2e585e6b0d70322eaf8264909cff",
     "package": "fontpkg-yanone-kaffeesatz",
     "path": "ofl/yanonekaffeesatz",
-    "published": false,
+    "published": true,
     "version": "2.003"
   },
   "yantramanav": {
