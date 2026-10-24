@@ -52,7 +52,7 @@
     "commit": "011d50a2ab121d974fc2ea46de43cf40b62ddbca",
     "package": "fontpkg-acme",
     "path": "ofl/acme",
-    "published": false,
+    "published": true,
     "version": "1.002"
   },
   "actor": {
@@ -3475,7 +3475,7 @@
     "commit": "b20575a6f33d751c1ce81e2e86c3a4c11a9277a7",
     "package": "fontpkg-frank-ruhl-libre",
     "path": "ofl/frankruhllibre",
-    "published": false,
+    "published": true,
     "version": "6.004"
   },
   "fraunces": {
@@ -6954,7 +6954,7 @@
     "commit": "0df458ae733a35c1bfb9488f3bbbb156ecee7335",
     "package": "fontpkg-noto-sans-devanagari",
     "path": "ofl/notosansdevanagari",
-    "published": false,
+    "published": true,
     "version": "2.007"
   },
   "notosansdisplay": {
@@ -10496,7 +10496,7 @@
     "commit": "d528a676a37bde2d14f2dc796264aa50d57d42e7",
     "package": "fontpkg-russo-one",
     "path": "ofl/russoone",
-    "published": false,
+    "published": true,
     "version": "1.000"
   },
   "ruthie": {
