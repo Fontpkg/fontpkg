@@ -147,7 +147,7 @@
     "version": "1.002"
   },
   "akronim": {
-    "commit": "f6ab9853a81e264da3bad2b9e9661b396513a7a5",
+    "commit": "b4fdb599dbf9f23ae72bb21e5a3c0d9aec8e626b",
     "package": "fontpkg-akronim",
     "path": "ofl/akronim",
     "published": false,
@@ -1925,7 +1925,7 @@
     "version": "1.010"
   },
   "calligraffitti": {
-    "commit": "00641051e0c275a229390eb5ba28745f111594a7",
+    "commit": "28024e6ce10b34ef9574a3005ec2279059335c6c",
     "package": "fontpkg-calligraffitti",
     "path": "apache/calligraffitti",
     "published": false,
@@ -2219,7 +2219,7 @@
     "version": "1.005"
   },
   "cherrycreamsoda": {
-    "commit": "2191a63589a7c5ad5d84f8ff6ae0d7edb25bb2a2",
+    "commit": "ba649ead91db087164d6edba3e30ada756accf26",
     "package": "fontpkg-cherry-cream-soda",
     "path": "apache/cherrycreamsoda",
     "published": false,
@@ -2233,7 +2233,7 @@
     "version": "1.001"
   },
   "chewy": {
-    "commit": "ac12430a6da4d9b8483466fe5351155dce7d5d36",
+    "commit": "73b5bc987dbfb236e8380db1abd273f36fb23822",
     "package": "fontpkg-chewy",
     "path": "apache/chewy",
     "published": false,
@@ -2366,7 +2366,7 @@
     "version": "1.200"
   },
   "comingsoon": {
-    "commit": "6803817ec9bc05e8c24c403311e5f467c8f2fef9",
+    "commit": "facad0d86885c514a23915e281c71662550cf5aa",
     "package": "fontpkg-coming-soon",
     "path": "apache/comingsoon",
     "published": false,
@@ -2548,7 +2548,7 @@
     "version": "1.000"
   },
   "craftygirls": {
-    "commit": "ce80262612ebd2233a321f0aca0f39f9cbd2ece0",
+    "commit": "12f25fa1b9a899a1628c5a52eba3257f16eec3b8",
     "package": "fontpkg-crafty-girls",
     "path": "apache/craftygirls",
     "published": false,
@@ -3444,7 +3444,7 @@
     "version": "1.000"
   },
   "fontdinerswanky": {
-    "commit": "c41aabd2beb5b9339a130dee9643ece394bdce8d",
+    "commit": "f4c0aa69ba34d5d6827ea383eca995e0f1fad898",
     "package": "fontpkg-fontdiner-swanky",
     "path": "apache/fontdinerswanky",
     "published": false,
@@ -4228,7 +4228,7 @@
     "version": "1.100"
   },
   "homemadeapple": {
-    "commit": "c90f28c1fe3f145f682a71e2cab418c674c39f78",
+    "commit": "c3cfeb42c4ba7a266759fe6c6ed7b72b6f453c91",
     "package": "fontpkg-homemade-apple",
     "path": "apache/homemadeapple",
     "published": false,
@@ -5152,7 +5152,7 @@
     "version": "8.000"
   },
   "kranky": {
-    "commit": "2c2322fb5270359ecc25ab64b260c934d1fc23ea",
+    "commit": "434f318515a80b922a50a208fbf15d1e7225239b",
     "package": "fontpkg-kranky",
     "path": "apache/kranky",
     "published": false,
@@ -8309,7 +8309,7 @@
     "version": "3.003"
   },
   "oranienbaum": {
-    "commit": "607f44cabd287e494a4385e006985cf63126a053",
+    "commit": "4f10df9fd8d1880feaa29e8de7b5464b3499723c",
     "package": "fontpkg-oranienbaum",
     "path": "ofl/oranienbaum",
     "published": false,
@@ -8589,7 +8589,7 @@
     "version": "1.000"
   },
   "permanentmarker": {
-    "commit": "38b7754d8dd547f68e68845a4503abd95c88896e",
+    "commit": "e050c5b91a7210b1639bed9da71b91ca2738d48b",
     "package": "fontpkg-permanent-marker",
     "path": "apache/permanentmarker",
     "published": true,
@@ -9702,35 +9702,35 @@
     "version": "1.001"
   },
   "ptsans": {
-    "commit": "b4c722aaf783063908ad8fab533a1b6ff28bcfec",
+    "commit": "113d179d5af9c21e5a8e9d68bec26be10b36a836",
     "package": "fontpkg-pt-sans",
     "path": "ofl/ptsans",
     "published": true,
     "version": "2.003"
   },
   "ptsanscaption": {
-    "commit": "58a801515972014652926c5ce5bf52987dfaf5db",
+    "commit": "51d6096cd40e3d115dfe1306f6a32ae85a38e400",
     "package": "fontpkg-pt-sans-caption",
     "path": "ofl/ptsanscaption",
     "published": false,
     "version": "2.004"
   },
   "ptsansnarrow": {
-    "commit": "1fa1bff95a0e50cd7952e5e23c087858b864b8b2",
+    "commit": "6f33022c07f9ed5923771552762ea27c597dd8df",
     "package": "fontpkg-pt-sans-narrow",
     "path": "ofl/ptsansnarrow",
     "published": true,
     "version": "2.003"
   },
   "ptserif": {
-    "commit": "82a9b1eb5d9d5b81513dd7060a831aa92136c24c",
+    "commit": "ed81cca945238dc16b36de90ecb9ff4226a1c5df",
     "package": "fontpkg-pt-serif",
     "path": "ofl/ptserif",
     "published": true,
     "version": "1.000"
   },
   "ptserifcaption": {
-    "commit": "0a379d3b20c84d500fcf291a1f8528ce36b193ce",
+    "commit": "b038be6348efc568d1a279fece27a511fcdbaa5f",
     "package": "fontpkg-pt-serif-caption",
     "path": "ofl/ptserifcaption",
     "published": false,
@@ -10073,7 +10073,7 @@
     "version": "1.899"
   },
   "reeniebeanie": {
-    "commit": "c20bfac3857612b0bb16b78a55aa935f0d88191a",
+    "commit": "0993e1b7a1d3457ac53ec32d161efcd9bd21c9df",
     "package": "fontpkg-reenie-beanie",
     "path": "ofl/reeniebeanie",
     "published": false,
@@ -10192,7 +10192,7 @@
     "version": "1.006"
   },
   "rocksalt": {
-    "commit": "58f738f67af06c866cf3f3ff8756f43786126c5f",
+    "commit": "f12c96b60660ec6b4e89e0c7e2ca829579a97ab9",
     "package": "fontpkg-rock-salt",
     "path": "apache/rocksalt",
     "published": false,
@@ -10696,7 +10696,7 @@
     "version": "1.100"
   },
   "schoolbell": {
-    "commit": "f4adf5c8d08c65bc5bb5cf1cb661326716c5f7d4",
+    "commit": "37bc24949ea6958061cdb9f45342820e3cf81696",
     "package": "fontpkg-schoolbell",
     "path": "apache/schoolbell",
     "published": false,
@@ -10983,7 +10983,7 @@
     "version": "1.020"
   },
   "slackey": {
-    "commit": "3483f3b4572e40ef02965f6cbbde42d419be2f00",
+    "commit": "1b3353973266d3094a913e52f9357e4971bcedc4",
     "package": "fontpkg-slackey",
     "path": "apache/slackey",
     "published": false,
@@ -11445,7 +11445,7 @@
     "version": "1.015"
   },
   "sunshiney": {
-    "commit": "28bd9cda0e647dd34653e13a2fd95e6694753dbf",
+    "commit": "87fc259fe52492d10e939933fa3a571b1fc224ad",
     "package": "fontpkg-sunshiney",
     "path": "apache/sunshiney",
     "published": false,
@@ -11977,7 +11977,7 @@
     "version": "2010.000"
   },
   "unkempt": {
-    "commit": "6eb1aa8094a16b5807b5e732e0c9bef3cd90eb76",
+    "commit": "6806893dd07e9766437c154c9cca293bf364cf97",
     "package": "fontpkg-unkempt",
     "path": "apache/unkempt",
     "published": false,
@@ -12180,7 +12180,7 @@
     "version": "1.000"
   },
   "walterturncoat": {
-    "commit": "3c61b51c1933df4dccc5065c748e16df353aa05d",
+    "commit": "4db3e4d6e18def5bc9fa1cc3c69c3cd1609e4b58",
     "package": "fontpkg-walter-turncoat",
     "path": "apache/walterturncoat",
     "published": false,
