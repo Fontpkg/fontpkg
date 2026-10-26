@@ -2796,7 +2796,7 @@
     "commit": "340cf5818580b4e39c653788619a19d3225d5d1a",
     "package": "fontpkg-dm-serif-text",
     "path": "ofl/dmseriftext",
-    "published": false,
+    "published": true,
     "version": "5.200"
   },
   "domine": {
@@ -4063,7 +4063,7 @@
     "commit": "bb1483b838af48e247e0c8af97a6a5b69a62b389",
     "package": "fontpkg-hammersmith-one",
     "path": "ofl/hammersmithone",
-    "published": false,
+    "published": true,
     "version": "1.003"
   },
   "hanalei": {
@@ -10244,7 +10244,7 @@
     "commit": "6991db00e29dcdd7e6541afcb1b3886e883c6c8f",
     "package": "fontpkg-rowdies",
     "path": "ofl/rowdies",
-    "published": false,
+    "published": true,
     "version": "1.000"
   },
   "rozhaone": {
@@ -11063,7 +11063,7 @@
     "commit": "f75f1e2f1a742856a8f532243b86ed0f5a939287",
     "package": "fontpkg-sofia-sans",
     "path": "ofl/sofiasans",
-    "published": false,
+    "published": true,
     "version": "4.101"
   },
   "sofiasanscondensed": {
