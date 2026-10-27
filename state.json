@@ -2257,7 +2257,7 @@
     "commit": "4753e8228522ed6d97b45581c8cc5c2fa88a9488",
     "package": "fontpkg-chivo",
     "path": "ofl/chivo",
-    "published": false,
+    "published": true,
     "version": "2.002"
   },
   "chivomono": {
@@ -6961,7 +6961,7 @@
     "commit": "de641ac865455e6506aa4c5ab2327457c1f8e20a",
     "package": "fontpkg-noto-sans-display",
     "path": "ofl/notosansdisplay",
-    "published": false,
+    "published": true,
     "version": "2.003"
   },
   "notosansduployan": {
@@ -7738,7 +7738,7 @@
     "commit": "5df16943cdfd6da3033fed34852f504f4b0a4943",
     "package": "fontpkg-noto-sans-tamil",
     "path": "ofl/notosanstamil",
-    "published": false,
+    "published": true,
     "version": "2.004"
   },
   "notosanstamilsupplement": {
@@ -10125,7 +10125,7 @@
     "commit": "62a2ccf91094d9cb278ad8243145c58f68a77319",
     "package": "fontpkg-righteous",
     "path": "ofl/righteous",
-    "published": false,
+    "published": true,
     "version": "1.000"
   },
   "risque": {
