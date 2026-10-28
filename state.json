@@ -185,7 +185,7 @@
     "commit": "d7a67e5272fd731ab5ebe0a4f67898006a5e8e09",
     "package": "fontpkg-alata",
     "path": "ofl/alata",
-    "published": false,
+    "published": true,
     "version": "1.005"
   },
   "alatsi": {
@@ -248,7 +248,7 @@
     "commit": "8071a2cad923358e750593d740f02febc1328181",
     "package": "fontpkg-aleo",
     "path": "ofl/aleo",
-    "published": false,
+    "published": true,
     "version": "2.001"
   },
   "alexandria": {
@@ -4196,7 +4196,7 @@
     "commit": "e8586f168c94cad7fb31f5195d64902e8b1cb9f7",
     "package": "fontpkg-hind-madurai",
     "path": "ofl/hindmadurai",
-    "published": false,
+    "published": true,
     "version": "1.001"
   },
   "hindmysuru": {
@@ -8704,7 +8704,7 @@
     "commit": "44b37fe33d619ac0b3b0f49bb089582200e0cb8e",
     "package": "fontpkg-playfair",
     "path": "ofl/playfair",
-    "published": false,
+    "published": true,
     "version": "2.203"
   },
   "playfairdisplay": {
