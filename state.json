@@ -451,7 +451,7 @@
     "commit": "0fdd3bc02f0ca4e5e0651bde3f604b0e97f344f4",
     "package": "fontpkg-amatic-sc",
     "path": "ofl/amaticsc",
-    "published": false,
+    "published": true,
     "version": "2.505"
   },
   "amethysta": {
@@ -2516,14 +2516,14 @@
     "commit": "b7dce9d2d1832fed2de7de38989f05b7f3410036",
     "package": "fontpkg-courgette",
     "path": "ofl/courgette",
-    "published": false,
+    "published": true,
     "version": "1.002"
   },
   "courierprime": {
     "commit": "88e24afc340dc5894f858a5a2c51afb62134f985",
     "package": "fontpkg-courier-prime",
     "path": "ofl/courierprime",
-    "published": false,
+    "published": true,
     "version": "3.018"
   },
   "cousine": {
@@ -10174,7 +10174,7 @@
     "commit": "17dd854eea9801c355d993a7697abc8e11b36ed4",
     "package": "fontpkg-roboto-serif",
     "path": "ofl/robotoserif",
-    "published": false,
+    "published": true,
     "version": "1.008"
   },
   "robotoslab": {
