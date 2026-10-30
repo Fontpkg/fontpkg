@@ -1732,7 +1732,7 @@
     "commit": "68ff38ec49b6ba21ae30577744b5aae508ec0a6b",
     "package": "fontpkg-bree-serif",
     "path": "ofl/breeserif",
-    "published": false,
+    "published": true,
     "version": "1.002"
   },
   "bricolagegrotesque": {
@@ -5526,7 +5526,7 @@
     "commit": "4e32fb414cf1a4a318a67db9c7476c26b0b2ac37",
     "package": "fontpkg-libre-caslon-text",
     "path": "ofl/librecaslontext",
-    "published": false,
+    "published": true,
     "version": "2.000"
   },
   "librefranklin": {
@@ -9971,7 +9971,7 @@
     "commit": "e0faa5f6977ecf63546030bbb8e43b12a0821f32",
     "package": "fontpkg-readex-pro",
     "path": "ofl/readexpro",
-    "published": false,
+    "published": true,
     "version": "1.205"
   },
   "recursive": {
@@ -11651,7 +11651,7 @@
     "commit": "1cd66436eccac3db1c6eef358056c75bdde8eaa7",
     "package": "fontpkg-tenor-sans",
     "path": "ofl/tenorsans",
-    "published": false,
+    "published": true,
     "version": "1.001"
   },
   "textmeone": {
