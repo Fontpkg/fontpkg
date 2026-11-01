@@ -2355,7 +2355,7 @@
     "commit": "2d26603ca56543a869d5d3b3fb9f6024eb370ec5",
     "package": "fontpkg-comic-neue",
     "path": "ofl/comicneue",
-    "published": false,
+    "published": true,
     "version": "2.003"
   },
   "comicrelief": {
@@ -4994,7 +4994,7 @@
     "commit": "bbeec8922253bb78e86ba43cd5956ba280b7a796",
     "package": "fontpkg-kaushan-script",
     "path": "ofl/kaushanscript",
-    "published": false,
+    "published": true,
     "version": "1.002"
   },
   "kavivanar": {
@@ -5211,7 +5211,7 @@
     "commit": "86be0110398d8d3a85233847015f70ac1e375eee",
     "package": "fontpkg-kumbh-sans",
     "path": "ofl/kumbhsans",
-    "published": false,
+    "published": true,
     "version": "1.005"
   },
   "kurale": {
@@ -8536,7 +8536,7 @@
     "commit": "48d7fcb5aecbab37607d2421a239797d42f82f97",
     "package": "fontpkg-patrick-hand",
     "path": "ofl/patrickhand",
-    "published": false,
+    "published": true,
     "version": "1.003"
   },
   "patrickhandsc": {
