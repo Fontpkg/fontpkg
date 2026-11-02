@@ -1963,7 +1963,7 @@
     "commit": "c05d1c0b5f7636a03d6469a5c2f2d0be8476daee",
     "package": "fontpkg-cantarell",
     "path": "ofl/cantarell",
-    "published": false,
+    "published": true,
     "version": "1.004"
   },
   "cantataone": {
@@ -6737,7 +6737,7 @@
     "commit": "056a650b640d43d7a57cd5336c51c0f4bbb50b68",
     "package": "fontpkg-noto-naskh-arabic",
     "path": "ofl/notonaskharabic",
-    "published": false,
+    "published": true,
     "version": "2.021"
   },
   "notonastaliqurdu": {
@@ -7339,7 +7339,7 @@
     "commit": "8786b551d455f0e409b2ba7271553fb0c1b44535",
     "package": "fontpkg-noto-sans-mono",
     "path": "ofl/notosansmono",
-    "published": false,
+    "published": true,
     "version": "2.014"
   },
   "notosansmro": {
@@ -11182,7 +11182,7 @@
     "commit": "084e8203aa731da6f0918ec56aa618b904964fdb",
     "package": "fontpkg-special-elite",
     "path": "apache/specialelite",
-    "published": false,
+    "published": true,
     "version": "1.001"
   },
   "specialgothic": {
