@@ -12390,7 +12390,7 @@
     "version": "3.003"
   },
   "yrsa": {
-    "commit": "30a3f61c5537c4f30c313a2f3f175cdf6fe00484",
+    "commit": "1c8000d9536a1b5369c3177e5380b99e48315b35",
     "package": "fontpkg-yrsa",
     "path": "ofl/yrsa",
     "published": false,
