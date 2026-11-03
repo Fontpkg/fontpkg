@@ -2138,7 +2138,7 @@
     "commit": "0087295879a0b60615eeb884f74a3ea8920eb9fa",
     "package": "fontpkg-changa",
     "path": "ofl/changa",
-    "published": false,
+    "published": true,
     "version": "3.003"
   },
   "changaone": {
@@ -6366,7 +6366,7 @@
     "commit": "4f9e5bc4436e6006d4921c1a48a73b31b15881bd",
     "package": "fontpkg-montserrat-alternates",
     "path": "ofl/montserratalternates",
-    "published": false,
+    "published": true,
     "version": "7.200"
   },
   "montserratunderline": {
@@ -8557,7 +8557,7 @@
     "commit": "f5b48dd93f78970d7099afc26fc2438c8c78e692",
     "package": "fontpkg-patua-one",
     "path": "ofl/patuaone",
-    "published": false,
+    "published": true,
     "version": "1.002"
   },
   "pavanam": {
@@ -12155,7 +12155,7 @@
     "commit": "50feebce3d080bb1706fcb26098f88edbed6f5dd",
     "package": "fontpkg-vt323",
     "path": "ofl/vt323",
-    "published": false,
+    "published": true,
     "version": "2.000"
   },
   "vujahdayscript": {
