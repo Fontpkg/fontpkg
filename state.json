@@ -1158,7 +1158,7 @@
     "commit": "0caae2e8b3d96c3d4df4617deb9f58050515b2bd",
     "package": "fontpkg-bangers",
     "path": "ofl/bangers",
-    "published": false,
+    "published": true,
     "version": "2.100"
   },
   "barlow": {
@@ -2558,7 +2558,7 @@
     "commit": "e77a26cae4605703e5de7b1497b10347232d4c3d",
     "package": "fontpkg-creepster",
     "path": "ofl/creepster",
-    "published": false,
+    "published": true,
     "version": "1.000"
   },
   "creteround": {
@@ -3888,7 +3888,7 @@
     "commit": "3d2fa82220501471e8ef41446c144b4e19a64aa7",
     "package": "fontpkg-golos-text",
     "path": "ofl/golostext",
-    "published": false,
+    "published": true,
     "version": "2.004"
   },
   "googlesanscode": {
@@ -8263,7 +8263,7 @@
     "commit": "e2760e983bd37d331e1714b6f2bc29b31b2b0214",
     "package": "fontpkg-old-standard-tt",
     "path": "ofl/oldstandardtt",
-    "published": false,
+    "published": true,
     "version": "3.000"
   },
   "ole": {
