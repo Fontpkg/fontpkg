@@ -80,7 +80,7 @@
     "commit": "3161902da7a7747a3a7ffbae17f988cd79396499",
     "package": "fontpkg-advent-pro",
     "path": "ofl/adventpro",
-    "published": false,
+    "published": true,
     "version": "3.000"
   },
   "afacad": {
@@ -8508,7 +8508,7 @@
     "commit": "0dbf6d32168b2aa535510afc03f0465954218465",
     "package": "fontpkg-passion-one",
     "path": "ofl/passionone",
-    "published": false,
+    "published": true,
     "version": "1.002"
   },
   "passionsconflict": {
@@ -9789,7 +9789,7 @@
     "commit": "6c867b619354ff01311da32da61752a720e4e298",
     "package": "fontpkg-quattrocento",
     "path": "ofl/quattrocento",
-    "published": false,
+    "published": true,
     "version": "2.000"
   },
   "quattrocentosans": {
@@ -10524,7 +10524,7 @@
     "commit": "b4e4c771b300933ad4382272d7ef2f64a2764aaa",
     "package": "fontpkg-sacramento",
     "path": "ofl/sacramento",
-    "published": false,
+    "published": true,
     "version": "1.000"
   },
   "sahitya": {
