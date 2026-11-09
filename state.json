@@ -5302,7 +5302,7 @@
     "commit": "050525454c7dc461ea2a64ae9f8c2b3822eee5a6",
     "package": "fontpkg-league-gothic",
     "path": "ofl/leaguegothic",
-    "published": false,
+    "published": true,
     "version": "2.001"
   },
   "leaguescript": {
@@ -6709,7 +6709,7 @@
     "commit": "c66d3e36df8cd7a966c72eedbd288af843651d26",
     "package": "fontpkg-noticia-text",
     "path": "ofl/noticiatext",
-    "published": false,
+    "published": true,
     "version": "1.003"
   },
   "notoemoji": {
@@ -8571,7 +8571,7 @@
     "commit": "474ae8feeaf8e80a6df06b905f937d278d6f89b3",
     "package": "fontpkg-paytone-one",
     "path": "ofl/paytoneone",
-    "published": false,
+    "published": true,
     "version": "1.002"
   },
   "peddana": {
@@ -9607,7 +9607,7 @@
     "commit": "729c0d9ccc0f71953a74d3fa91ab1c315c09794f",
     "package": "fontpkg-prata",
     "path": "ofl/prata",
-    "published": false,
+    "published": true,
     "version": "2.000"
   },
   "preahvihear": {
