@@ -2383,7 +2383,7 @@
     "commit": "a764429612eae0f01a7807860d870d36df365864",
     "package": "fontpkg-commissioner",
     "path": "ofl/commissioner",
-    "published": false,
+    "published": true,
     "version": "1.001"
   },
   "concertone": {
@@ -5379,7 +5379,7 @@
     "commit": "2743d1f02dbd4d7367569d8e6d9b2a42c9799b58",
     "package": "fontpkg-lexend-giga",
     "path": "ofl/lexendgiga",
-    "published": false,
+    "published": true,
     "version": "1.007"
   },
   "lexendmega": {
@@ -5939,7 +5939,7 @@
     "commit": "5c5d30c008ca93831d49c72d8245ada3efb30ece",
     "package": "fontpkg-martel",
     "path": "ofl/martel",
-    "published": false,
+    "published": true,
     "version": "1.001"
   },
   "martelsans": {
@@ -12323,7 +12323,7 @@
     "commit": "fff7c6770ad49e146999aa951bfea04b7bf79d11",
     "package": "fontpkg-yantramanav",
     "path": "ofl/yantramanav",
-    "published": false,
+    "published": true,
     "version": "1.001"
   },
   "yarndings12": {
