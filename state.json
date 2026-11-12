@@ -598,7 +598,7 @@
     "commit": "a4b9a253aa9107e0e33f84ff7a659a850dacbb59",
     "package": "fontpkg-angkor",
     "path": "ofl/angkor",
-    "published": false,
+    "published": true,
     "version": "8.000"
   },
   "annapurnasil": {
@@ -2754,7 +2754,7 @@
     "commit": "5bf619d9f06935d865f3c899933a2036eb794880",
     "package": "fontpkg-didact-gothic",
     "path": "ofl/didactgothic",
-    "published": false,
+    "published": true,
     "version": "2.101"
   },
   "diplomata": {
@@ -8410,7 +8410,7 @@
     "commit": "df98b8dfc62c0c6499ab11228b124f9844640e03",
     "package": "fontpkg-oxanium",
     "path": "ofl/oxanium",
-    "published": false,
+    "published": true,
     "version": "2.000"
   },
   "oxygen": {
@@ -10909,7 +10909,7 @@
     "commit": "13a91ac36eb82722e74d04556b025b6438c07768",
     "package": "fontpkg-signika-negative",
     "path": "ofl/signikanegative",
-    "published": false,
+    "published": true,
     "version": "2.001"
   },
   "silkscreen": {
