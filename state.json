@@ -1207,7 +1207,7 @@
     "commit": "4b733d87dc24f84fffe8981336a98e643e507f14",
     "package": "fontpkg-baskervville",
     "path": "ofl/baskervville",
-    "published": false,
+    "published": true,
     "version": "1.100"
   },
   "baskervvillesc": {
@@ -3468,7 +3468,7 @@
     "commit": "bc7b1cdc9ec0435cfee60a10c7da670c0c8b194c",
     "package": "fontpkg-francois-one",
     "path": "ofl/francoisone",
-    "published": false,
+    "published": true,
     "version": "2.000"
   },
   "frankruhllibre": {
@@ -3545,7 +3545,7 @@
     "commit": "89d4d111d3d8eac96719110803e3669d1ca4b010",
     "package": "fontpkg-fugaz-one",
     "path": "ofl/fugazone",
-    "published": false,
+    "published": true,
     "version": "1.002"
   },
   "fuggles": {
@@ -3895,7 +3895,7 @@
     "commit": "4455c51f929b234ebd3d7452c66a420b33815a1d",
     "package": "fontpkg-google-sans-code",
     "path": "ofl/googlesanscode",
-    "published": false,
+    "published": true,
     "version": "6.001"
   },
   "gorditas": {
