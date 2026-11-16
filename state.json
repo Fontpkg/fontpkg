@@ -353,7 +353,7 @@
     "commit": "6240d3ea836743ac2a90d529b2b62fcd43f843ea",
     "package": "fontpkg-allura",
     "path": "ofl/allura",
-    "published": false,
+    "published": true,
     "version": "1.110"
   },
   "almarai": {
@@ -437,7 +437,7 @@
     "commit": "4b4565cb0b9f6f279839cd2a066c7fd0af9bc515",
     "package": "fontpkg-amaranth",
     "path": "ofl/amaranth",
-    "published": false,
+    "published": true,
     "version": "1.001"
   },
   "amarna": {
@@ -8627,7 +8627,7 @@
     "commit": "717088faff1d5e0d841fe56851f12b4bbf0418f3",
     "package": "fontpkg-philosopher",
     "path": "ofl/philosopher",
-    "published": false,
+    "published": true,
     "version": "2.001"
   },
   "phudu": {
@@ -11378,7 +11378,7 @@
     "commit": "4095302eaa498ad0f7d1660a29e47a6a508a4695",
     "package": "fontpkg-stix-two-text",
     "path": "ofl/stixtwotext",
-    "published": false,
+    "published": true,
     "version": "2.130"
   },
   "stoke": {
