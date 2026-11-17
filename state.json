@@ -220,7 +220,7 @@
     "commit": "a9d3a421f537b7e4960ace558fb65a448fb3cdbb",
     "package": "fontpkg-alegreya",
     "path": "ofl/alegreya",
-    "published": false,
+    "published": true,
     "version": "2.009"
   },
   "alegreyasans": {
@@ -4819,7 +4819,7 @@
     "commit": "1153458fc44c044ba0e3c14356aa60875acf6a2d",
     "package": "fontpkg-josefin-slab",
     "path": "ofl/josefinslab",
-    "published": false,
+    "published": true,
     "version": "2.100"
   },
   "jost": {
@@ -6611,7 +6611,7 @@
     "commit": "fc007656d8d231ac399fbe31056b70ede51f66d7",
     "package": "fontpkg-neuton",
     "path": "ofl/neuton",
-    "published": false,
+    "published": true,
     "version": "1.560"
   },
   "newamsterdam": {
@@ -6835,7 +6835,7 @@
     "commit": "73e5c8805eee07e322c7b084b5ac7750e9630398",
     "package": "fontpkg-noto-sans-bengali",
     "path": "ofl/notosansbengali",
-    "published": false,
+    "published": true,
     "version": "3.011"
   },
   "notosansbhaiksuki": {
