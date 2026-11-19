@@ -59,7 +59,7 @@
     "commit": "1af6d5b219149d8e73b21adae769f8050d39f575",
     "package": "fontpkg-actor",
     "path": "ofl/actor",
-    "published": false,
+    "published": true,
     "version": "1.001"
   },
   "adamina": {
@@ -934,7 +934,7 @@
     "commit": "540e3f24ffc92b9617bdacf61010eaeb3de31174",
     "package": "fontpkg-audiowide",
     "path": "ofl/audiowide",
-    "published": false,
+    "published": true,
     "version": "1.003"
   },
   "autourone": {
@@ -1053,7 +1053,7 @@
     "commit": "ad35d4cd15ac330f5b1bdeb991ab7b7cacebee25",
     "package": "fontpkg-bai-jamjuree",
     "path": "ofl/baijamjuree",
-    "published": false,
+    "published": true,
     "version": "1.000"
   },
   "bakbakone": {
@@ -11070,7 +11070,7 @@
     "commit": "8ea847ad2a74eedcc6543c3204796d00ec105c0b",
     "package": "fontpkg-sofia-sans-condensed",
     "path": "ofl/sofiasanscondensed",
-    "published": false,
+    "published": true,
     "version": "4.101"
   },
   "sofiasansextracondensed": {
