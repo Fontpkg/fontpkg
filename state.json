@@ -255,7 +255,7 @@
     "commit": "9e945761ebb091976b3bebc466410d752d0c36ba",
     "package": "fontpkg-alexandria",
     "path": "ofl/alexandria",
-    "published": false,
+    "published": true,
     "version": "5.100"
   },
   "alexbrush": {
@@ -3034,7 +3034,7 @@
     "commit": "27f60ad8d5736e829894f5dcd6a34e0040846d57",
     "package": "fontpkg-encode-sans-condensed",
     "path": "ofl/encodesanscondensed",
-    "published": false,
+    "published": true,
     "version": "2.000"
   },
   "encodesansexpanded": {
@@ -5057,7 +5057,7 @@
     "commit": "7efcd2946c12ca20b71a62adc4d85639a6b5a2cb",
     "package": "fontpkg-khand",
     "path": "ofl/khand",
-    "published": false,
+    "published": true,
     "version": "1.102"
   },
   "khmer": {
@@ -8718,7 +8718,7 @@
     "commit": "4e6b7a49785b48b2bc9d709b0244c62b99ba9ca8",
     "package": "fontpkg-playfair-display-sc",
     "path": "ofl/playfairdisplaysc",
-    "published": false,
+    "published": true,
     "version": "1.200"
   },
   "playpensans": {
