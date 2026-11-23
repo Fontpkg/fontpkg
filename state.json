@@ -2565,7 +2565,7 @@
     "commit": "e3cc5b464ea58af1d5972cafe1fe817a448db2de",
     "package": "fontpkg-crete-round",
     "path": "ofl/creteround",
-    "published": false,
+    "published": true,
     "version": "1.001"
   },
   "crimsonpro": {
@@ -10195,14 +10195,14 @@
     "commit": "f12c96b60660ec6b4e89e0c7e2ca829579a97ab9",
     "package": "fontpkg-rock-salt",
     "path": "apache/rocksalt",
-    "published": false,
+    "published": true,
     "version": "1.001"
   },
   "rokkitt": {
     "commit": "6bc25996bdfc00289afe285e9779c3eecadb738c",
     "package": "fontpkg-rokkitt",
     "path": "ofl/rokkitt",
-    "published": false,
+    "published": true,
     "version": "3.103"
   },
   "romanesco": {
@@ -10853,7 +10853,7 @@
     "commit": "5a20386e906f92ab3fce5556e40a5fb4bb4f1d8c",
     "package": "fontpkg-share-tech-mono",
     "path": "ofl/sharetechmono",
-    "published": false,
+    "published": true,
     "version": "1.003"
   },
   "shojumaru": {
