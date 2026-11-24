@@ -3804,7 +3804,7 @@
     "commit": "b82b73e1ce979dabb2c817e214dea784a196f08a",
     "package": "fontpkg-gilda-display",
     "path": "ofl/gildadisplay",
-    "published": false,
+    "published": true,
     "version": "1.002"
   },
   "girassol": {
@@ -5470,7 +5470,7 @@
     "commit": "35ba75f241653cbcf492a9a92c673d160a2154a4",
     "package": "fontpkg-libre-barcode-39",
     "path": "ofl/librebarcode39",
-    "published": false,
+    "published": true,
     "version": "1.005"
   },
   "librebarcode39extended": {
@@ -6205,7 +6205,7 @@
     "commit": "cbcdb96d340ad080aa3783dcf831dbf317584783",
     "package": "fontpkg-mitr",
     "path": "ofl/mitr",
-    "published": false,
+    "published": true,
     "version": "1.001"
   },
   "modak": {
@@ -9796,7 +9796,7 @@
     "commit": "0a7297854c298cdbf6638d35d12f4da9cdd28ba4",
     "package": "fontpkg-quattrocento-sans",
     "path": "ofl/quattrocentosans",
-    "published": false,
+    "published": true,
     "version": "2.000"
   },
   "questrial": {
