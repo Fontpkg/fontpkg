@@ -4609,7 +4609,7 @@
     "commit": "5be904e6914834d66eef6066ddc07ee2c46bc956",
     "package": "fontpkg-italianno",
     "path": "ofl/italianno",
-    "published": false,
+    "published": true,
     "version": "1.100"
   },
   "itim": {
@@ -6744,7 +6744,7 @@
     "commit": "d53f0c9d40bee81e53252bf4de8701e9047f7f22",
     "package": "fontpkg-noto-nastaliq-urdu",
     "path": "ofl/notonastaliqurdu",
-    "published": false,
+    "published": true,
     "version": "3.009"
   },
   "notorashihebrew": {
@@ -10566,7 +10566,7 @@
     "commit": "933aeaa8f87f41ee14483734419509c95b38aec2",
     "package": "fontpkg-saira-semi-condensed",
     "path": "ofl/sairasemicondensed",
-    "published": false,
+    "published": true,
     "version": "0.072"
   },
   "sairastencil": {
@@ -11994,7 +11994,7 @@
     "commit": "9172ecb77e81820274ae19799c73b2f4d2a0b17a",
     "package": "fontpkg-unna",
     "path": "ofl/unna",
-    "published": false,
+    "published": true,
     "version": "2.007"
   },
   "updock": {
