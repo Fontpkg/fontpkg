@@ -7073,7 +7073,7 @@
     "commit": "44d62cc7f9aef618ac0705ef8520dbdc52ebd230",
     "package": "fontpkg-noto-sans-hebrew",
     "path": "ofl/notosanshebrew",
-    "published": false,
+    "published": true,
     "version": "3.001"
   },
   "notosansimperialaramaic": {
@@ -9516,7 +9516,7 @@
     "commit": "7c896cfcb49d6991be623359721f6b06039a2bb2",
     "package": "fontpkg-poiret-one",
     "path": "ofl/poiretone",
-    "published": false,
+    "published": true,
     "version": "1.101"
   },
   "pollerone": {
@@ -9915,7 +9915,7 @@
     "commit": "00fde661657dcb966aace137b2e1d88ab044229c",
     "package": "fontpkg-rammetto-one",
     "path": "ofl/rammettoone",
-    "published": false,
+    "published": true,
     "version": "1.100"
   },
   "ramsina": {
@@ -11567,7 +11567,7 @@
     "commit": "18425ce46cf5fbe28c658e7e5ecb41279554078c",
     "package": "fontpkg-tangerine",
     "path": "ofl/tangerine",
-    "published": false,
+    "published": true,
     "version": "1.301"
   },
   "tapestry": {
